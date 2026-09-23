@@ -1,15 +1,18 @@
+import type { Translation } from '@/i18n/types'
 import { ROUTES, type RoutePath } from '@/routes/paths'
 
 export type NavItem = {
-  label: string
+  /** Resolved against the active locale at render time. */
+  labelKey: keyof Translation['nav']
+  /** Language-neutral path; the locale prefix is applied when linking. */
   path: RoutePath
 }
 
 export const MAIN_NAV: readonly NavItem[] = [
-  { label: 'Home', path: ROUTES.home },
-  { label: 'About', path: ROUTES.about },
-  { label: 'Programs', path: ROUTES.programs },
-  { label: 'Insights', path: ROUTES.insights },
-  { label: 'Media', path: ROUTES.media },
-  { label: 'Contact', path: ROUTES.contact },
+  { labelKey: 'home', path: ROUTES.home },
+  { labelKey: 'about', path: ROUTES.about },
+  { labelKey: 'programs', path: ROUTES.programs },
+  { labelKey: 'insights', path: ROUTES.insights },
+  { labelKey: 'media', path: ROUTES.media },
+  { labelKey: 'contact', path: ROUTES.contact },
 ]
