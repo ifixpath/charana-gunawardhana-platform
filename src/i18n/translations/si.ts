@@ -271,6 +271,60 @@ export const si: Translation = {
         allPrograms: 'සියලු වැඩසටහන් බලන්න',
       },
     },
+    unstoppable: {
+      meta: {
+        title: 'Unstoppable — Charana Gunawardhana',
+        description: 'විනය සහ ඉදිරිගමන කෙරෙහි අවධානය යොමු කරන මාස හයක ජීවිත පරිවර්තන වැඩසටහනකි.',
+      },
+      hero: {
+        eyebrow: 'වැඩසටහන',
+        descriptor: 'මාස හයක ජීවිත පරිවර්තන වැඩසටහන',
+        supporting: 'විනය සහ ඉදිරිගමන කෙරෙහි අවධානය යොමු කරන දිගුකාලීන ජීවිත පරිවර්තන වැඩසටහනකි.',
+      },
+      about: {
+        heading: 'Unstoppable ගැන',
+        body: 'විනය සහ ඉදිරිගමන කෙරෙහි අවධානය යොමු කරන දිගුකාලීන ජීවිත පරිවර්තන වැඩසටහනකි.',
+      },
+      duration: {
+        heading: 'වැඩසටහන් කාලය',
+        value: 'මාස හයක්',
+      },
+      focus: {
+        heading: 'අවධානය',
+        body: 'විනය සහ ඉදිරිගමන කෙරෙහි අවධානය යොමු කරන දිගුකාලීන සංවර්ධන අත්දැකීමකි.',
+      },
+      cta: {
+        enquire: 'Unstoppable ගැන විමසන්න',
+        allPrograms: 'සියලු වැඩසටහන් බලන්න',
+      },
+    },
+    experienceYour100: {
+      meta: {
+        title: 'Experience Your 100% — Charana Gunawardhana',
+        description: 'සහභාගිවන්නන්ට තමන්ගේ සම්පූර්ණ දක්ෂතාවය අවදි කර ගැනීමට උපකාර වන එක්දින වැඩමුළුවකි.',
+      },
+      hero: {
+        eyebrow: 'වැඩසටහන',
+        descriptor: 'එක්දින වැඩමුළුව',
+        supporting: 'සහභාගිවන්නන්ට තමන්ගේ සම්පූර්ණ දක්ෂතාවය අවදි කර ගැනීමට උපකාර වන එක්දින වැඩමුළුවකි.',
+      },
+      about: {
+        heading: 'Experience Your 100% ගැන',
+        body: 'සහභාගිවන්නන්ට තමන්ගේ සම්පූර්ණ දක්ෂතාවය අවදි කර ගැනීමට උපකාර වන එක්දින වැඩමුළුවකි.',
+      },
+      format: {
+        heading: 'ආකෘතිය',
+        value: 'එක්දින වැඩමුළුව',
+      },
+      focus: {
+        heading: 'අවධානය',
+        body: 'සහභාගිවන්නන්ට තමන්ගේ සම්පූර්ණ දක්ෂතාවය අවදි කර ගැනීමට උපකාර වන එක්දින වැඩමුළුවකි.',
+      },
+      cta: {
+        enquire: 'Experience Your 100% ගැන විමසන්න',
+        allPrograms: 'සියලු වැඩසටහන් බලන්න',
+      },
+    },
   },
   programsIndex: {
     meta: {

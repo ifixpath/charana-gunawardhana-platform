@@ -262,6 +262,63 @@ export const en: Translation = {
         allPrograms: 'View All Programs',
       },
     },
+    unstoppable: {
+      meta: {
+        title: 'Unstoppable — Charana Gunawardhana',
+        description:
+          'Unstoppable is a six-month life transformation program focused on discipline and progress.',
+      },
+      hero: {
+        eyebrow: 'Program',
+        descriptor: 'Six Months Life Transformation Program',
+        supporting: 'A long-term life transformation program focused on discipline and progress.',
+      },
+      about: {
+        heading: 'About Unstoppable',
+        body: 'A long-term life transformation program focused on discipline and progress.',
+      },
+      duration: {
+        heading: 'Program Duration',
+        value: 'Six Months',
+      },
+      focus: {
+        heading: 'Focus',
+        body: 'A longer-form development experience focused on discipline and progress.',
+      },
+      cta: {
+        enquire: 'Enquire About Unstoppable',
+        allPrograms: 'View All Programs',
+      },
+    },
+    experienceYour100: {
+      meta: {
+        title: 'Experience Your 100% — Charana Gunawardhana',
+        description:
+          'A one-day workshop designed to help participants unlock their full performance.',
+      },
+      hero: {
+        eyebrow: 'Program',
+        descriptor: 'One-Day Workshop',
+        supporting:
+          'A one-day workshop designed to help participants unlock their full performance.',
+      },
+      about: {
+        heading: 'About Experience Your 100%',
+        body: 'A one-day workshop designed to help participants unlock their full performance.',
+      },
+      format: {
+        heading: 'Format',
+        value: 'One-Day Workshop',
+      },
+      focus: {
+        heading: 'Focus',
+        body: 'A one-day workshop designed to help participants unlock their full performance.',
+      },
+      cta: {
+        enquire: 'Enquire About Experience Your 100%',
+        allPrograms: 'View All Programs',
+      },
+    },
   },
   programsIndex: {
     meta: {

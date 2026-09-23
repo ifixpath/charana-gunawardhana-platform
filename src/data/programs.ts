@@ -53,10 +53,12 @@ export const CATALOG_PROGRAMS: readonly CatalogProgram[] = [
     id: 'unstoppable',
     name: 'Unstoppable',
     format: 'longTerm',
+    path: ROUTES.unstoppable,
   },
   {
     id: 'experience-your-100',
     name: 'Experience Your 100%',
     format: 'workshop',
+    path: ROUTES.experienceYour100,
   },
 ]

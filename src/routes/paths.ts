@@ -5,6 +5,8 @@ export const ROUTES = {
   mindMagic: '/programs/mind-magic',
   optimisticMagnet: '/programs/optimistic-magnet',
   socialMediaBusinessDevelopment: '/programs/social-media-business-development',
+  unstoppable: '/programs/unstoppable',
+  experienceYour100: '/programs/experience-your-100',
   insights: '/insights',
   media: '/media',
   contact: '/contact',
@@ -22,4 +24,6 @@ export const OVERLAY_HEADER_ROUTES: readonly string[] = [
   ROUTES.mindMagic,
   ROUTES.optimisticMagnet,
   ROUTES.socialMediaBusinessDevelopment,
+  ROUTES.unstoppable,
+  ROUTES.experienceYour100,
 ]

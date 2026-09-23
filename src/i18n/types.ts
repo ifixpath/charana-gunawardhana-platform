@@ -65,6 +65,32 @@ export type SocialMediaBusinessDevelopmentCopy = {
   cta: { enquire: string; allPrograms: string }
 }
 
+export type UnstoppableCopy = {
+  meta: { title: string; description: string }
+  hero: {
+    eyebrow: string
+    descriptor: string
+    supporting: string
+  }
+  about: { heading: string; body: string }
+  duration: { heading: string; value: string }
+  focus: { heading: string; body: string }
+  cta: { enquire: string; allPrograms: string }
+}
+
+export type ExperienceYour100Copy = {
+  meta: { title: string; description: string }
+  hero: {
+    eyebrow: string
+    descriptor: string
+    supporting: string
+  }
+  about: { heading: string; body: string }
+  format: { heading: string; value: string }
+  focus: { heading: string; body: string }
+  cta: { enquire: string; allPrograms: string }
+}
+
 export type HomeProgramItemCopy = {
   description: string
   availability?: string
@@ -177,6 +203,8 @@ export type Translation = {
     mindMagic: MindMagicCopy
     optimisticMagnet: OptimisticMagnetCopy
     socialMediaBusinessDevelopment: SocialMediaBusinessDevelopmentCopy
+    unstoppable: UnstoppableCopy
+    experienceYour100: ExperienceYour100Copy
   }
   programsIndex: ProgramsIndexCopy
 }
