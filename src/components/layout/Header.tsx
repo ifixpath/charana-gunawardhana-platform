@@ -7,6 +7,7 @@ import MobileNavigation from '@/components/layout/MobileNavigation'
 import ButtonLink from '@/components/ui/ButtonLink'
 import { useIsScrolled } from '@/hooks/useIsScrolled'
 import { stripLocale } from '@/i18n/config'
+import { labelClass } from '@/i18n/script'
 import { useLocalizedPath, useTranslations } from '@/i18n/useI18n'
 import { MAIN_NAV } from '@/routes/navigation'
 import { OVERLAY_HEADER_ROUTES, ROUTES } from '@/routes/paths'
@@ -89,7 +90,12 @@ export default function Header() {
                     end={item.path === ROUTES.home}
                     className={({ isActive }) =>
                       [
-                        'text-[0.7rem] font-medium tracking-[0.18em] uppercase transition-colors',
+                        'font-medium transition-colors',
+                        labelClass(
+                          t.nav[item.labelKey],
+                          'text-[0.7rem] tracking-[0.18em] uppercase',
+                          'text-[0.85rem]',
+                        ),
                         isActive
                           ? 'text-accent-light'
                           : 'text-content-inverse-muted hover:text-content-inverse',

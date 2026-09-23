@@ -40,21 +40,25 @@ export const PROGRAM_PREVIEWS: readonly ProgramPreview[] = [
     id: 'optimistic-magnet',
     name: 'Optimistic Magnet',
     format: 'program',
+    path: ROUTES.optimisticMagnet,
   },
   {
     id: 'social-media-business-development',
     name: 'Social Media for Business Development',
     format: 'zoomClass',
+    path: ROUTES.socialMediaBusinessDevelopment,
   },
   {
     id: 'unstoppable',
     name: 'Unstoppable',
     format: 'longTerm',
+    path: ROUTES.unstoppable,
   },
   {
     id: 'experience-your-100',
     name: 'Experience Your 100%',
     format: 'workshop',
+    path: ROUTES.experienceYour100,
   },
 ]
 

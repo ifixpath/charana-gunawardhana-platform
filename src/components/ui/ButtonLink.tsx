@@ -2,6 +2,7 @@ import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 
 import { EXTERNAL_LINK_PROPS } from '@/data/socialLinks'
+import { isLatinLabel } from '@/i18n/script'
 
 type ButtonLinkVariant = 'primary' | 'outlineOnDark' | 'outlineOnLight'
 type ButtonLinkSize = 'sm' | 'md'
@@ -14,7 +15,7 @@ type SharedProps = {
 }
 
 const BASE =
-  'inline-flex items-center justify-center rounded-sm text-center font-semibold uppercase whitespace-nowrap transition-colors duration-200'
+  'inline-flex items-center justify-center rounded-sm text-center font-semibold transition-colors duration-200'
 
 const VARIANTS: Record<ButtonLinkVariant, string> = {
   primary: 'bg-accent text-primary-dark hover:bg-accent-light',
@@ -23,17 +24,29 @@ const VARIANTS: Record<ButtonLinkVariant, string> = {
   outlineOnLight: 'border border-primary/20 text-primary hover:border-accent-dark hover:text-accent-dark',
 }
 
-const SIZES: Record<ButtonLinkSize, string> = {
-  sm: 'px-5 py-2.5 text-[0.7rem] tracking-[0.16em]',
-  md: 'px-7 py-3.5 text-xs tracking-[0.16em]',
+const LATIN_SIZES: Record<ButtonLinkSize, string> = {
+  sm: 'px-5 py-2.5 text-[0.7rem] tracking-[0.16em] uppercase whitespace-nowrap',
+  md: 'px-7 py-3.5 text-xs tracking-[0.16em] uppercase whitespace-nowrap',
+}
+
+const INDIC_SIZES: Record<ButtonLinkSize, string> = {
+  sm: 'px-5 py-2.5 text-[0.8rem] leading-snug',
+  md: 'px-7 py-3.5 text-[0.85rem] leading-snug',
+}
+
+function isLatinChildren(children: ReactNode) {
+  return typeof children !== 'string' || isLatinLabel(children)
 }
 
 function buttonClasses({
   variant = 'primary',
   size = 'md',
   className = '',
-}: Pick<SharedProps, 'variant' | 'size' | 'className'>) {
-  return [BASE, VARIANTS[variant], SIZES[size], className].filter(Boolean).join(' ')
+  children,
+}: Pick<SharedProps, 'variant' | 'size' | 'className' | 'children'>) {
+  const type = isLatinChildren(children) ? LATIN_SIZES[size] : INDIC_SIZES[size]
+
+  return [BASE, VARIANTS[variant], type, className].filter(Boolean).join(' ')
 }
 
 type ButtonLinkProps = SharedProps & {
@@ -51,7 +64,7 @@ export default function ButtonLink({
   onClick,
 }: ButtonLinkProps) {
   return (
-    <Link to={to} onClick={onClick} className={buttonClasses({ variant, size, className })}>
+    <Link to={to} onClick={onClick} className={buttonClasses({ variant, size, className, children })}>
       {children}
     </Link>
   )
@@ -77,7 +90,7 @@ export function ExternalButtonLink({
       href={href}
       {...EXTERNAL_LINK_PROPS}
       aria-label={ariaLabel}
-      className={buttonClasses({ variant, size, className })}
+      className={buttonClasses({ variant, size, className, children })}
     >
       {children}
     </a>

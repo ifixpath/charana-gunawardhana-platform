@@ -1,6 +1,7 @@
 import HeroBackdrop from '@/components/home/HeroBackdrop'
 import Container from '@/components/layout/Container'
 import ButtonLink from '@/components/ui/ButtonLink'
+import { labelClass } from '@/i18n/script'
 import { useLocalizedPath, useTranslations } from '@/i18n/useI18n'
 import { ROUTES } from '@/routes/paths'
 
@@ -47,7 +48,9 @@ export default function HeroSection() {
         {/* Held to a narrow measure on phones so the block reads as a
             lower-left column and never runs under Charana. */}
         <div className="max-w-[20rem] sm:max-w-xl lg:max-w-2xl">
-          <p className="flex items-center gap-4 text-[0.65rem] font-medium tracking-[0.3em] uppercase">
+          <p
+            className={`flex items-center gap-4 font-medium ${labelClass(home.hero.eyebrow)}`}
+          >
             <span aria-hidden="true" className="bg-accent h-px w-10 shrink-0" />
             <span className="text-accent-light">{home.hero.eyebrow}</span>
           </p>

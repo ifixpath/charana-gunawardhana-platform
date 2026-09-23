@@ -1,7 +1,13 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
-import { DEFAULT_LOCALE, LOCALES, LOCALE_TAGS, alternatePaths } from '@/i18n/config'
+import {
+  DEFAULT_LOCALE,
+  LOCALES,
+  LOCALE_TAGS,
+  alternatePaths,
+  getLocaleFromPathname,
+} from '@/i18n/config'
 
 type PageMeta = {
   title: string
@@ -41,14 +47,21 @@ export function usePageMeta({ title, description }: PageMeta) {
   useEffect(() => {
     const paths = alternatePaths(pathname)
     const { origin } = window.location
+    const locale = getLocaleFromPathname(pathname)
+
+    const canonical = document.createElement('link')
+    canonical.rel = 'canonical'
+    canonical.href = `${origin}${paths[locale]}`
+    canonical.setAttribute(OWNED, '')
+    document.head.append(canonical)
 
     const links = [...LOCALES, 'x-default' as const].map((entry) => {
-      const locale = entry === 'x-default' ? DEFAULT_LOCALE : entry
+      const alternateLocale = entry === 'x-default' ? DEFAULT_LOCALE : entry
       const link = document.createElement('link')
 
       link.rel = 'alternate'
-      link.hreflang = entry === 'x-default' ? 'x-default' : LOCALE_TAGS[locale]
-      link.href = `${origin}${paths[locale]}`
+      link.hreflang = entry === 'x-default' ? 'x-default' : LOCALE_TAGS[alternateLocale]
+      link.href = `${origin}${paths[alternateLocale]}`
       link.setAttribute(OWNED, '')
       document.head.append(link)
 
@@ -56,6 +69,7 @@ export function usePageMeta({ title, description }: PageMeta) {
     })
 
     return () => {
+      canonical.remove()
       links.forEach((link) => {
         link.remove()
       })

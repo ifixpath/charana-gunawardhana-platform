@@ -224,6 +224,16 @@ export type Translation = {
     morningGym: MorningGymProgramCopy
   }
   programsIndex: ProgramsIndexCopy
+  about: AboutCopy
+  contact: ContactCopy
+  media: MediaPageCopy
+  insights: InsightsPageCopy
+  notFound: {
+    title: string
+    description: string
+    heading: string
+    backHome: string
+  }
 }
 
 export type ProgramsIndexItemCopy = {
@@ -262,5 +272,143 @@ export type ProgramsIndexCopy = {
   }
   a11y: {
     morningGymPhoto: string
+  }
+}
+
+export type AboutCopy = {
+  meta: { title: string; description: string }
+  hero: {
+    eyebrow: string
+    heading: string
+    supporting: string
+  }
+  intro: {
+    heading: string
+    body: string
+  }
+  journey: {
+    heading: string
+    body: string
+    supporting: string
+  }
+  focus: {
+    heading: string
+    items: Record<FocusAreaId, { title: string; description: string }>
+  }
+  programs: {
+    heading: string
+    supporting: string
+    cta: string
+  }
+  finalCta: {
+    heading: string
+    ctaPrograms: string
+    ctaContact: string
+  }
+  a11y: {
+    portrait: string
+  }
+}
+
+export type ContactCopy = {
+  meta: { title: string; description: string }
+  hero: {
+    eyebrow: string
+    heading: string
+    supporting: string
+  }
+  options: {
+    heading: string
+    supporting: string
+    profile: string
+    community: {
+      heading: string
+      body: string
+      cta: string
+    }
+  }
+  programs: {
+    heading: string
+    supporting: string
+    cta: string
+  }
+  social: {
+    heading: string
+    supporting: string
+  }
+  finalCta: {
+    heading: string
+    ctaPrograms: string
+    ctaHome: string
+  }
+  a11y: {
+    community: string
+  }
+}
+
+export type InsightsPageCopy = {
+  meta: { title: string; description: string }
+  hero: {
+    eyebrow: string
+    heading: string
+    supporting: string
+  }
+  themes: {
+    heading: string
+    supporting: string
+  }
+  featured: {
+    heading: string
+    body: string
+  }
+  programs: {
+    heading: string
+    supporting: string
+    cta: string
+  }
+  media: {
+    heading: string
+    supporting: string
+    cta: string
+  }
+  finalCta: {
+    heading: string
+    ctaPrograms: string
+    ctaContact: string
+  }
+  a11y: {
+    themes: string
+  }
+}
+
+export type MediaPageCopy = {
+  meta: { title: string; description: string }
+  hero: {
+    eyebrow: string
+    heading: string
+    supporting: string
+  }
+  featured: {
+    heading: string
+    supporting: string
+  }
+  video: {
+    heading: string
+    supporting: string
+    cta: string
+  }
+  social: {
+    heading: string
+    supporting: string
+    profile: string
+  }
+  finalCta: {
+    heading: string
+    ctaPrograms: string
+    ctaContact: string
+  }
+  a11y: {
+    featured: string
+    watchYoutube: string
   }
 }

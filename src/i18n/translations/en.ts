@@ -426,4 +426,181 @@ export const en: Translation = {
         'Charana Gunawardhana hosting a live Morning Gym session, with participants joining across two screens',
     },
   },
+  about: {
+    meta: {
+      title: 'About Charana Gunawardhana',
+      description:
+        'A journey shaped by discipline, learning and a commitment to helping people move forward with clarity and purpose.',
+    },
+    hero: {
+      eyebrow: 'About',
+      heading: 'About Charana Gunawardhana',
+      supporting:
+        'Ideas, discipline and practical guidance for personal growth, leadership and meaningful progress.',
+    },
+    intro: {
+      heading: 'More Than a Mentor',
+      body: 'A journey shaped by discipline, learning and a commitment to helping people move forward with clarity and purpose.',
+    },
+    journey: {
+      heading: 'The Journey',
+      body: 'A journey shaped by discipline, learning and a commitment to helping people move forward with clarity and purpose.',
+      supporting:
+        'Ideas, discipline and practical guidance for personal growth, leadership and meaningful progress.',
+    },
+    focus: {
+      heading: 'Areas of Focus',
+      items: {
+        'personal-growth': {
+          title: 'Personal Growth',
+          description: 'Habits, self-awareness and steady progress that compounds over time.',
+        },
+        leadership: {
+          title: 'Leadership',
+          description: 'Leading with clarity, responsibility and considered judgement.',
+        },
+        mindset: {
+          title: 'Mindset',
+          description: 'Attention, belief and emotional discipline as daily practice.',
+        },
+        direction: {
+          title: 'Business & Life Direction',
+          description: 'Choosing a direction with intent, then moving on it consistently.',
+        },
+      },
+    },
+    programs: {
+      heading: 'Programs',
+      supporting: 'Programs, workshops and classes across mindset, discipline and business growth.',
+      cta: 'Explore Programs',
+    },
+    finalCta: {
+      heading: 'Continue the Journey',
+      ctaPrograms: 'Explore Programs',
+      ctaContact: 'Contact',
+    },
+    a11y: {
+      portrait: 'Charana Gunawardhana seated in a beige suit',
+    },
+  },
+  contact: {
+    meta: {
+      title: 'Contact — Charana Gunawardhana',
+      description:
+        'Connect with Charana Gunawardhana for program information and general enquiries.',
+    },
+    hero: {
+      eyebrow: 'Contact',
+      heading: 'Get in Touch',
+      supporting:
+        'Connect with Charana Gunawardhana for program information and general enquiries.',
+    },
+    options: {
+      heading: 'Public Channels',
+      supporting: 'These are the confirmed public profiles. They open in a new tab.',
+      profile: 'Public profile',
+      community: {
+        heading: 'Morning Gym Community',
+        body: 'This WhatsApp link is an invite to the Morning Gym community. It is not a private support number.',
+        cta: 'Join Community',
+      },
+    },
+    programs: {
+      heading: 'Program Enquiries',
+      supporting: 'Explore the programs, or use the public channels on this page.',
+      cta: 'Explore Programs',
+    },
+    social: {
+      heading: 'Follow',
+      supporting: 'The same public profiles, collected here.',
+    },
+    finalCta: {
+      heading: 'Continue',
+      ctaPrograms: 'Explore Programs',
+      ctaHome: 'Back to Home',
+    },
+    a11y: {
+      community: 'Join the Morning Gym community on WhatsApp (opens in a new tab)',
+    },
+  },
+  media: {
+    meta: {
+      title: 'Media — Charana Gunawardhana',
+      description: 'Selected visual moments, appearances, and public content from Charana Gunawardhana.',
+    },
+    hero: {
+      eyebrow: 'Media',
+      heading: 'Media & Moments',
+      supporting:
+        'Explore selected visual moments, appearances, and public content from Charana Gunawardhana.',
+    },
+    featured: {
+      heading: 'On Stage',
+      supporting: 'Charana Gunawardhana speaking on stage to an audience.',
+    },
+    video: {
+      heading: 'YouTube',
+      supporting: 'Public video is shared on YouTube.',
+      cta: 'Visit YouTube',
+    },
+    social: {
+      heading: 'Follow',
+      supporting: 'The confirmed public profiles.',
+      profile: 'Public profile',
+    },
+    finalCta: {
+      heading: 'Continue',
+      ctaPrograms: 'Explore Programs',
+      ctaContact: 'Contact',
+    },
+    a11y: {
+      featured: 'Charana Gunawardhana speaking on stage to an audience',
+      watchYoutube: 'Watch Charana Gunawardhana on YouTube (opens in a new tab)',
+    },
+  },
+  insights: {
+    meta: {
+      title: 'Insights — Charana Gunawardhana',
+      description:
+        'Written reflections and practical notes on growth, mindset and leadership from Charana Gunawardhana.',
+    },
+    hero: {
+      eyebrow: 'Insights',
+      heading: 'Ideas for Growth, Clarity and Progress',
+      supporting:
+        'Ideas, discipline and practical guidance for personal growth, leadership and meaningful progress.',
+    },
+    themes: {
+      heading: 'Insight Themes',
+      supporting: 'Selected ideas are gathered around these areas of focus.',
+    },
+    featured: {
+      heading: 'Selected Ideas',
+      body: 'This space brings together selected ideas and reflections on growth, mindset and leadership.',
+    },
+    programs: {
+      heading: 'Programs',
+      supporting: 'These themes continue through the programs, workshops and classes.',
+      cta: 'Explore Programs',
+    },
+    media: {
+      heading: 'Media',
+      supporting: 'Videos, conversations and appearances, collected in one place.',
+      cta: 'Explore Media',
+    },
+    finalCta: {
+      heading: 'Continue',
+      ctaPrograms: 'Explore Programs',
+      ctaContact: 'Contact',
+    },
+    a11y: {
+      themes: 'Insight themes',
+    },
+  },
+  notFound: {
+    title: 'Page not found — Charana Gunawardhana',
+    description: 'This page could not be found on the official Charana Gunawardhana website.',
+    heading: 'Page not found',
+    backHome: 'Back to home',
+  },
 }

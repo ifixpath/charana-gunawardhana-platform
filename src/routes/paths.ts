@@ -21,6 +21,7 @@ export type RoutePath = (typeof ROUTES)[keyof typeof ROUTES]
  */
 export const OVERLAY_HEADER_ROUTES: readonly string[] = [
   ROUTES.home,
+  ROUTES.about,
   ROUTES.programs,
   ROUTES.morningGym,
   ROUTES.mindMagic,
@@ -28,4 +29,7 @@ export const OVERLAY_HEADER_ROUTES: readonly string[] = [
   ROUTES.socialMediaBusinessDevelopment,
   ROUTES.unstoppable,
   ROUTES.experienceYour100,
+  ROUTES.media,
+  ROUTES.insights,
+  ROUTES.contact,
 ]

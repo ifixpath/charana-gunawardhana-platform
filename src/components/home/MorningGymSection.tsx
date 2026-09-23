@@ -57,7 +57,7 @@ export default function MorningGymSection() {
           />
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
-            <ButtonLink to={localizedPath(ROUTES.programs)} className="w-full sm:w-auto">
+            <ButtonLink to={localizedPath(ROUTES.morningGym)} className="w-full sm:w-auto">
               {home.morningGym.ctaExplore}
             </ButtonLink>
             {/* The only place the community invite is exposed. */}

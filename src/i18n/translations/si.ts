@@ -422,4 +422,178 @@ export const si: Translation = {
       morningGymPhoto: 'සජීවී Morning Gym සැසියක් පවත්වන Charana Gunawardhana, තිර දෙකක් හරහා සහභාගිවන්නන් සමඟ',
     },
   },
+  about: {
+    meta: {
+      title: 'Charana Gunawardhana ගැන',
+      description:
+        'විනය, ඉගෙනීම සහ මිනිසුන්ට පැහැදිලිකමින් හා අරමුණින් ඉදිරියට යාමට උපකාර කිරීමේ බැඳීමෙන් හැඩගැසුණු ගමනකි.',
+    },
+    hero: {
+      eyebrow: 'මා ගැන',
+      heading: 'Charana Gunawardhana ගැන',
+      supporting:
+        'පෞද්ගලික වර්ධනය, නායකත්වය සහ අර්ථවත් ඉදිරිගමන සඳහා අදහස්, විනය සහ ප්‍රායෝගික මගපෙන්වීම.',
+    },
+    intro: {
+      heading: 'උපදේශකයෙකුට වඩා වැඩි යමක්',
+      body: 'විනය, ඉගෙනීම සහ මිනිසුන්ට පැහැදිලිකමින් හා අරමුණින් ඉදිරියට යාමට උපකාර කිරීමේ බැඳීමෙන් හැඩගැසුණු ගමනකි.',
+    },
+    journey: {
+      heading: 'ගමන',
+      body: 'විනය, ඉගෙනීම සහ මිනිසුන්ට පැහැදිලිකමින් හා අරමුණින් ඉදිරියට යාමට උපකාර කිරීමේ බැඳීමෙන් හැඩගැසුණු ගමනකි.',
+      supporting:
+        'පෞද්ගලික වර්ධනය, නායකත්වය සහ අර්ථවත් ඉදිරිගමන සඳහා අදහස්, විනය සහ ප්‍රායෝගික මගපෙන්වීම.',
+    },
+    focus: {
+      heading: 'අවධානය යොමු වන ක්ෂේත්‍ර',
+      items: {
+        'personal-growth': {
+          title: 'පෞද්ගලික වර්ධනය',
+          description: 'කාලයත් සමඟ රැස්වන පුරුදු, ස්වයං-දැනුවත්භාවය සහ ස්ථිර ඉදිරිගමන.',
+        },
+        leadership: {
+          title: 'නායකත්වය',
+          description: 'පැහැදිලිකම, වගකීම සහ සිතාබලා ගන්නා තීරණ සමඟ නායකත්වය දැරීම.',
+        },
+        mindset: {
+          title: 'මානසිකත්වය',
+          description: 'අවධානය, විශ්වාසය සහ හැඟීම් විනය දෛනික පුහුණුවක් ලෙස.',
+        },
+        direction: {
+          title: 'ව්‍යාපාර සහ ජීවිත දිශාව',
+          description: 'චේතනාවෙන් දිශාවක් තෝරා, එය මත නිරන්තරයෙන් ඉදිරියට යාම.',
+        },
+      },
+    },
+    programs: {
+      heading: 'වැඩසටහන්',
+      supporting: 'මානසිකත්වය, විනය සහ ව්‍යාපාර වර්ධනය ආවරණය කරන වැඩසටහන්, වැඩමුළු සහ පන්ති.',
+      cta: 'වැඩසටහන් බලන්න',
+    },
+    finalCta: {
+      heading: 'ගමන ඉදිරියට ගෙන යන්න',
+      ctaPrograms: 'වැඩසටහන් බලන්න',
+      ctaContact: 'සම්බන්ධ වන්න',
+    },
+    a11y: {
+      portrait: 'බෙජ් ඇඳුමකින් වාඩි වී සිටින Charana Gunawardhana',
+    },
+  },
+  contact: {
+    meta: {
+      title: 'සම්බන්ධ වන්න — Charana Gunawardhana',
+      description:
+        'වැඩසටහන් තොරතුරු සහ සාමාන්‍ය විමසීම් සඳහා Charana Gunawardhana සමඟ සම්බන්ධ වන්න.',
+    },
+    hero: {
+      eyebrow: 'සම්බන්ධ වන්න',
+      heading: 'සම්බන්ධ වන්න',
+      supporting:
+        'වැඩසටහන් තොරතුරු සහ සාමාන්‍ය විමසීම් සඳහා Charana Gunawardhana සමඟ සම්බන්ධ වන්න.',
+    },
+    options: {
+      heading: 'පොදු නාලිකා',
+      supporting: 'මේවා තහවුරු කළ පොදු පැතිකඩයි. ඒවා නව ටැබයකින් විවෘත වේ.',
+      profile: 'පොදු පැතිකඩ',
+      community: {
+        heading: 'Morning Gym ප්‍රජාව',
+        body: 'මෙම WhatsApp සබැඳිය Morning Gym ප්‍රජාවට එක් වීම සඳහා ය. එය පෞද්ගලික සහාය අංකයක් නොවේ.',
+        cta: 'ප්‍රජාවට එක් වන්න',
+      },
+    },
+    programs: {
+      heading: 'වැඩසටහන් විමසීම්',
+      supporting: 'වැඩසටහන් බලන්න, නැතහොත් මෙම පිටුවේ පොදු නාලිකා භාවිතා කරන්න.',
+      cta: 'වැඩසටහන් බලන්න',
+    },
+    social: {
+      heading: 'අනුගමනය කරන්න',
+      supporting: 'එම පොදු පැතිකඩම මෙහි එකතු කර ඇත.',
+    },
+    finalCta: {
+      heading: 'ඉදිරියට',
+      ctaPrograms: 'වැඩසටහන් බලන්න',
+      ctaHome: 'මුල් පිටුවට',
+    },
+    a11y: {
+      community: 'WhatsApp හි Morning Gym ප්‍රජාවට එක් වන්න (නව ටැබයකින් විවෘත වේ)',
+    },
+  },
+  media: {
+    meta: {
+      title: 'මාධ්‍ය — Charana Gunawardhana',
+      description: 'Charana Gunawardhana ගේ තෝරාගත් දෘශ්‍ය මොහොත්, පෙනී සිටීම් සහ පොදු අන්තර්ගතය.',
+    },
+    hero: {
+      eyebrow: 'මාධ්‍ය',
+      heading: 'මාධ්‍ය සහ මොහොත්',
+      supporting: 'Charana Gunawardhana ගේ තෝරාගත් දෘශ්‍ය මොහොත්, පෙනී සිටීම් සහ පොදු අන්තර්ගතය බලන්න.',
+    },
+    featured: {
+      heading: 'වේදිකාව මත',
+      supporting: 'වේදිකාවක් මත ප්‍රේක්ෂකයන් අමතන Charana Gunawardhana.',
+    },
+    video: {
+      heading: 'YouTube',
+      supporting: 'පොදු වීඩියෝ YouTube හි බෙදා ගනී.',
+      cta: 'YouTube වෙත යන්න',
+    },
+    social: {
+      heading: 'අනුගමනය කරන්න',
+      supporting: 'තහවුරු කළ පොදු පැතිකඩ.',
+      profile: 'පොදු පැතිකඩ',
+    },
+    finalCta: {
+      heading: 'ඉදිරියට',
+      ctaPrograms: 'වැඩසටහන් බලන්න',
+      ctaContact: 'සම්බන්ධ වන්න',
+    },
+    a11y: {
+      featured: 'වේදිකාවක් මත ප්‍රේක්ෂකයන් අමතන Charana Gunawardhana',
+      watchYoutube: 'YouTube හි Charana Gunawardhana නරඹන්න (නව ටැබයකින් විවෘත වේ)',
+    },
+  },
+  insights: {
+    meta: {
+      title: 'අදහස් — Charana Gunawardhana',
+      description: 'Charana Gunawardhana ගේ වර්ධනය, මානසිකත්වය සහ නායකත්වය පිළිබඳ ලිඛිත අදහස් සහ ප්‍රායෝගික සටහන්.',
+    },
+    hero: {
+      eyebrow: 'අදහස්',
+      heading: 'වර්ධනය, පැහැදිලිකම සහ ඉදිරිගමන සඳහා අදහස්',
+      supporting: 'පෞද්ගලික වර්ධනය, නායකත්වය සහ අර්ථවත් ඉදිරිගමන සඳහා අදහස්, විනය සහ ප්‍රායෝගික මගපෙන්වීම.',
+    },
+    themes: {
+      heading: 'අදහස් ක්ෂේත්‍ර',
+      supporting: 'තෝරාගත් අදහස් මෙම අවධානය යොමු වන ක්ෂේත්‍ර වටා එකතු වේ.',
+    },
+    featured: {
+      heading: 'තෝරාගත් අදහස්',
+      body: 'මෙම ඉඩ වර්ධනය, මානසිකත්වය සහ නායකත්වය පිළිබඳ තෝරාගත් අදහස් එකතු කරයි.',
+    },
+    programs: {
+      heading: 'වැඩසටහන්',
+      supporting: 'මෙම තේමා වැඩසටහන්, වැඩමුළු සහ පන්ති හරහා ඉදිරියට යයි.',
+      cta: 'වැඩසටහන් බලන්න',
+    },
+    media: {
+      heading: 'මාධ්‍ය',
+      supporting: 'වීඩියෝ, සංවාද සහ පෙනී සිටීම්, එක තැනකට එකතු කර ඇත.',
+      cta: 'මාධ්‍ය බලන්න',
+    },
+    finalCta: {
+      heading: 'ඉදිරියට',
+      ctaPrograms: 'වැඩසටහන් බලන්න',
+      ctaContact: 'සම්බන්ධ වන්න',
+    },
+    a11y: {
+      themes: 'අදහස් ක්ෂේත්‍ර',
+    },
+  },
+  notFound: {
+    title: 'පිටුව හමු නොවීය — Charana Gunawardhana',
+    description: 'Charana Gunawardhana ගේ නිල වෙබ් අඩවියේ මෙම පිටුව හමු නොවීය.',
+    heading: 'පිටුව හමු නොවීය',
+    backHome: 'මුල් පිටුවට',
+  },
 }

@@ -8,6 +8,8 @@ type PortraitAreaProps = {
   /** Tailwind aspect ratio utility, e.g. `aspect-4/5`. */
   aspect?: string
   objectPosition?: string
+  /** Use on the first portrait in view so the browser fetches it immediately. */
+  eager?: boolean
 }
 
 /**
@@ -21,6 +23,7 @@ export default function PortraitArea({
   className = '',
   aspect = 'aspect-4/5',
   objectPosition = 'object-center',
+  eager = false,
 }: PortraitAreaProps) {
   return (
     <div className={`${aspect} relative w-full overflow-hidden rounded-sm ${className}`.trim()}>
@@ -30,7 +33,8 @@ export default function PortraitArea({
           alt={image.alt}
           width={image.width}
           height={image.height}
-          loading="lazy"
+          loading={eager ? 'eager' : 'lazy'}
+          fetchPriority={eager ? 'high' : 'auto'}
           decoding="async"
           className={`h-full w-full object-cover ${objectPosition}`}
         />
