@@ -325,6 +325,36 @@ export const si: Translation = {
         allPrograms: 'සියලු වැඩසටහන් බලන්න',
       },
     },
+    morningGym: {
+      meta: {
+        title: 'Morning Gym — Charana Gunawardhana',
+        description: 'මානසිකත්වය, විනය සහ චේතනාන්විත ක්‍රියාව කෙරෙහි අවධානය යොමු කරන මඟපෙන්වන උදෑසන අත්දැකීමකි.',
+      },
+      hero: {
+        eyebrow: 'වැඩසටහන',
+        supporting: 'මානසිකත්වය, විනය සහ චේතනාන්විත ක්‍රියාව කෙරෙහි අවධානය යොමු කරන මඟපෙන්වන උදෑසන අත්දැකීමකි.',
+      },
+      about: {
+        heading: 'Morning Gym ගැන',
+        body: 'මානසිකත්වය, විනය සහ චේතනාන්විත ක්‍රියාව කෙරෙහි අවධානය යොමු කරන මඟපෙන්වන උදෑසන අත්දැකීමකි.',
+      },
+      focus: {
+        heading: 'අවධානය',
+        items: ['මානසිකත්වය', 'විනය', 'චේතනාන්විත ක්‍රියාව'],
+      },
+      community: {
+        heading: 'ප්‍රජාව',
+        cta: 'ප්‍රජාවට එක් වන්න',
+      },
+      cta: {
+        enquire: 'Morning Gym ගැන විමසන්න',
+        allPrograms: 'සියලු වැඩසටහන් බලන්න',
+      },
+      a11y: {
+        photo: 'සජීවී Morning Gym සැසියක් පවත්වන Charana Gunawardhana, තිර දෙකක් හරහා සහභාගිවන්නන් සමඟ',
+        joinCommunity: 'WhatsApp හි Morning Gym ප්‍රජාවට එක් වන්න (නව ටැබයකින් විවෘත වේ)',
+      },
+    },
   },
   programsIndex: {
     meta: {

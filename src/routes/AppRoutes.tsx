@@ -8,6 +8,7 @@ import HomePage from '@/pages/Home/HomePage'
 import InsightsPage from '@/pages/Insights/InsightsPage'
 import MediaPage from '@/pages/Media/MediaPage'
 import NotFoundPage from '@/pages/NotFound/NotFoundPage'
+import MorningGymPage from '@/pages/Programs/MorningGymPage'
 import MindMagicPage from '@/pages/Programs/MindMagicPage'
 import OptimisticMagnetPage from '@/pages/Programs/OptimisticMagnetPage'
 import ProgramsPage from '@/pages/Programs/ProgramsPage'
@@ -29,6 +30,7 @@ const pageRoutes = () => [
   <Route key="home" index element={<HomePage />} />,
   <Route key="about" path={segment(ROUTES.about)} element={<AboutPage />} />,
   <Route key="programs" path={segment(ROUTES.programs)} element={<ProgramsPage />} />,
+  <Route key="morning-gym" path={segment(ROUTES.morningGym)} element={<MorningGymPage />} />,
   <Route key="mind-magic" path={segment(ROUTES.mindMagic)} element={<MindMagicPage />} />,
   <Route
     key="optimistic-magnet"

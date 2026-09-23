@@ -29,6 +29,7 @@ export const CATALOG_PROGRAMS: readonly CatalogProgram[] = [
     name: 'Morning Gym',
     logo: MORNING_GYM_LOGO,
     photo: MORNING_GYM_PHOTO,
+    path: ROUTES.morningGym,
   },
   {
     id: 'mind-magic',

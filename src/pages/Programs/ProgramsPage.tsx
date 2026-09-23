@@ -83,7 +83,7 @@ export default function ProgramsPage() {
                 </p>
                 <div className="mt-8">
                   <ButtonLink
-                    to={localizedPath(ROUTES.programs)}
+                    to={localizedPath(morningGym.path ?? ROUTES.programs)}
                     className="w-full whitespace-normal text-balance sm:w-auto"
                   >
                     {copy.featured.morningGym.cta}

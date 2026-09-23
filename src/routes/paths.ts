@@ -2,6 +2,7 @@ export const ROUTES = {
   home: '/',
   about: '/about',
   programs: '/programs',
+  morningGym: '/programs/morning-gym',
   mindMagic: '/programs/mind-magic',
   optimisticMagnet: '/programs/optimistic-magnet',
   socialMediaBusinessDevelopment: '/programs/social-media-business-development',
@@ -21,6 +22,7 @@ export type RoutePath = (typeof ROUTES)[keyof typeof ROUTES]
 export const OVERLAY_HEADER_ROUTES: readonly string[] = [
   ROUTES.home,
   ROUTES.programs,
+  ROUTES.morningGym,
   ROUTES.mindMagic,
   ROUTES.optimisticMagnet,
   ROUTES.socialMediaBusinessDevelopment,

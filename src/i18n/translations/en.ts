@@ -319,6 +319,39 @@ export const en: Translation = {
         allPrograms: 'View All Programs',
       },
     },
+    morningGym: {
+      meta: {
+        title: 'Morning Gym — Charana Gunawardhana',
+        description:
+          'A guided morning experience focused on mindset, discipline and intentional action.',
+      },
+      hero: {
+        eyebrow: 'Program',
+        supporting:
+          'A guided morning experience focused on mindset, discipline and intentional action.',
+      },
+      about: {
+        heading: 'About Morning Gym',
+        body: 'A guided morning experience focused on mindset, discipline and intentional action.',
+      },
+      focus: {
+        heading: 'Focus',
+        items: ['Mindset', 'Discipline', 'Intentional Action'],
+      },
+      community: {
+        heading: 'Community',
+        cta: 'Join Community',
+      },
+      cta: {
+        enquire: 'Enquire About Morning Gym',
+        allPrograms: 'View All Programs',
+      },
+      a11y: {
+        photo:
+          'Charana Gunawardhana hosting a live Morning Gym session, with participants joining across two screens',
+        joinCommunity: 'Join the Morning Gym community on WhatsApp (opens in a new tab)',
+      },
+    },
   },
   programsIndex: {
     meta: {

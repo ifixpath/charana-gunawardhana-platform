@@ -91,6 +91,22 @@ export type ExperienceYour100Copy = {
   cta: { enquire: string; allPrograms: string }
 }
 
+export type MorningGymProgramCopy = {
+  meta: { title: string; description: string }
+  hero: {
+    eyebrow: string
+    supporting: string
+  }
+  about: { heading: string; body: string }
+  focus: {
+    heading: string
+    items: readonly [string, string, string]
+  }
+  community: { heading: string; cta: string }
+  cta: { enquire: string; allPrograms: string }
+  a11y: { photo: string; joinCommunity: string }
+}
+
 export type HomeProgramItemCopy = {
   description: string
   availability?: string
@@ -205,6 +221,7 @@ export type Translation = {
     socialMediaBusinessDevelopment: SocialMediaBusinessDevelopmentCopy
     unstoppable: UnstoppableCopy
     experienceYour100: ExperienceYour100Copy
+    morningGym: MorningGymProgramCopy
   }
   programsIndex: ProgramsIndexCopy
 }
