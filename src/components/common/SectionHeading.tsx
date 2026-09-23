@@ -1,5 +1,7 @@
 import type { ReactNode } from 'react'
 
+import { labelClass } from '@/i18n/script'
+
 type SectionHeadingProps = {
   id: string
   title: ReactNode
@@ -28,7 +30,7 @@ export default function SectionHeading({
     >
       {eyebrow ? (
         <p
-          className={`flex items-center gap-4 text-[0.65rem] font-medium tracking-[0.3em] uppercase ${
+          className={`flex items-center gap-4 font-medium ${labelClass(eyebrow)} ${
             isCentered ? 'justify-center' : ''
           }`}
         >

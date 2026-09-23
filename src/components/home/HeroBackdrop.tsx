@@ -1,4 +1,5 @@
 import { PORTRAIT_HERO } from '@/data/images'
+import { useTranslations } from '@/i18n/useI18n'
 
 /**
  * Full-bleed hero image layer. No frame, no border, no card — the photograph
@@ -14,11 +15,13 @@ import { PORTRAIT_HERO } from '@/data/images'
  *   leaving his face and upper body in the open right-hand half.
  */
 export default function HeroBackdrop() {
+  const { home } = useTranslations()
+
   return (
     <div className="absolute inset-0 -z-10">
       <img
         src={PORTRAIT_HERO.src}
-        alt={PORTRAIT_HERO.alt}
+        alt={home.a11y.heroPortrait}
         width={PORTRAIT_HERO.width}
         height={PORTRAIT_HERO.height}
         fetchPriority="high"

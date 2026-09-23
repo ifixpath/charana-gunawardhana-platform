@@ -4,9 +4,13 @@ import Section from '@/components/layout/Section'
 import ButtonLink, { ExternalButtonLink } from '@/components/ui/ButtonLink'
 import { MORNING_GYM_LOGO, MORNING_GYM_PHOTO } from '@/data/images'
 import { WHATSAPP_COMMUNITY } from '@/data/socialLinks'
+import { useLocalizedPath, useTranslations } from '@/i18n/useI18n'
 import { ROUTES } from '@/routes/paths'
 
 export default function MorningGymSection() {
+  const { home } = useTranslations()
+  const localizedPath = useLocalizedPath()
+
   return (
     <Section
       tone="dark"
@@ -23,7 +27,10 @@ export default function MorningGymSection() {
           {/* The frame matches the photograph's native 4:3, so `cover` crops
               nothing: the room, the screen full of participants and Charana
               all stay in shot. */}
-          <PortraitArea image={MORNING_GYM_PHOTO} aspect="aspect-4/3" />
+          <PortraitArea
+            image={{ ...MORNING_GYM_PHOTO, alt: home.a11y.morningGymPhoto }}
+            aspect="aspect-4/3"
+          />
 
           {/* Programme identity. The wordmark is supplied on an opaque navy
               field, so it can never dissolve into the page; inset over the
@@ -43,24 +50,24 @@ export default function MorningGymSection() {
         <div className="lg:col-span-5">
           <SectionHeading
             id="morning-gym-heading"
-            eyebrow="Morning Gym"
-            title="Start Your Day With Purpose"
-            lead="A guided morning experience focused on mindset, discipline and intentional action."
+            eyebrow={home.morningGym.eyebrow}
+            title={home.morningGym.heading}
+            lead={home.morningGym.supporting}
             tone="dark"
           />
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
-            <ButtonLink to={ROUTES.programs} className="w-full sm:w-auto">
-              Explore Morning Gym
+            <ButtonLink to={localizedPath(ROUTES.programs)} className="w-full sm:w-auto">
+              {home.morningGym.ctaExplore}
             </ButtonLink>
             {/* The only place the community invite is exposed. */}
             <ExternalButtonLink
               href={WHATSAPP_COMMUNITY.url}
-              ariaLabel={WHATSAPP_COMMUNITY.ariaLabel}
+              ariaLabel={home.a11y.whatsappCommunity}
               variant="outlineOnDark"
               className="w-full sm:w-auto"
             >
-              Join Community
+              {home.morningGym.ctaCommunity}
             </ExternalButtonLink>
           </div>
         </div>

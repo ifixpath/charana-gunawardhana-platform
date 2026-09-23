@@ -1,9 +1,13 @@
 import HeroBackdrop from '@/components/home/HeroBackdrop'
 import Container from '@/components/layout/Container'
 import ButtonLink from '@/components/ui/ButtonLink'
+import { useLocalizedPath, useTranslations } from '@/i18n/useI18n'
 import { ROUTES } from '@/routes/paths'
 
 export default function HeroSection() {
+  const { home } = useTranslations()
+  const localizedPath = useLocalizedPath()
+
   return (
     <section
       aria-labelledby="hero-heading"
@@ -45,7 +49,7 @@ export default function HeroSection() {
         <div className="max-w-[20rem] sm:max-w-xl lg:max-w-2xl">
           <p className="flex items-center gap-4 text-[0.65rem] font-medium tracking-[0.3em] uppercase">
             <span aria-hidden="true" className="bg-accent h-px w-10 shrink-0" />
-            <span className="text-accent-light">Charana Gunawardhana</span>
+            <span className="text-accent-light">{home.hero.eyebrow}</span>
           </p>
 
           {/* Sized so each sentence stays on one line inside the narrow mobile
@@ -56,8 +60,8 @@ export default function HeroSection() {
             id="hero-heading"
             className="font-serif mt-4 text-[1.65rem] leading-[1.14] tracking-tight min-[360px]:text-3xl sm:mt-5 sm:text-5xl lg:mt-7 lg:text-[3rem] xl:text-[3.5rem]"
           >
-            <span className="block text-balance">Build a Stronger Life.</span>
-            <span className="block text-balance">Create a Brighter Future.</span>
+            <span className="block text-balance">{home.hero.headline[0]}</span>
+            <span className="block text-balance">{home.hero.headline[1]}</span>
           </h1>
 
           {/* Narrower measure between `lg` and `xl`: at those widths Charana's
@@ -66,14 +70,13 @@ export default function HeroSection() {
           {/* Measure is a touch tighter than the headline column on phones, so
               the two blocks step rather than align flush. */}
           <p className="text-content-inverse-muted mt-5 max-w-[17.5rem] text-base leading-relaxed sm:max-w-xl sm:text-lg lg:mt-7 lg:max-w-md xl:max-w-xl">
-            Ideas, discipline and practical guidance for personal growth, leadership and meaningful
-            progress.
+            {home.hero.supporting}
           </p>
 
           <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4 lg:mt-10">
-            <ButtonLink to={ROUTES.programs}>Explore Programs</ButtonLink>
-            <ButtonLink to={ROUTES.about} variant="outlineOnDark">
-              Discover My Journey
+            <ButtonLink to={localizedPath(ROUTES.programs)}>{home.hero.ctaPrograms}</ButtonLink>
+            <ButtonLink to={localizedPath(ROUTES.about)} variant="outlineOnDark">
+              {home.hero.ctaJourney}
             </ButtonLink>
           </div>
         </div>

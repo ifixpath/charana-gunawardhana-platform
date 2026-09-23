@@ -3,19 +3,10 @@ import Container from '@/components/layout/Container'
 import Section from '@/components/layout/Section'
 import ButtonLink from '@/components/ui/ButtonLink'
 import { MIND_MAGIC_LOGO } from '@/data/images'
+import { labelClass } from '@/i18n/script'
 import { useLocalizedPath, useTranslations } from '@/i18n/useI18n'
 import { usePageMeta } from '@/i18n/usePageMeta'
 import { ROUTES } from '@/routes/paths'
-
-/**
- * Wide letter-spacing belongs to Latin small caps only. Sinhala and Tamil are
- * set at their natural size and spacing, since tracking pulls their conjuncts
- * and vowel signs apart.
- */
-const LATIN = /^[\p{Script=Latin}\p{Script=Common}]+$/u
-
-const labelClass = (text: string) =>
-  LATIN.test(text) ? 'text-[0.65rem] tracking-[0.3em] uppercase' : 'text-[0.8rem]'
 
 export default function MindMagicPage() {
   const t = useTranslations()
