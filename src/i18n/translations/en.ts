@@ -203,5 +203,137 @@ export const en: Translation = {
         allPrograms: 'View All Programs',
       },
     },
+    optimisticMagnet: {
+      meta: {
+        title: 'Optimistic Magnet — Charana Gunawardhana',
+        description:
+          'Optimistic Magnet is a 37-day recorded journey of 37 sessions. Completing Mind Magic is part of the intended eligibility path.',
+      },
+      hero: {
+        eyebrow: 'Program',
+        descriptor: '37-Day Recorded Journey',
+        supporting: 'A recorded program of 37 sessions, structured as a 37-day journey.',
+        badges: ['37 Sessions', '37-Day Journey'],
+      },
+      about: {
+        heading: 'About Optimistic Magnet',
+        body: 'Optimistic Magnet is a guided program centred on gratitude, perspective and abundance thinking. It is offered as 37 recorded sessions, designed as a 37-day journey.',
+      },
+      journey: {
+        heading: 'How the Journey Is Structured',
+        body: 'The recorded sessions are arranged across 37 days.',
+        from: '37 Recorded Sessions',
+        to: 'Structured Across 37 Days',
+      },
+      eligibility: {
+        heading: 'Eligibility',
+        body: 'Completing Mind Magic is part of the intended eligibility path for Optimistic Magnet.',
+        review: 'Eligibility is reviewed before access is granted.',
+      },
+      continuation: {
+        heading: 'Continue Your Journey',
+        body: 'Optimistic Magnet sits within the broader Charana program ecosystem. Not every program follows a required sequence.',
+      },
+      cta: {
+        enquire: 'Enquire About Optimistic Magnet',
+        allPrograms: 'View All Programs',
+      },
+    },
+    socialMediaBusinessDevelopment: {
+      meta: {
+        title: 'Social Media for Business Development — Charana Gunawardhana',
+        description: 'A practical online class on using social media to support business growth.',
+      },
+      hero: {
+        eyebrow: 'Program',
+        descriptor: 'Zoom Class',
+        supporting: 'A practical online class on using social media to support business growth.',
+      },
+      about: {
+        heading: 'About the Program',
+        body: 'A practical online class on using social media to support business growth.',
+      },
+      focus: {
+        heading: 'Focus',
+        body: 'Using social media to support business growth.',
+      },
+      cta: {
+        enquire: 'Enquire About the Program',
+        allPrograms: 'View All Programs',
+      },
+    },
+  },
+  programsIndex: {
+    meta: {
+      title: 'Programs — Charana Gunawardhana',
+      description:
+        'Programs, workshops and classes across mindset, discipline and business growth.',
+    },
+    hero: {
+      eyebrow: 'Programs',
+      heading: 'Programs for Growth, Progress and Transformation',
+      supporting:
+        'Programs, workshops and classes across mindset, discipline and business growth.',
+    },
+    featured: {
+      heading: 'Primary Programs',
+      morningGym: {
+        heading: 'Start Your Day With Purpose',
+        supporting:
+          'A guided morning experience focused on mindset, discipline and intentional action.',
+        cta: 'Explore Morning Gym',
+      },
+      mindMagic: {
+        heading: 'Mindset & Personal Transformation Program',
+        supporting: 'Available in recorded and live workshop formats.',
+        detail: 'Recorded Program · Approx. 8.5 Hours',
+        cta: 'Explore Mind Magic',
+      },
+    },
+    list: {
+      heading: 'All Programs',
+      explore: 'Explore Program',
+      comingSoon: 'Coming soon',
+      items: {
+        'morning-gym': {
+          description:
+            'A guided morning experience focused on mindset, discipline and intentional action.',
+        },
+        'mind-magic': {
+          description: 'Mindset & Personal Transformation Program',
+          availability: 'Available in recorded and live workshop formats.',
+          detail: 'Recorded Program · Approx. 8.5 Hours',
+        },
+        'optimistic-magnet': {
+          description: 'A guided program centred on gratitude, perspective and abundance thinking.',
+          detail: 'Recorded journey · 37 sessions · 37 days',
+        },
+        'social-media-business-development': {
+          description: 'A practical online class on using social media to support business growth.',
+        },
+        unstoppable: {
+          description: 'A long-term life transformation program focused on discipline and progress.',
+        },
+        'experience-your-100': {
+          description:
+            'A one-day workshop designed to help participants unlock their full performance.',
+        },
+      },
+    },
+    progression: {
+      heading: 'How Programs Relate',
+      body: 'Some programs sit on a longer path. Not every offering follows a required sequence.',
+      optimisticMagnet:
+        'Optimistic Magnet is a 37-day recorded journey, intended after Mind Magic. Completing Mind Magic is part of the intended eligibility path.',
+    },
+    finalCta: {
+      heading: 'Find the Right Program for Your Journey',
+      supporting: 'Reach out to enquire about a program that fits.',
+      enquire: 'Enquire',
+    },
+    a11y: {
+      morningGymPhoto:
+        'Charana Gunawardhana hosting a live Morning Gym session, with participants joining across two screens',
+    },
   },
 }

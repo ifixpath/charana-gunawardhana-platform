@@ -1,3 +1,4 @@
+import type { CatalogProgramId } from '@/data/programs'
 import type {
   FocusAreaId,
   ProgramFormatId,
@@ -29,6 +30,38 @@ export type MindMagicCopy = {
   }
   journey: { heading: string; steps: readonly [string, string, string] }
   next: { heading: string; body: string }
+  cta: { enquire: string; allPrograms: string }
+}
+
+export type OptimisticMagnetCopy = {
+  meta: { title: string; description: string }
+  hero: {
+    eyebrow: string
+    descriptor: string
+    supporting: string
+    badges: readonly [string, string]
+  }
+  about: { heading: string; body: string }
+  journey: {
+    heading: string
+    body: string
+    from: string
+    to: string
+  }
+  eligibility: { heading: string; body: string; review: string }
+  continuation: { heading: string; body: string }
+  cta: { enquire: string; allPrograms: string }
+}
+
+export type SocialMediaBusinessDevelopmentCopy = {
+  meta: { title: string; description: string }
+  hero: {
+    eyebrow: string
+    descriptor: string
+    supporting: string
+  }
+  about: { heading: string; body: string }
+  focus: { heading: string; body: string }
   cta: { enquire: string; allPrograms: string }
 }
 
@@ -142,5 +175,47 @@ export type Translation = {
   home: HomeCopy
   programs: {
     mindMagic: MindMagicCopy
+    optimisticMagnet: OptimisticMagnetCopy
+    socialMediaBusinessDevelopment: SocialMediaBusinessDevelopmentCopy
+  }
+  programsIndex: ProgramsIndexCopy
+}
+
+export type ProgramsIndexItemCopy = {
+  description?: string
+  availability?: string
+  detail?: string
+}
+
+export type ProgramsIndexCopy = {
+  meta: { title: string; description: string }
+  hero: {
+    eyebrow: string
+    heading: string
+    supporting: string
+  }
+  featured: {
+    heading: string
+    morningGym: { heading: string; supporting: string; cta: string }
+    mindMagic: { heading: string; supporting: string; detail: string; cta: string }
+  }
+  list: {
+    heading: string
+    explore: string
+    comingSoon: string
+    items: Record<CatalogProgramId, ProgramsIndexItemCopy>
+  }
+  progression: {
+    heading: string
+    body: string
+    optimisticMagnet: string
+  }
+  finalCta: {
+    heading: string
+    supporting: string
+    enquire: string
+  }
+  a11y: {
+    morningGymPhoto: string
   }
 }

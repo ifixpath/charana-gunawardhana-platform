@@ -3,6 +3,8 @@ export const ROUTES = {
   about: '/about',
   programs: '/programs',
   mindMagic: '/programs/mind-magic',
+  optimisticMagnet: '/programs/optimistic-magnet',
+  socialMediaBusinessDevelopment: '/programs/social-media-business-development',
   insights: '/insights',
   media: '/media',
   contact: '/contact',
@@ -14,4 +16,10 @@ export type RoutePath = (typeof ROUTES)[keyof typeof ROUTES]
  * Routes whose first section paints its own dark background behind the header,
  * which lets the header sit transparently on top of it until the page scrolls.
  */
-export const OVERLAY_HEADER_ROUTES: readonly string[] = [ROUTES.home, ROUTES.mindMagic]
+export const OVERLAY_HEADER_ROUTES: readonly string[] = [
+  ROUTES.home,
+  ROUTES.programs,
+  ROUTES.mindMagic,
+  ROUTES.optimisticMagnet,
+  ROUTES.socialMediaBusinessDevelopment,
+]

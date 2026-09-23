@@ -9,7 +9,9 @@ import InsightsPage from '@/pages/Insights/InsightsPage'
 import MediaPage from '@/pages/Media/MediaPage'
 import NotFoundPage from '@/pages/NotFound/NotFoundPage'
 import MindMagicPage from '@/pages/Programs/MindMagicPage'
+import OptimisticMagnetPage from '@/pages/Programs/OptimisticMagnetPage'
 import ProgramsPage from '@/pages/Programs/ProgramsPage'
+import SocialMediaBusinessDevelopmentPage from '@/pages/Programs/SocialMediaBusinessDevelopmentPage'
 import { ROUTES } from '@/routes/paths'
 
 /** `/about` as the child segment `about`, so it can hang off any prefix. */
@@ -26,6 +28,16 @@ const pageRoutes = () => [
   <Route key="about" path={segment(ROUTES.about)} element={<AboutPage />} />,
   <Route key="programs" path={segment(ROUTES.programs)} element={<ProgramsPage />} />,
   <Route key="mind-magic" path={segment(ROUTES.mindMagic)} element={<MindMagicPage />} />,
+  <Route
+    key="optimistic-magnet"
+    path={segment(ROUTES.optimisticMagnet)}
+    element={<OptimisticMagnetPage />}
+  />,
+  <Route
+    key="social-media-business-development"
+    path={segment(ROUTES.socialMediaBusinessDevelopment)}
+    element={<SocialMediaBusinessDevelopmentPage />}
+  />,
   <Route key="insights" path={segment(ROUTES.insights)} element={<InsightsPage />} />,
   <Route key="media" path={segment(ROUTES.media)} element={<MediaPage />} />,
   <Route key="contact" path={segment(ROUTES.contact)} element={<ContactPage />} />,
