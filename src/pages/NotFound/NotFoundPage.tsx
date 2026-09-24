@@ -10,7 +10,11 @@ export default function NotFoundPage() {
   const { notFound } = useTranslations()
   const localizedPath = useLocalizedPath()
 
-  usePageMeta({ title: notFound.title, description: notFound.description })
+  usePageMeta({
+    title: notFound.title,
+    description: notFound.description,
+    robots: 'noindex',
+  })
 
   return (
     <>

@@ -89,9 +89,8 @@ export function toLocalizedPath(pathname: string, locale: Locale): string {
 /**
  * Every language's URL for the current page, keyed by locale.
  *
- * These are root-relative. Emitting `hreflang` tags additionally needs the
- * site's canonical origin, which is not configured yet; once it is, prefix
- * each value with it rather than recomputing the paths here.
+ * These are root-relative. Absolute canonical and `hreflang` URLs are built
+ * from `SITE_URL` in `usePageMeta`.
  */
 export function alternatePaths(pathname: string): Record<Locale, string> {
   const path = stripLocale(pathname)
