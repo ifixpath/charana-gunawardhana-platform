@@ -1,6 +1,7 @@
 import SectionHeading from '@/components/common/SectionHeading'
 import Container from '@/components/layout/Container'
 import Section from '@/components/layout/Section'
+import ProgramHeroLogo from '@/components/programs/ProgramHeroLogo'
 import ButtonLink from '@/components/ui/ButtonLink'
 import { labelClass } from '@/i18n/script'
 import { useLocalizedPath, useTranslations } from '@/i18n/useI18n'
@@ -28,7 +29,9 @@ export default function SocialMediaBusinessDevelopmentPage() {
             <span className="text-accent-light">{copy.hero.eyebrow}</span>
           </p>
 
-          <h1 className="font-serif mt-9 max-w-4xl text-3xl leading-[1.12] tracking-tight text-balance sm:text-4xl lg:text-5xl">
+          <ProgramHeroLogo id="social-media-business-development" />
+
+          <h1 className="font-serif mt-7 max-w-4xl text-3xl leading-[1.12] tracking-tight text-balance sm:text-4xl lg:text-5xl">
             Social Media for Business Development
           </h1>
 

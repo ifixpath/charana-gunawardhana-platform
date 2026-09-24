@@ -1,8 +1,8 @@
 import SectionHeading from '@/components/common/SectionHeading'
 import Container from '@/components/layout/Container'
 import Section from '@/components/layout/Section'
+import ProgramHeroLogo from '@/components/programs/ProgramHeroLogo'
 import ButtonLink from '@/components/ui/ButtonLink'
-import { MIND_MAGIC_LOGO } from '@/data/images'
 import { labelClass } from '@/i18n/script'
 import { useLocalizedPath, useTranslations } from '@/i18n/useI18n'
 import { usePageMeta } from '@/i18n/usePageMeta'
@@ -29,18 +29,7 @@ export default function MindMagicPage() {
             <span className="text-accent-light">{copy.hero.eyebrow}</span>
           </p>
 
-          {/* The wordmark carries an opaque dark field, which sits almost
-              invisibly on this near-black hero — the one place it needs no
-              tile of its own. The name is set in text directly beneath, so
-              the mark itself is decorative. */}
-          <img
-            src={MIND_MAGIC_LOGO.src}
-            alt={MIND_MAGIC_LOGO.alt}
-            width={MIND_MAGIC_LOGO.width}
-            height={MIND_MAGIC_LOGO.height}
-            decoding="async"
-            className="mt-9 w-16 rounded-sm lg:w-20"
-          />
+          <ProgramHeroLogo id="mind-magic" />
 
           <h1 className="font-serif mt-7 text-4xl leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
             Mind Magic

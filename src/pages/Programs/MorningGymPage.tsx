@@ -2,8 +2,9 @@ import PortraitArea from '@/components/common/PortraitArea'
 import SectionHeading from '@/components/common/SectionHeading'
 import Container from '@/components/layout/Container'
 import Section from '@/components/layout/Section'
+import ProgramHeroLogo from '@/components/programs/ProgramHeroLogo'
 import ButtonLink, { ExternalButtonLink } from '@/components/ui/ButtonLink'
-import { MORNING_GYM_LOGO, MORNING_GYM_PHOTO } from '@/data/images'
+import { MORNING_GYM_PHOTO } from '@/data/images'
 import { WHATSAPP_COMMUNITY } from '@/data/socialLinks'
 import { labelClass } from '@/i18n/script'
 import { useLocalizedPath, useTranslations } from '@/i18n/useI18n'
@@ -33,14 +34,7 @@ export default function MorningGymPage() {
                 <span className="text-accent-light">{copy.hero.eyebrow}</span>
               </p>
 
-              <img
-                src={MORNING_GYM_LOGO.src}
-                alt={MORNING_GYM_LOGO.alt}
-                width={MORNING_GYM_LOGO.width}
-                height={MORNING_GYM_LOGO.height}
-                decoding="async"
-                className="mt-9 h-auto w-16 rounded-sm lg:w-20"
-              />
+              <ProgramHeroLogo id="morning-gym" />
 
               <h1 className="font-serif mt-7 text-4xl leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
                 Morning Gym

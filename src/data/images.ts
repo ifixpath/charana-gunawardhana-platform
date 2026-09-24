@@ -2,8 +2,14 @@ import charanaAbout from '@/assets/images/charana/charana-about.webp'
 import charanaHero from '@/assets/images/charana/charana-hero.webp'
 import lakmaliSiriwardhana from '@/assets/images/contact/lakmali-siriwardhana.jpg'
 import morningGymPhoto from '@/assets/images/programs/morning-gym/morning-gym-hero.webp'
+import experienceYour100Logo from '@/assets/logos/optimized/experience-your-100.webp'
 import mindMagicLogo from '@/assets/logos/optimized/mind-magic.webp'
 import morningGymLogo from '@/assets/logos/optimized/morning-gym.webp'
+import optimisticMagnetLogo from '@/assets/logos/optimized/optimistic-magnet.webp'
+import paradigmShiftingForAbundanceLogo from '@/assets/logos/optimized/paradigm-shifting-for-abundance.webp'
+import realityRoomLogo from '@/assets/logos/optimized/reality-room.webp'
+import socialMediaBusinessDevelopmentLogo from '@/assets/logos/optimized/social-media-business-development.webp'
+import unstoppableLogo from '@/assets/logos/optimized/unstoppable.webp'
 
 export type ImageAsset = {
   src: string
@@ -54,32 +60,34 @@ export const MORNING_GYM_PHOTO: ImageAsset = {
 }
 
 /**
- * Official Morning Gym wordmark, supplied on its own dark navy field. The alt
- * text is intentionally empty: every placement so far names the programme in
- * adjacent text, so a label here would only be announced twice.
- * The published file is a 400px WebP derived from the approved source at
- * `src/assets/logos/programs/morning-gym-hero.jpg`, which is left untouched.
+ * Official program marks. Every current source is an opaque RGB square, so
+ * placements treat them as small inset tiles rather than free-floating marks.
+ * Alt text is empty: every placement names the programme in adjacent text.
+ * Published files are 400px WebP derivatives. Source files stay untouched.
  */
-export const MORNING_GYM_LOGO: ImageAsset = {
-  src: morningGymLogo,
-  alt: '',
-  width: 400,
-  height: 400,
+function programLogo(src: string): ImageAsset {
+  return { src, alt: '', width: 400, height: 400 }
 }
 
-/**
- * Mind Magic wordmark. Like the Morning Gym one it carries an opaque dark
- * field rather than an alpha channel, so it is always placed as a small
- * self-contained mark rather than sitting directly on a page background.
- * The published file is a 400px WebP derived from the approved source at
- * `src/assets/logos/mind-magic.png`, which is left untouched.
- */
-export const MIND_MAGIC_LOGO: ImageAsset = {
-  src: mindMagicLogo,
-  alt: '',
-  width: 400,
-  height: 400,
-}
+export const MORNING_GYM_LOGO = programLogo(morningGymLogo)
+export const MIND_MAGIC_LOGO = programLogo(mindMagicLogo)
+export const OPTIMISTIC_MAGNET_LOGO = programLogo(optimisticMagnetLogo)
+export const SOCIAL_MEDIA_BUSINESS_DEVELOPMENT_LOGO = programLogo(socialMediaBusinessDevelopmentLogo)
+export const UNSTOPPABLE_LOGO = programLogo(unstoppableLogo)
+export const EXPERIENCE_YOUR_100_LOGO = programLogo(experienceYour100Logo)
+export const REALITY_ROOM_LOGO = programLogo(realityRoomLogo)
+export const PARADIGM_SHIFTING_FOR_ABUNDANCE_LOGO = programLogo(paradigmShiftingForAbundanceLogo)
+
+export const PROGRAM_LOGOS = {
+  'morning-gym': MORNING_GYM_LOGO,
+  'mind-magic': MIND_MAGIC_LOGO,
+  'optimistic-magnet': OPTIMISTIC_MAGNET_LOGO,
+  'social-media-business-development': SOCIAL_MEDIA_BUSINESS_DEVELOPMENT_LOGO,
+  unstoppable: UNSTOPPABLE_LOGO,
+  'experience-your-100': EXPERIENCE_YOUR_100_LOGO,
+  'reality-room': REALITY_ROOM_LOGO,
+  'paradigm-shifting-for-abundance': PARADIGM_SHIFTING_FOR_ABUNDANCE_LOGO,
+} as const
 
 /**
  * Approved Lakmali Siriwardhana portrait for the Mind Magic enquiry card.

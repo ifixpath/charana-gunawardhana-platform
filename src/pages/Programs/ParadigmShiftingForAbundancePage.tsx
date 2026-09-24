@@ -1,6 +1,7 @@
 import SectionHeading from '@/components/common/SectionHeading'
 import Container from '@/components/layout/Container'
 import Section from '@/components/layout/Section'
+import ProgramHeroLogo from '@/components/programs/ProgramHeroLogo'
 import ButtonLink from '@/components/ui/ButtonLink'
 import { labelClass } from '@/i18n/script'
 import { useLocalizedPath, useTranslations } from '@/i18n/useI18n'
@@ -28,7 +29,9 @@ export default function ParadigmShiftingForAbundancePage() {
             <span className="text-accent-light">{copy.hero.eyebrow}</span>
           </p>
 
-          <h1 className="font-serif mt-9 max-w-4xl text-3xl leading-[1.08] tracking-tight text-balance break-words sm:text-5xl lg:text-6xl">
+          <ProgramHeroLogo id="paradigm-shifting-for-abundance" />
+
+          <h1 className="font-serif mt-7 max-w-4xl text-3xl leading-[1.08] tracking-tight text-balance break-words sm:text-5xl lg:text-6xl">
             Paradigm Shifting for Abundance
           </h1>
 

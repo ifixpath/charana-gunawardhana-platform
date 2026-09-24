@@ -46,9 +46,8 @@ export default function ProgramsPreview() {
                 <div className="min-w-0 flex-1">
                   {/* The mark sits above the name rather than beside it, so
                       every programme name still starts on the same left edge.
-                      It is supplied on an opaque dark field, hence the rounded
-                      tile: there is no transparency to let it sit on the page
-                      itself. */}
+                      Official marks arrive as opaque squares, hence the
+                      rounded tile rather than a free-floating wordmark. */}
                   {program.logo ? (
                     <img
                       src={program.logo.src}
@@ -57,7 +56,7 @@ export default function ProgramsPreview() {
                       height={program.logo.height}
                       loading="lazy"
                       decoding="async"
-                      className="mb-3 w-12 rounded-sm lg:w-14"
+                      className="mb-3 h-auto w-12 rounded-sm lg:w-14"
                     />
                   ) : null}
 

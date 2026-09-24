@@ -65,7 +65,7 @@ export default function ProgramsPage() {
                   height={MORNING_GYM_LOGO.height}
                   loading="lazy"
                   decoding="async"
-                  className="absolute bottom-4 left-4 w-20 rounded-sm sm:w-24 lg:bottom-6 lg:left-6 lg:w-28"
+                  className="absolute bottom-4 left-4 h-auto w-20 rounded-sm sm:w-24 lg:bottom-6 lg:left-6 lg:w-28"
                 />
               </div>
 
@@ -103,7 +103,7 @@ export default function ProgramsPage() {
                   height={mindMagic.logo.height}
                   loading="lazy"
                   decoding="async"
-                  className="w-16 rounded-sm lg:w-20"
+                  className="h-auto w-16 rounded-sm lg:w-20"
                 />
               ) : null}
 
@@ -163,7 +163,7 @@ export default function ProgramsPage() {
                         height={program.logo.height}
                         loading="lazy"
                         decoding="async"
-                        className="mb-3 w-12 rounded-sm lg:w-14"
+                        className="mb-3 h-auto w-12 rounded-sm lg:w-14"
                       />
                     ) : null}
 
