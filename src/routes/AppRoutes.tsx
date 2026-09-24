@@ -15,6 +15,8 @@ import ProgramsPage from '@/pages/Programs/ProgramsPage'
 import SocialMediaBusinessDevelopmentPage from '@/pages/Programs/SocialMediaBusinessDevelopmentPage'
 import UnstoppablePage from '@/pages/Programs/UnstoppablePage'
 import ExperienceYour100Page from '@/pages/Programs/ExperienceYour100Page'
+import RealityRoomPage from '@/pages/Programs/RealityRoomPage'
+import ParadigmShiftingForAbundancePage from '@/pages/Programs/ParadigmShiftingForAbundancePage'
 import { ROUTES } from '@/routes/paths'
 
 /** `/about` as the child segment `about`, so it can hang off any prefix. */
@@ -47,6 +49,12 @@ const pageRoutes = () => [
     key="experience-your-100"
     path={segment(ROUTES.experienceYour100)}
     element={<ExperienceYour100Page />}
+  />,
+  <Route key="reality-room" path={segment(ROUTES.realityRoom)} element={<RealityRoomPage />} />,
+  <Route
+    key="paradigm-shifting-for-abundance"
+    path={segment(ROUTES.paradigmShiftingForAbundance)}
+    element={<ParadigmShiftingForAbundancePage />}
   />,
   <Route key="insights" path={segment(ROUTES.insights)} element={<InsightsPage />} />,
   <Route key="media" path={segment(ROUTES.media)} element={<MediaPage />} />,

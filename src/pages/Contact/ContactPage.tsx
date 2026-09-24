@@ -4,6 +4,7 @@ import Container from '@/components/layout/Container'
 import Section from '@/components/layout/Section'
 import ButtonLink, { ExternalButtonLink } from '@/components/ui/ButtonLink'
 import SocialIcon from '@/components/ui/SocialIcon'
+import { MINDMAGIC_ENQUIRY, PUBLIC_EMAIL } from '@/data/contact'
 import { EXTERNAL_LINK_PROPS, SOCIAL_LINKS, WHATSAPP_COMMUNITY } from '@/data/socialLinks'
 import { labelClass } from '@/i18n/script'
 import { useLocalizedPath, useTranslations } from '@/i18n/useI18n'
@@ -48,7 +49,18 @@ export default function ContactPage() {
           lead={copy.options.supporting}
         />
 
-        <ul className="mt-12 grid gap-0 sm:grid-cols-2 sm:gap-x-12 lg:mt-16">
+        <div className="border-line mt-12 border-t py-6">
+          <a
+            href={PUBLIC_EMAIL.href}
+            aria-label={copy.a11y.email}
+            className="hover:text-accent-dark text-primary font-serif block break-all text-xl transition-colors sm:text-2xl"
+          >
+            {PUBLIC_EMAIL.address}
+          </a>
+          <p className="text-content-muted mt-2 text-sm">{copy.options.email}</p>
+        </div>
+
+        <ul className="mt-4 grid gap-0 sm:grid-cols-2 sm:gap-x-12 lg:mt-8">
           {SOCIAL_LINKS.map((link) => (
             <li key={link.id} className="border-line border-t">
               <a
@@ -68,7 +80,25 @@ export default function ContactPage() {
         </ul>
       </Section>
 
-      <Section tone="muted" labelledBy="contact-community">
+      <Section tone="muted" labelledBy="contact-enquiry">
+        <SectionHeading id="contact-enquiry" title={copy.enquiry.heading} />
+
+        <div className="border-line mt-10 max-w-xl border-t pt-6">
+          <p className="text-primary font-serif text-xl sm:text-2xl">{MINDMAGIC_ENQUIRY.name}</p>
+          <p className="text-content-muted mt-2 text-sm">{copy.enquiry.association}</p>
+          <p className="text-content-muted mt-1 text-sm">{MINDMAGIC_ENQUIRY.program}</p>
+          <p className="text-content-muted mt-5 text-sm">{copy.enquiry.phoneLabel}</p>
+          <a
+            href={MINDMAGIC_ENQUIRY.href}
+            aria-label={copy.a11y.enquiryPhone}
+            className="hover:text-accent-dark text-primary mt-1 inline-block break-words text-lg transition-colors"
+          >
+            {MINDMAGIC_ENQUIRY.phoneDisplay}
+          </a>
+        </div>
+      </Section>
+
+      <Section labelledBy="contact-community">
         <SectionHeading
           id="contact-community"
           title={copy.options.community.heading}

@@ -82,16 +82,17 @@ export const en: Translation = {
         workshop: 'Workshop',
         zoomClass: 'Zoom Class',
         longTerm: 'Long-term Program',
+        recordedCourse: 'Recorded Course',
       },
       items: {
         'mind-magic': {
-          description: 'Mindset & Personal Transformation Program',
+          description: 'Discover the power within yourself.',
           availability: 'Available in recorded and live workshop formats.',
           detail: 'Recorded Program · Approx. 8.5 Hours',
           cta: 'Explore Mind Magic',
         },
         'optimistic-magnet': {
-          description: 'A guided program centred on gratitude, perspective and abundance thinking.',
+          description: 'Practice gratitude. Shift your focus. Build a more positive mindset.',
         },
         'social-media-business-development': {
           description: 'A practical online class on using social media to support business growth.',
@@ -100,8 +101,14 @@ export const en: Translation = {
           description: 'A long-term life transformation program focused on discipline and progress.',
         },
         'experience-your-100': {
-          description:
-            'A one-day workshop designed to help participants unlock their full performance.',
+          description: 'Understand how to take effective action towards your goals.',
+        },
+        'reality-room': {
+          description: 'Visualization Workshop',
+          availability: 'Available as a Recorded Workshop',
+        },
+        'paradigm-shifting-for-abundance': {
+          description: 'A recorded course within the Charana Gunawardhana program ecosystem.',
         },
       },
     },
@@ -167,17 +174,17 @@ export const en: Translation = {
       meta: {
         title: 'Mind Magic — Charana Gunawardhana',
         description:
-          'Mind Magic is a mindset and personal transformation program, available as a recorded program of approximately 8.5 hours and as a live workshop.',
+          'A transformational experience that helps you discover the power within yourself. Available as a recorded program of approximately 8.5 hours and as a live workshop.',
       },
       hero: {
         eyebrow: 'Program',
-        descriptor: 'Mindset & Personal Transformation Program',
+        descriptor: 'Discover the power within yourself.',
         supporting: 'Available in recorded and live workshop formats.',
         badges: ['Recorded Program · Approx. 8.5 Hours', 'Live Workshop'],
       },
       overview: {
         heading: 'About Mind Magic',
-        body: 'Mind Magic is available as both a recorded learning experience and a live workshop, giving participants different ways to engage with the program.',
+        body: 'A transformational experience that helps you discover the power within yourself, understand your mind, and create a new perspective on your life and goals — a potential turning point in your journey.',
       },
       formats: {
         heading: 'Two Formats',
@@ -207,17 +214,17 @@ export const en: Translation = {
       meta: {
         title: 'Optimistic Magnet — Charana Gunawardhana',
         description:
-          'Optimistic Magnet is a 37-day recorded journey of 37 sessions. Completing Mind Magic is part of the intended eligibility path.',
+          'A 37-day gratitude practice of 37 recorded sessions. Completing Mind Magic is part of the intended eligibility path.',
       },
       hero: {
         eyebrow: 'Program',
-        descriptor: '37-Day Recorded Journey',
+        descriptor: 'Practice gratitude. Shift your focus. Build a more positive mindset.',
         supporting: 'A recorded program of 37 sessions, structured as a 37-day journey.',
         badges: ['37 Sessions', '37-Day Journey'],
       },
       about: {
         heading: 'About Optimistic Magnet',
-        body: 'Optimistic Magnet is a guided program centred on gratitude, perspective and abundance thinking. It is offered as 37 recorded sessions, designed as a 37-day journey.',
+        body: 'A 37-day gratitude practice that helps you put what you learned through Mind Magic into action. By consciously practicing gratitude for the good in your life — and finding the silver lining even in difficult experiences — you learn to shift your focus away from negativity and toward positivity, helping you cultivate a more empowered state of mind.',
       },
       journey: {
         heading: 'How the Journey Is Structured',
@@ -294,17 +301,16 @@ export const en: Translation = {
       meta: {
         title: 'Experience Your 100% — Charana Gunawardhana',
         description:
-          'A one-day workshop designed to help participants unlock their full performance.',
+          'A one-day workshop to understand how to take effective action towards your goals.',
       },
       hero: {
         eyebrow: 'Program',
         descriptor: 'One-Day Workshop',
-        supporting:
-          'A one-day workshop designed to help participants unlock their full performance.',
+        supporting: 'Understand how to take effective action towards your goals.',
       },
       about: {
         heading: 'About Experience Your 100%',
-        body: 'A one-day workshop designed to help participants unlock their full performance.',
+        body: 'A transformational training that helps you understand why you may not have achieved what you wanted, what may have been holding you back, and how you can approach your goals differently to create the results you want.',
       },
       format: {
         heading: 'Format',
@@ -312,7 +318,7 @@ export const en: Translation = {
       },
       focus: {
         heading: 'Focus',
-        body: 'A one-day workshop designed to help participants unlock their full performance.',
+        body: 'Understand how to take effective action towards your goals.',
       },
       cta: {
         enquire: 'Enquire About Experience Your 100%',
@@ -352,6 +358,61 @@ export const en: Translation = {
         joinCommunity: 'Join the Morning Gym community on WhatsApp (opens in a new tab)',
       },
     },
+    realityRoom: {
+      meta: {
+        title: 'Reality Room — Charana Gunawardhana',
+        description:
+          'Reality Room is a visualization workshop. A full-day practical workshop, available as a recorded workshop.',
+      },
+      hero: {
+        eyebrow: 'Program',
+        descriptor: 'Visualization Workshop',
+        supporting: 'Available as a Recorded Workshop',
+      },
+      about: {
+        heading: 'About Reality Room',
+        body: 'A full-day practical workshop designed to help you understand visualization and learn how to visualize your goals with greater clarity and focus.',
+      },
+      format: {
+        heading: 'Format',
+        value: 'Full-Day Workshop',
+      },
+      focus: {
+        heading: 'Visualization Focus',
+        body: 'Understand visualization, and learn how to visualize your goals with greater clarity and focus.',
+      },
+      availability: {
+        heading: 'Availability',
+        body: 'Available as a Recorded Workshop',
+      },
+      cta: {
+        enquire: 'Enquire About Reality Room',
+        allPrograms: 'View All Programs',
+      },
+    },
+    paradigmShiftingForAbundance: {
+      meta: {
+        title: 'Paradigm Shifting for Abundance — Charana Gunawardhana',
+        description:
+          'Paradigm Shifting for Abundance is a recorded course within the Charana Gunawardhana program ecosystem.',
+      },
+      hero: {
+        eyebrow: 'Program',
+        descriptor: 'Recorded Course',
+      },
+      about: {
+        heading: 'About the Course',
+        body: 'A recorded course within the Charana Gunawardhana program ecosystem.',
+      },
+      format: {
+        heading: 'Format',
+        value: 'Recorded Course',
+      },
+      cta: {
+        enquire: 'Enquire About the Course',
+        allPrograms: 'View All Programs',
+      },
+    },
   },
   programsIndex: {
     meta: {
@@ -374,7 +435,7 @@ export const en: Translation = {
         cta: 'Explore Morning Gym',
       },
       mindMagic: {
-        heading: 'Mindset & Personal Transformation Program',
+        heading: 'Discover the power within yourself.',
         supporting: 'Available in recorded and live workshop formats.',
         detail: 'Recorded Program · Approx. 8.5 Hours',
         cta: 'Explore Mind Magic',
@@ -390,12 +451,12 @@ export const en: Translation = {
             'A guided morning experience focused on mindset, discipline and intentional action.',
         },
         'mind-magic': {
-          description: 'Mindset & Personal Transformation Program',
+          description: 'Discover the power within yourself.',
           availability: 'Available in recorded and live workshop formats.',
           detail: 'Recorded Program · Approx. 8.5 Hours',
         },
         'optimistic-magnet': {
-          description: 'A guided program centred on gratitude, perspective and abundance thinking.',
+          description: 'Practice gratitude. Shift your focus. Build a more positive mindset.',
           detail: 'Recorded journey · 37 sessions · 37 days',
         },
         'social-media-business-development': {
@@ -405,8 +466,14 @@ export const en: Translation = {
           description: 'A long-term life transformation program focused on discipline and progress.',
         },
         'experience-your-100': {
-          description:
-            'A one-day workshop designed to help participants unlock their full performance.',
+          description: 'Understand how to take effective action towards your goals.',
+        },
+        'reality-room': {
+          description: 'Visualization Workshop',
+          availability: 'Available as a Recorded Workshop',
+        },
+        'paradigm-shifting-for-abundance': {
+          description: 'A recorded course within the Charana Gunawardhana program ecosystem.',
         },
       },
     },
@@ -435,6 +502,8 @@ export const en: Translation = {
     hero: {
       eyebrow: 'About',
       heading: 'About Charana Gunawardhana',
+      positioning:
+        'Entrepreneur | Personal Transformation Educator and Mindset Strategist | Concept Creator',
       supporting:
         'Ideas, discipline and practical guidance for personal growth, leadership and meaningful progress.',
     },
@@ -499,11 +568,17 @@ export const en: Translation = {
       heading: 'Public Channels',
       supporting: 'These are the confirmed public profiles. They open in a new tab.',
       profile: 'Public profile',
+      email: 'Email',
       community: {
         heading: 'Morning Gym Community',
         body: 'This WhatsApp link is an invite to the Morning Gym community. It is not a private support number.',
         cta: 'Join Community',
       },
+    },
+    enquiry: {
+      heading: 'Mind Magic Enquiries',
+      association: 'Programme',
+      phoneLabel: 'Phone',
     },
     programs: {
       heading: 'Program Enquiries',
@@ -521,6 +596,8 @@ export const en: Translation = {
     },
     a11y: {
       community: 'Join the Morning Gym community on WhatsApp (opens in a new tab)',
+      email: 'Email aumcharana@gmail.com',
+      enquiryPhone: 'Call Lakmali Siriwardhana for Mind Magic enquiries, +94 74 316 9754',
     },
   },
   media: {

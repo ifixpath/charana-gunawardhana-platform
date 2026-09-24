@@ -167,7 +167,9 @@ export default function ProgramsPage() {
                       />
                     ) : null}
 
-                    <h3 className="text-primary font-serif text-xl sm:text-2xl">{program.name}</h3>
+                    <h3 className="text-primary font-serif text-xl text-balance break-words sm:text-2xl">
+                      {program.name}
+                    </h3>
                     {item.description ? (
                       <p className="text-content-muted mt-2 max-w-prose text-sm leading-relaxed sm:text-base">
                         {item.description}

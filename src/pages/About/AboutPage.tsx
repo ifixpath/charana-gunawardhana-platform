@@ -47,6 +47,10 @@ export default function AboutPage() {
                 {copy.hero.heading}
               </h1>
 
+              <p className="text-accent-light mt-4 max-w-xl text-sm leading-relaxed text-balance sm:text-base">
+                {copy.hero.positioning}
+              </p>
+
               <p className="text-content-inverse-muted mt-5 max-w-xl text-base leading-relaxed">
                 {copy.hero.supporting}
               </p>
@@ -107,7 +111,7 @@ export default function AboutPage() {
           {CATALOG_PROGRAMS.map((program) => (
             <li key={program.id} className="border-line border-t pt-6">
               <p
-                className={`text-accent-dark font-medium ${labelClass(
+                className={`text-accent-dark font-medium break-words text-balance ${labelClass(
                   program.name,
                   'text-[0.65rem] tracking-[0.3em] uppercase',
                   'text-[0.8rem]',

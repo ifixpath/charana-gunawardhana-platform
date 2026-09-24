@@ -90,10 +90,12 @@ export default function InsightsPage() {
                   to={localizedPath(program.path)}
                   className="hover:text-accent-dark text-primary block py-6 transition-colors"
                 >
-                  <h3 className="font-serif text-xl">{program.name}</h3>
+                  <h3 className="font-serif text-xl text-balance break-words">{program.name}</h3>
                 </Link>
               ) : (
-                <p className="font-serif text-primary py-6 text-xl">{program.name}</p>
+                <p className="font-serif text-primary py-6 text-xl text-balance break-words">
+                  {program.name}
+                </p>
               )}
             </li>
           ))}

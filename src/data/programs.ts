@@ -9,6 +9,8 @@ export const CATALOG_PROGRAM_IDS = [
   'social-media-business-development',
   'unstoppable',
   'experience-your-100',
+  'reality-room',
+  'paradigm-shifting-for-abundance',
 ] as const
 
 export type CatalogProgramId = (typeof CATALOG_PROGRAM_IDS)[number]
@@ -61,5 +63,17 @@ export const CATALOG_PROGRAMS: readonly CatalogProgram[] = [
     name: 'Experience Your 100%',
     format: 'workshop',
     path: ROUTES.experienceYour100,
+  },
+  {
+    id: 'reality-room',
+    name: 'Reality Room',
+    format: 'workshop',
+    path: ROUTES.realityRoom,
+  },
+  {
+    id: 'paradigm-shifting-for-abundance',
+    name: 'Paradigm Shifting for Abundance',
+    format: 'recordedCourse',
+    path: ROUTES.paradigmShiftingForAbundance,
   },
 ]

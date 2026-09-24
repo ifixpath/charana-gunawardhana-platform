@@ -5,7 +5,13 @@ export const FOCUS_AREA_IDS = ['personal-growth', 'leadership', 'mindset', 'dire
 
 export type FocusAreaId = (typeof FOCUS_AREA_IDS)[number]
 
-export const PROGRAM_FORMAT_IDS = ['program', 'workshop', 'zoomClass', 'longTerm'] as const
+export const PROGRAM_FORMAT_IDS = [
+  'program',
+  'workshop',
+  'zoomClass',
+  'longTerm',
+  'recordedCourse',
+] as const
 
 export type ProgramFormatId = (typeof PROGRAM_FORMAT_IDS)[number]
 
@@ -15,6 +21,8 @@ export const PROGRAM_IDS = [
   'social-media-business-development',
   'unstoppable',
   'experience-your-100',
+  'reality-room',
+  'paradigm-shifting-for-abundance',
 ] as const
 
 export type ProgramId = (typeof PROGRAM_IDS)[number]
@@ -59,6 +67,18 @@ export const PROGRAM_PREVIEWS: readonly ProgramPreview[] = [
     name: 'Experience Your 100%',
     format: 'workshop',
     path: ROUTES.experienceYour100,
+  },
+  {
+    id: 'reality-room',
+    name: 'Reality Room',
+    format: 'workshop',
+    path: ROUTES.realityRoom,
+  },
+  {
+    id: 'paradigm-shifting-for-abundance',
+    name: 'Paradigm Shifting for Abundance',
+    format: 'recordedCourse',
+    path: ROUTES.paradigmShiftingForAbundance,
   },
 ]
 

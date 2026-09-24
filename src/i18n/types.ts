@@ -91,6 +91,31 @@ export type ExperienceYour100Copy = {
   cta: { enquire: string; allPrograms: string }
 }
 
+export type RealityRoomCopy = {
+  meta: { title: string; description: string }
+  hero: {
+    eyebrow: string
+    descriptor: string
+    supporting: string
+  }
+  about: { heading: string; body: string }
+  format: { heading: string; value: string }
+  focus: { heading: string; body: string }
+  availability: { heading: string; body: string }
+  cta: { enquire: string; allPrograms: string }
+}
+
+export type ParadigmShiftingForAbundanceCopy = {
+  meta: { title: string; description: string }
+  hero: {
+    eyebrow: string
+    descriptor: string
+  }
+  about: { heading: string; body: string }
+  format: { heading: string; value: string }
+  cta: { enquire: string; allPrograms: string }
+}
+
 export type MorningGymProgramCopy = {
   meta: { title: string; description: string }
   hero: {
@@ -222,6 +247,8 @@ export type Translation = {
     unstoppable: UnstoppableCopy
     experienceYour100: ExperienceYour100Copy
     morningGym: MorningGymProgramCopy
+    realityRoom: RealityRoomCopy
+    paradigmShiftingForAbundance: ParadigmShiftingForAbundanceCopy
   }
   programsIndex: ProgramsIndexCopy
   about: AboutCopy
@@ -280,6 +307,7 @@ export type AboutCopy = {
   hero: {
     eyebrow: string
     heading: string
+    positioning: string
     supporting: string
   }
   intro: {
@@ -321,11 +349,17 @@ export type ContactCopy = {
     heading: string
     supporting: string
     profile: string
+    email: string
     community: {
       heading: string
       body: string
       cta: string
     }
+  }
+  enquiry: {
+    heading: string
+    association: string
+    phoneLabel: string
   }
   programs: {
     heading: string
@@ -343,6 +377,8 @@ export type ContactCopy = {
   }
   a11y: {
     community: string
+    email: string
+    enquiryPhone: string
   }
 }
 
