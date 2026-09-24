@@ -5,6 +5,7 @@ import Section from '@/components/layout/Section'
 import ButtonLink, { ExternalButtonLink } from '@/components/ui/ButtonLink'
 import SocialIcon from '@/components/ui/SocialIcon'
 import { MINDMAGIC_ENQUIRY, PUBLIC_EMAIL } from '@/data/contact'
+import { LAKMALI_SIRIWARDHANA_PORTRAIT } from '@/data/images'
 import { EXTERNAL_LINK_PROPS, SOCIAL_LINKS, WHATSAPP_COMMUNITY } from '@/data/socialLinks'
 import { labelClass } from '@/i18n/script'
 import { useLocalizedPath, useTranslations } from '@/i18n/useI18n'
@@ -84,17 +85,30 @@ export default function ContactPage() {
         <SectionHeading id="contact-enquiry" title={copy.enquiry.heading} />
 
         <div className="border-line mt-10 max-w-xl border-t pt-6">
-          <p className="text-primary font-serif text-xl sm:text-2xl">{MINDMAGIC_ENQUIRY.name}</p>
-          <p className="text-content-muted mt-2 text-sm">{copy.enquiry.association}</p>
-          <p className="text-content-muted mt-1 text-sm">{MINDMAGIC_ENQUIRY.program}</p>
-          <p className="text-content-muted mt-5 text-sm">{copy.enquiry.phoneLabel}</p>
-          <a
-            href={MINDMAGIC_ENQUIRY.href}
-            aria-label={copy.a11y.enquiryPhone}
-            className="hover:text-accent-dark text-primary mt-1 inline-block break-words text-lg transition-colors"
-          >
-            {MINDMAGIC_ENQUIRY.phoneDisplay}
-          </a>
+          <div className="flex items-start gap-4">
+            <img
+              src={LAKMALI_SIRIWARDHANA_PORTRAIT.src}
+              alt={LAKMALI_SIRIWARDHANA_PORTRAIT.alt}
+              width={LAKMALI_SIRIWARDHANA_PORTRAIT.width}
+              height={LAKMALI_SIRIWARDHANA_PORTRAIT.height}
+              loading="lazy"
+              decoding="async"
+              className="size-16 shrink-0 rounded-full object-cover object-[58%_18%] sm:size-[4.5rem] lg:size-[5.25rem]"
+            />
+            <div className="min-w-0">
+              <p className="text-primary font-serif text-xl sm:text-2xl">{MINDMAGIC_ENQUIRY.name}</p>
+              <p className="text-content-muted mt-2 text-sm">{copy.enquiry.association}</p>
+              <p className="text-content-muted mt-1 text-sm">{MINDMAGIC_ENQUIRY.program}</p>
+              <p className="text-content-muted mt-5 text-sm">{copy.enquiry.phoneLabel}</p>
+              <a
+                href={MINDMAGIC_ENQUIRY.href}
+                aria-label={copy.a11y.enquiryPhone}
+                className="hover:text-accent-dark text-primary mt-1 inline-block break-words text-lg transition-colors"
+              >
+                {MINDMAGIC_ENQUIRY.phoneDisplay}
+              </a>
+            </div>
+          </div>
         </div>
       </Section>
 

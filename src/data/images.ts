@@ -1,5 +1,6 @@
 import charanaAbout from '@/assets/images/charana/charana-about.webp'
 import charanaHero from '@/assets/images/charana/charana-hero.webp'
+import lakmaliSiriwardhana from '@/assets/images/contact/lakmali-siriwardhana.jpg'
 import morningGymPhoto from '@/assets/images/programs/morning-gym/morning-gym-hero.webp'
 import mindMagicLogo from '@/assets/logos/optimized/mind-magic.webp'
 import morningGymLogo from '@/assets/logos/optimized/morning-gym.webp'
@@ -78,4 +79,15 @@ export const MIND_MAGIC_LOGO: ImageAsset = {
   alt: '',
   width: 400,
   height: 400,
+}
+
+/**
+ * Approved Lakmali Siriwardhana portrait for the Mind Magic enquiry card.
+ * Official name is the alt text in every language.
+ */
+export const LAKMALI_SIRIWARDHANA_PORTRAIT: ImageAsset = {
+  src: lakmaliSiriwardhana,
+  alt: 'Lakmali Siriwardhana',
+  width: 1303,
+  height: 1207,
 }
