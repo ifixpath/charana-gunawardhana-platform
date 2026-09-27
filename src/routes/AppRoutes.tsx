@@ -19,6 +19,7 @@ import ExperienceYour100Page from '@/pages/Programs/ExperienceYour100Page'
 import RealityRoomPage from '@/pages/Programs/RealityRoomPage'
 import ParadigmShiftingForAbundancePage from '@/pages/Programs/ParadigmShiftingForAbundancePage'
 import { ROUTES } from '@/routes/paths'
+import { studentRoutes } from '@/routes/studentRoutes'
 
 /** `/about` as the child segment `about`, so it can hang off any prefix. */
 const segment = (path: string) => path.replace(/^\//, '')
@@ -73,6 +74,7 @@ const pageRoutes = () => [
 export default function AppRoutes() {
   return (
     <Routes>
+      {studentRoutes}
       {LOCALES.map((locale) => (
         <Route
           key={locale}

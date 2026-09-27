@@ -19,6 +19,19 @@ export const ROUTES = {
 export type RoutePath = (typeof ROUTES)[keyof typeof ROUTES]
 
 /**
+ * Student and checkout paths. Mounted once, outside the locale-aware public
+ * tree, so `/account` is not also served as `/si/account`. Do not pass these
+ * through `withLocale`.
+ */
+export const STUDENT_ROUTES = {
+  account: '/account',
+  learn: '/learn',
+  checkoutReturn: '/checkout/return',
+} as const
+
+export type StudentRoutePath = (typeof STUDENT_ROUTES)[keyof typeof STUDENT_ROUTES]
+
+/**
  * Routes whose first section paints its own dark background behind the header,
  * which lets the header sit transparently on top of it until the page scrolls.
  */
