@@ -10,6 +10,7 @@ import MediaPage from '@/pages/Media/MediaPage'
 import NotFoundPage from '@/pages/NotFound/NotFoundPage'
 import MorningGymPage from '@/pages/Programs/MorningGymPage'
 import MindMagicPage from '@/pages/Programs/MindMagicPage'
+import TheSecretPart1Page from '@/pages/Programs/MindMagic/TheSecretPart1Page'
 import OptimisticMagnetPage from '@/pages/Programs/OptimisticMagnetPage'
 import ProgramsPage from '@/pages/Programs/ProgramsPage'
 import SocialMediaBusinessDevelopmentPage from '@/pages/Programs/SocialMediaBusinessDevelopmentPage'
@@ -34,6 +35,11 @@ const pageRoutes = () => [
   <Route key="programs" path={segment(ROUTES.programs)} element={<ProgramsPage />} />,
   <Route key="morning-gym" path={segment(ROUTES.morningGym)} element={<MorningGymPage />} />,
   <Route key="mind-magic" path={segment(ROUTES.mindMagic)} element={<MindMagicPage />} />,
+  <Route
+    key="mind-magic-the-secret-part-1"
+    path={segment(ROUTES.mindMagicTheSecretPart1)}
+    element={<TheSecretPart1Page />}
+  />,
   <Route
     key="optimistic-magnet"
     path={segment(ROUTES.optimisticMagnet)}

@@ -1,10 +1,9 @@
-import PortraitArea from '@/components/common/PortraitArea'
 import SectionHeading from '@/components/common/SectionHeading'
 import Container from '@/components/layout/Container'
 import Section from '@/components/layout/Section'
 import ProgramHeroLogo from '@/components/programs/ProgramHeroLogo'
 import ButtonLink, { ExternalButtonLink } from '@/components/ui/ButtonLink'
-import { MORNING_GYM_PHOTO } from '@/data/images'
+import { MORNING_GYM_CINEMATIC_HERO } from '@/data/images'
 import { WHATSAPP_COMMUNITY } from '@/data/socialLinks'
 import { labelClass } from '@/i18n/script'
 import { useLocalizedPath, useTranslations } from '@/i18n/useI18n'
@@ -21,37 +20,44 @@ export default function MorningGymPage() {
   return (
     <>
       <section className="bg-primary-dark text-content-inverse relative isolate overflow-hidden pt-[calc(var(--header-height)+3.5rem)] pb-20 sm:pt-[calc(var(--header-height)+4.5rem)] sm:pb-24 lg:pt-[calc(var(--header-height)+6.5rem)] lg:pb-32">
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 -z-10 bg-[radial-gradient(85%_70%_at_50%_0%,var(--color-primary)_0%,var(--color-primary-dark)_70%)]"
-        />
+        <div className="absolute inset-0 -z-10">
+          <img
+            src={MORNING_GYM_CINEMATIC_HERO.src}
+            alt={MORNING_GYM_CINEMATIC_HERO.alt}
+            width={MORNING_GYM_CINEMATIC_HERO.width}
+            height={MORNING_GYM_CINEMATIC_HERO.height}
+            decoding="async"
+            className="h-full w-full object-cover object-[70%_center] sm:object-[60%_center] lg:object-[54%_center]"
+          />
+          <div
+            aria-hidden="true"
+            className="from-primary-dark via-primary-dark/85 absolute inset-0 bg-gradient-to-r from-0% via-58% to-transparent to-88% lg:hidden"
+          />
+          <div
+            aria-hidden="true"
+            className="from-primary-dark via-primary-dark/75 absolute inset-0 hidden bg-gradient-to-r from-0% via-40% to-transparent to-72% lg:block"
+          />
+          <div
+            aria-hidden="true"
+            className="from-primary-dark/80 absolute inset-x-0 top-0 h-[calc(var(--header-height)+3rem)] bg-gradient-to-b to-transparent"
+          />
+        </div>
 
         <Container>
-          <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
-            <div className="lg:col-span-5">
-              <p className={`flex items-center gap-4 font-medium ${labelClass(copy.hero.eyebrow)}`}>
-                <span aria-hidden="true" className="bg-accent h-px w-10 shrink-0" />
-                <span className="text-accent-light">{copy.hero.eyebrow}</span>
-              </p>
+          <p className={`flex items-center gap-4 font-medium ${labelClass(copy.hero.eyebrow)}`}>
+            <span aria-hidden="true" className="bg-accent h-px w-10 shrink-0" />
+            <span className="text-accent-light">{copy.hero.eyebrow}</span>
+          </p>
 
-              <ProgramHeroLogo id="morning-gym" />
+          <ProgramHeroLogo id="morning-gym" />
 
-              <h1 className="font-serif mt-7 text-4xl leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
-                Morning Gym
-              </h1>
+          <h1 className="font-serif mt-7 text-4xl leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
+            Morning Gym
+          </h1>
 
-              <p className="text-content-inverse-muted mt-5 max-w-xl text-base leading-relaxed">
-                {copy.hero.supporting}
-              </p>
-            </div>
-
-            <div className="lg:col-span-7">
-              <PortraitArea
-                image={{ ...MORNING_GYM_PHOTO, alt: copy.a11y.photo }}
-                aspect="aspect-4/3"
-              />
-            </div>
-          </div>
+          <p className="text-content-inverse-muted mt-5 max-w-xl text-base leading-relaxed">
+            {copy.hero.supporting}
+          </p>
         </Container>
       </section>
 

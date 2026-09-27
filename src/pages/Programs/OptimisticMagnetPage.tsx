@@ -3,6 +3,7 @@ import Container from '@/components/layout/Container'
 import Section from '@/components/layout/Section'
 import ProgramHeroLogo from '@/components/programs/ProgramHeroLogo'
 import ButtonLink from '@/components/ui/ButtonLink'
+import { OPTIMISTIC_MAGNET_HERO } from '@/data/images'
 import { labelClass } from '@/i18n/script'
 import { useLocalizedPath, useTranslations } from '@/i18n/useI18n'
 import { usePageMeta } from '@/i18n/usePageMeta'
@@ -18,10 +19,28 @@ export default function OptimisticMagnetPage() {
   return (
     <>
       <section className="bg-primary-dark text-content-inverse relative isolate overflow-hidden pt-[calc(var(--header-height)+3.5rem)] pb-20 sm:pt-[calc(var(--header-height)+4.5rem)] sm:pb-24 lg:pt-[calc(var(--header-height)+6.5rem)] lg:pb-32">
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 -z-10 bg-[radial-gradient(85%_70%_at_50%_0%,var(--color-primary)_0%,var(--color-primary-dark)_70%)]"
-        />
+        <div className="absolute inset-0 -z-10">
+          <img
+            src={OPTIMISTIC_MAGNET_HERO.src}
+            alt={OPTIMISTIC_MAGNET_HERO.alt}
+            width={OPTIMISTIC_MAGNET_HERO.width}
+            height={OPTIMISTIC_MAGNET_HERO.height}
+            decoding="async"
+            className="h-full w-full object-cover object-[68%_center] sm:object-[58%_center] lg:object-[52%_center]"
+          />
+          <div
+            aria-hidden="true"
+            className="from-primary-dark via-primary-dark/85 absolute inset-0 bg-gradient-to-r from-0% via-58% to-transparent to-88% lg:hidden"
+          />
+          <div
+            aria-hidden="true"
+            className="from-primary-dark via-primary-dark/75 absolute inset-0 hidden bg-gradient-to-r from-0% via-40% to-transparent to-72% lg:block"
+          />
+          <div
+            aria-hidden="true"
+            className="from-primary-dark/80 absolute inset-x-0 top-0 h-[calc(var(--header-height)+3rem)] bg-gradient-to-b to-transparent"
+          />
+        </div>
 
         <Container>
           <p className={`flex items-center gap-4 font-medium ${labelClass(copy.hero.eyebrow)}`}>

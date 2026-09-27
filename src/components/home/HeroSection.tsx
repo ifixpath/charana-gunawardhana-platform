@@ -49,7 +49,7 @@ export default function HeroSection() {
             lower-left column and never runs under Charana. */}
         <div className="max-w-[20rem] sm:max-w-xl lg:max-w-2xl">
           <p
-            className={`flex items-center gap-4 font-medium ${labelClass(home.hero.eyebrow)}`}
+            className={`flex items-center gap-4 font-medium ${labelClass(home.hero.eyebrow, 'text-[0.7rem] tracking-[0.3em] uppercase')}`}
           >
             <span aria-hidden="true" className="bg-accent h-px w-10 shrink-0" />
             <span className="text-accent-light">{home.hero.eyebrow}</span>

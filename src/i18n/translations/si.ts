@@ -204,6 +204,59 @@ export const si: Translation = {
           points: ['සජීවී වැඩමුළු අත්දැකීමක් ලෙස පවත්වනු ලැබේ'],
         },
       },
+      homework: {
+        heading: 'Mind Magic — Homework සහ සූදානම',
+        intro:
+          'Mind Magic වැඩසටහනට සහභාගී වීමට පෙර පහත කාර්යයන් සම්පූර්ණ කර සූදානම් වන්න.',
+        introductionVideo: {
+          label: 'හඳුන්වාදීමේ වීඩියෝව නරඹන්න',
+          aria: 'Mind Magic හඳුන්වාදීමේ වීඩියෝව YouTube හි නරඹන්න (නව ටැබයකින් විවෘත වේ)',
+        },
+        items: [
+          {
+            title: 'ඔබේ ජයග්‍රහණ 10ක්',
+            body: 'ඔබ විසින් ජීවිතයේ ලබාගත්, ඔබට වැදගත් යැයි හැඟෙන ජයග්‍රහණ 10ක් ලියන්න.',
+          },
+          {
+            title: 'ඔබට සිදු වූ අසාර්ථක වීම් 10ක්',
+            body: 'ඔබ ලබාගැනීමට කැමති වූ නමුත් ළඟාකරගත නොහැකි වූ දේවල් හෝ අත්දැකීම් 10ක් ලියන්න.',
+          },
+          {
+            title: 'ඔබේ බලාපොරොත්තු 20ක්',
+            body: 'ඔබට අවශ්‍ය තරම් මුදල් තිබුණේ නම් ජීවිතයේ ලබාගැනීමට හෝ අත්විඳීමට කැමති දේවල් 20ක් ලියන්න.',
+          },
+          {
+            title: 'The Secret අධ්‍යයනය',
+            body: 'The Secret වීඩියෝව සම්පූර්ණයෙන් නරඹා එහි ඇති සිංහල උපසිරැසි වෙනම පොතක ලියන්න.',
+          },
+        ],
+        secretVideo: {
+          label: 'THE SECRET නරඹන්න',
+          aria: 'The Secret YouTube හි නරඹන්න (නව ටැබයකින් විවෘත වේ)',
+        },
+        secretReading: {
+          label: 'පළමු කොටස සිංහලෙන් කියවන්න',
+          aria: 'The Secret පළමු කොටසේ සිංහල අධ්‍යයන සටහන කියවන්න',
+        },
+        preparation: {
+          heading: 'වැඩසටහනට සූදානම් වන්න',
+          body: 'Mind Magic වැඩසටහනට සහභාගී වීමට පෙර සූදානම් විය යුතු ආකාරය පැහැදිලි කරන වීඩියෝව අනිවාර්යයෙන් නරඹන්න.',
+          video: {
+            label: 'සූදානම් වීමේ වීඩියෝව නරඹන්න',
+            aria: 'Mind Magic සූදානම් වීමේ වීඩියෝව YouTube හි නරඹන්න (නව ටැබයකින් විවෘත වේ)',
+          },
+        },
+        submission: {
+          heading: 'Homework සම්පූර්ණ කළ පසු',
+          body: 'ඔබ ලියූ සියලුම Homework වල පැහැදිලි ඡායාරූප Charana Gunawardhana වෙත WhatsApp මඟින් යොමු කරන්න.',
+          cta: 'WHATSAPP මඟින් HOMEWORK යවන්න',
+          aria: 'Mind Magic Homework WhatsApp මඟින් Charana Gunawardhana වෙත යවන්න (නව ටැබයකින් විවෘත වේ)',
+        },
+        quote: {
+          text: 'මෙම වැඩසටහන ඔබේ ජීවිතයේ විශාල වෙනසක් සහ සුවිශේෂී අත්දැකීමක් බවට පත්කරගන්න.',
+          attribution: 'Charana Gunawardhana',
+        },
+      },
       journey: {
         heading: 'පටිගත කළ ගමන ක්‍රියාත්මක වන ආකාරය',
         steps: [
@@ -219,6 +272,23 @@ export const si: Translation = {
       cta: {
         enquire: 'Mind Magic ගැන විමසන්න',
         allPrograms: 'සියලු වැඩසටහන් බලන්න',
+      },
+      resources: {
+        theSecretPart1: {
+          meta: {
+            title: 'The Secret — Part 1 | Mind Magic අධ්‍යයන සටහන — Charana Gunawardhana',
+            description:
+              'Mind Magic ඉගෙනුම් ගමන සඳහා, The Secret තුළ සාකච්ඡා වන අදහස් ඇසුරෙන් සකස් කළ සිංහල අධ්‍යයන සටහනකි. මෙය නිල පරිවර්තනයක් හෝ පිටපතක් නොවේ.',
+          },
+          eyebrow: 'Mind Magic • Learning Resource',
+          series: 'The Secret — Part 01',
+          supporting:
+            'Mind Magic ඉගෙනුම් ගමන සඳහා, The Secret තුළ සාකච්ඡා වන අදහස් ඇසුරෙන් සකස් කළ සිංහල අධ්‍යයන සටහනකි. මෙය නිල පරිවර්තනයක් හෝ උපසිරැසි පිටපතක් නොවේ.',
+          sinhalaNote: '',
+          back: 'Mind Magic වෙත ආපසු යන්න',
+          watchVideo: 'The Secret වීඩියෝව නරඹන්න',
+          watchVideoAria: 'The Secret YouTube හි නරඹන්න (නව ටැබයකින් විවෘත වේ)',
+        },
       },
     },
     optimisticMagnet: {

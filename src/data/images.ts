@@ -1,6 +1,9 @@
 import charanaAbout from '@/assets/images/charana/charana-about.webp'
 import charanaHero from '@/assets/images/charana/charana-hero.webp'
 import lakmaliSiriwardhana from '@/assets/images/contact/lakmali-siriwardhana.jpg'
+import mindMagicIceberg from '@/assets/images/programs/mind-magic/mind-magic-iceberg.png'
+import optimisticMagnetHero from '@/assets/images/programs/optimistic-magnet/optimistic-magnet-hero.png'
+import morningGymCinematicHero from '@/assets/images/programs/morning-gym/morning-gym-cinematic-hero.png'
 import morningGymPhoto from '@/assets/images/programs/morning-gym/morning-gym-hero.webp'
 import experienceYour100Logo from '@/assets/logos/optimized/experience-your-100.webp'
 import mindMagicLogo from '@/assets/logos/optimized/mind-magic.webp'
@@ -57,6 +60,39 @@ export const MORNING_GYM_PHOTO: ImageAsset = {
   alt: 'Charana Gunawardhana hosting a live Morning Gym session, with participants joining across two screens',
   width: 1450,
   height: 1085,
+}
+
+/**
+ * Morning Gym detail-page cinematic hero. Decorative background only.
+ * Separate from MORNING_GYM_PHOTO, which remains the Home / catalog session still.
+ */
+export const MORNING_GYM_CINEMATIC_HERO: ImageAsset = {
+  src: morningGymCinematicHero,
+  alt: '',
+  width: 1944,
+  height: 809,
+}
+
+/**
+ * Mind Magic hero iceberg. Decorative background only — the programme name
+ * stays in the adjacent heading, so the alt is empty.
+ */
+export const MIND_MAGIC_ICEBERG: ImageAsset = {
+  src: mindMagicIceberg,
+  alt: '',
+  width: 1672,
+  height: 941,
+}
+
+/**
+ * Optimistic Magnet hero sunrise. Decorative background only — the
+ * programme name stays in the adjacent heading, so the alt is empty.
+ */
+export const OPTIMISTIC_MAGNET_HERO: ImageAsset = {
+  src: optimisticMagnetHero,
+  alt: '',
+  width: 1942,
+  height: 809,
 }
 
 /**

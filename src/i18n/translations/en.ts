@@ -197,6 +197,58 @@ export const en: Translation = {
           points: ['Delivered as a live workshop experience'],
         },
       },
+      homework: {
+        heading: 'Mind Magic — Homework and Preparation',
+        intro: 'Complete the following tasks and prepare before you take part in the Mind Magic program.',
+        introductionVideo: {
+          label: 'Watch the introduction video',
+          aria: 'Watch the Mind Magic introduction video on YouTube (opens in a new tab)',
+        },
+        items: [
+          {
+            title: 'Your 10 achievements',
+            body: 'Write 10 achievements from your life that feel important to you.',
+          },
+          {
+            title: '10 opportunities you missed',
+            body: 'Write 10 things or experiences you wanted, but could not reach.',
+          },
+          {
+            title: 'Your 20 hopes',
+            body: 'Write 20 things you would like to obtain or experience in life if you had as much money as you needed.',
+          },
+          {
+            title: 'Study of The Secret',
+            body: 'Watch The Secret video in full and write its Sinhala subtitles in a separate notebook.',
+          },
+        ],
+        secretVideo: {
+          label: 'Watch The Secret',
+          aria: 'Watch The Secret on YouTube (opens in a new tab)',
+        },
+        secretReading: {
+          label: 'Read Part 1 in Sinhala',
+          aria: 'Read The Secret Part 1 Sinhala study note',
+        },
+        preparation: {
+          heading: 'Prepare for the program',
+          body: 'You must watch the video that explains how to prepare before you take part in the Mind Magic program.',
+          video: {
+            label: 'Watch the preparation video',
+            aria: 'Watch the Mind Magic preparation video on YouTube (opens in a new tab)',
+          },
+        },
+        submission: {
+          heading: 'After you complete the homework',
+          body: 'Send clear photographs of all the homework you wrote to Charana Gunawardhana on WhatsApp.',
+          cta: 'Send homework on WhatsApp',
+          aria: 'Send Mind Magic homework to Charana Gunawardhana on WhatsApp (opens in a new tab)',
+        },
+        quote: {
+          text: 'Make this program a great change and a distinctive experience in your life.',
+          attribution: 'Charana Gunawardhana',
+        },
+      },
       journey: {
         heading: 'How the Recorded Journey Works',
         steps: ['Prepare', 'Complete Pre-Course Homework', 'Continue to Program Access'],
@@ -208,6 +260,23 @@ export const en: Translation = {
       cta: {
         enquire: 'Enquire About Mind Magic',
         allPrograms: 'View All Programs',
+      },
+      resources: {
+        theSecretPart1: {
+          meta: {
+            title: 'The Secret — Part 1 | Mind Magic study note — Charana Gunawardhana',
+            description:
+              'A Sinhala study note for the Mind Magic learning journey, inspired by ideas discussed in The Secret. Not an official translation or transcript.',
+          },
+          eyebrow: 'Mind Magic • Learning Resource',
+          series: 'The Secret — Part 01',
+          supporting:
+            'A Sinhala study note for the Mind Magic learning journey, inspired by ideas discussed in The Secret.',
+          sinhalaNote: 'This study material is currently available in Sinhala.',
+          back: 'Back to Mind Magic',
+          watchVideo: 'Watch The Secret video',
+          watchVideoAria: 'Watch The Secret on YouTube (opens in a new tab)',
+        },
       },
     },
     optimisticMagnet: {

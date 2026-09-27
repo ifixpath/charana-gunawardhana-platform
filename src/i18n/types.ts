@@ -28,9 +28,37 @@ export type MindMagicCopy = {
     recorded: { title: string; points: readonly [string, string] }
     live: { title: string; points: readonly [string] }
   }
+  homework: {
+    heading: string
+    intro: string
+    introductionVideo: { label: string; aria: string }
+    items: readonly [
+      { title: string; body: string },
+      { title: string; body: string },
+      { title: string; body: string },
+      { title: string; body: string },
+    ]
+    secretVideo: { label: string; aria: string }
+    secretReading: { label: string; aria: string }
+    preparation: { heading: string; body: string; video: { label: string; aria: string } }
+    submission: { heading: string; body: string; cta: string; aria: string }
+    quote: { text: string; attribution: string }
+  }
   journey: { heading: string; steps: readonly [string, string, string] }
   next: { heading: string; body: string }
   cta: { enquire: string; allPrograms: string }
+  resources: {
+    theSecretPart1: {
+      meta: { title: string; description: string }
+      eyebrow: string
+      series: string
+      supporting: string
+      sinhalaNote: string
+      back: string
+      watchVideo: string
+      watchVideoAria: string
+    }
+  }
 }
 
 export type OptimisticMagnetCopy = {

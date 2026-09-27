@@ -199,6 +199,59 @@ export const ta: Translation = {
           points: ['நேரடி பட்டறை அனுபவமாக நடத்தப்படுகிறது'],
         },
       },
+      homework: {
+        heading: 'Mind Magic — Homework மற்றும் தயாரிப்பு',
+        intro:
+          'Mind Magic நிகழ்ச்சிக்குப் பங்கேற்பதற்கு முன் கீழ்க்காணும் பணிகளை முடித்து தயாராகுங்கள்.',
+        introductionVideo: {
+          label: 'அறிமுக வீடியோவைப் பாருங்கள்',
+          aria: 'Mind Magic அறிமுக வீடியோவை YouTube-இல் பார்க்க (புதிய தாவலில் திறக்கும்)',
+        },
+        items: [
+          {
+            title: 'உங்கள் 10 வெற்றிகள்',
+            body: 'உங்கள் வாழ்க்கையில் நீங்கள் அடைந்த, உங்களுக்கு முக்கியமானவை எனத் தோன்றும் 10 வெற்றிகளை எழுதுங்கள்.',
+          },
+          {
+            title: 'நீங்கள் இழந்த 10 வாய்ப்புகள்',
+            body: 'நீங்கள் பெற விரும்பிய ஆனால் அடைய முடியாத 10 விஷயங்கள் அல்லது அனுபவங்களை எழுதுங்கள்.',
+          },
+          {
+            title: 'உங்கள் 20 எதிர்பார்ப்புகள்',
+            body: 'உங்களுக்குத் தேவையான அளவு பணம் இருந்தால் வாழ்க்கையில் பெற அல்லது அனுபவிக்க விரும்பும் 20 விஷயங்களை எழுதுங்கள்.',
+          },
+          {
+            title: 'The Secret ஆய்வு',
+            body: 'The Secret வீடியோவை முழுமையாகப் பார்த்து, அதிலுள்ள சிங்கள வசனங்களைத் தனியான ஒரு புத்தகத்தில் எழுதுங்கள்.',
+          },
+        ],
+        secretVideo: {
+          label: 'THE SECRET-ஐப் பாருங்கள்',
+          aria: 'The Secret-ஐ YouTube-இல் பார்க்க (புதிய தாவலில் திறக்கும்)',
+        },
+        secretReading: {
+          label: 'முதல் பகுதியை சிங்களத்தில் வாசிக்க',
+          aria: 'The Secret முதல் பகுதியின் சிங்கள கற்றல் குறிப்பை வாசிக்க',
+        },
+        preparation: {
+          heading: 'நிகழ்ச்சிக்குத் தயாராகுங்கள்',
+          body: 'Mind Magic நிகழ்ச்சிக்குப் பங்கேற்பதற்கு முன் எவ்வாறு தயாராக வேண்டும் என்பதை விளக்கும் வீடியோவைக் கட்டாயம் பாருங்கள்.',
+          video: {
+            label: 'தயாரிப்பு வீடியோவைப் பாருங்கள்',
+            aria: 'Mind Magic தயாரிப்பு வீடியோவை YouTube-இல் பார்க்க (புதிய தாவலில் திறக்கும்)',
+          },
+        },
+        submission: {
+          heading: 'Homework முடித்த பிறகு',
+          body: 'நீங்கள் எழுதிய அனைத்து Homework-இன் தெளிவான புகைப்படங்களை WhatsApp மூலம் Charana Gunawardhana-விடம் அனுப்புங்கள்.',
+          cta: 'WHATSAPP மூலம் HOMEWORK அனுப்ப',
+          aria: 'Mind Magic Homework-ஐ WhatsApp மூலம் Charana Gunawardhana-விடம் அனுப்ப (புதிய தாவலில் திறக்கும்)',
+        },
+        quote: {
+          text: 'இந்த நிகழ்ச்சியை உங்கள் வாழ்க்கையில் ஒரு பெரிய மாற்றமாகவும் சிறப்பான அனுபவமாகவும் ஆக்குங்கள்.',
+          attribution: 'Charana Gunawardhana',
+        },
+      },
       journey: {
         heading: 'பதிவு செய்யப்பட்ட பயணம் எவ்வாறு நடைபெறுகிறது',
         steps: [
@@ -214,6 +267,23 @@ export const ta: Translation = {
       cta: {
         enquire: 'Mind Magic பற்றி விசாரிக்க',
         allPrograms: 'அனைத்து திட்டங்களையும் பார்க்க',
+      },
+      resources: {
+        theSecretPart1: {
+          meta: {
+            title: 'The Secret — Part 1 | Mind Magic கற்றல் குறிப்பு — Charana Gunawardhana',
+            description:
+              'The Secret-இல் பேசப்படும் கருத்துகளால் ஊக்கமளிக்கப்பட்ட Mind Magic கற்றல் பயணத்திற்கான சிங்கள கற்றல் குறிப்பு. இது அதிகாரப்பூர்வ மொழிபெயர்ப்போ படியோ அல்ல.',
+          },
+          eyebrow: 'Mind Magic • Learning Resource',
+          series: 'The Secret — Part 01',
+          supporting:
+            'The Secret-இல் பேசப்படும் கருத்துகளால் ஊக்கமளிக்கப்பட்ட Mind Magic கற்றல் பயணத்திற்கான சிங்கள கற்றல் குறிப்பு.',
+          sinhalaNote: 'இந்த கற்றல் பொருள் தற்போது சிங்களத்தில் உள்ளது.',
+          back: 'Mind Magic-க்குத் திரும்ப',
+          watchVideo: 'The Secret வீடியோவைப் பாருங்கள்',
+          watchVideoAria: 'The Secret-ஐ YouTube-இல் பார்க்க (புதிய தாவலில் திறக்கும்)',
+        },
       },
     },
     optimisticMagnet: {
