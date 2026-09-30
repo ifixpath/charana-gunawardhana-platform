@@ -21,11 +21,11 @@ export default function Footer() {
         </div>
 
         <p className="text-content-muted mt-6 text-[0.7rem] leading-relaxed">
-          Powered by{' '}
+          {home.footer.poweredBy}{' '}
           <a
             href={NEXOR_BOS_URL}
             {...EXTERNAL_LINK_PROPS}
-            aria-label="NEXOR BOS (opens in a new tab)"
+            aria-label={home.footer.poweredByAria}
             className="hover:text-accent-dark rounded-sm transition-colors"
           >
             NEXOR BOS

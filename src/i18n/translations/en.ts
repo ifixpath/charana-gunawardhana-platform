@@ -222,6 +222,8 @@ export const en: Translation = {
     },
     footer: {
       rights: 'All rights reserved.',
+      poweredBy: 'Powered by',
+      poweredByAria: 'NEXOR BOS (opens in a new tab)',
     },
     a11y: {
       heroPortrait: 'Charana Gunawardhana speaking on stage to an audience',

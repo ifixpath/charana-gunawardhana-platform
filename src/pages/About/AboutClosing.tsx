@@ -2,7 +2,7 @@ import Section from '@/components/layout/Section'
 import ButtonLink, { ExternalButtonLink } from '@/components/ui/ButtonLink'
 import { WHATSAPP_COMMUNITY } from '@/data/socialLinks'
 import type { AboutNarrativeCopy } from '@/i18n/types'
-import { useLocalizedPath } from '@/i18n/useI18n'
+import { useLocalizedPath, useTranslations } from '@/i18n/useI18n'
 import { ROUTES } from '@/routes/paths'
 
 type AboutClosingProps = {
@@ -11,6 +11,7 @@ type AboutClosingProps = {
 
 export default function AboutClosing({ closing }: AboutClosingProps) {
   const localizedPath = useLocalizedPath()
+  const { home } = useTranslations()
 
   return (
     <Section tone="dark" labelledBy="about-closing" className="lg:py-32">
@@ -36,7 +37,7 @@ export default function AboutClosing({ closing }: AboutClosingProps) {
           </ButtonLink>
           <ExternalButtonLink
             href={WHATSAPP_COMMUNITY.url}
-            ariaLabel={WHATSAPP_COMMUNITY.ariaLabel}
+            ariaLabel={home.a11y.whatsappCommunity}
             variant="outlineOnDark"
             className="w-full sm:w-auto"
           >

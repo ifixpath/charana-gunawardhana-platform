@@ -1,6 +1,5 @@
 import { useTranslations } from '@/i18n/useI18n'
 import { usePageMeta } from '@/i18n/usePageMeta'
-import AboutLegacyPage from '@/pages/About/AboutLegacyPage'
 import AboutNarrative from '@/pages/About/AboutNarrative'
 
 export default function AboutPage() {
@@ -8,9 +7,9 @@ export default function AboutPage() {
 
   usePageMeta(about.meta)
 
-  if (about.narrative) {
-    return <AboutNarrative copy={about.narrative} portraitAlt={about.a11y.portrait} />
+  if (!about.narrative) {
+    return null
   }
 
-  return <AboutLegacyPage />
+  return <AboutNarrative copy={about.narrative} portraitAlt={about.a11y.portrait} />
 }

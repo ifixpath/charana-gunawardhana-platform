@@ -253,6 +253,8 @@ export type HomeCopy = {
   }
   footer: {
     rights: string
+    poweredBy: string
+    poweredByAria: string
   }
   a11y: {
     heroPortrait: string
@@ -403,8 +405,8 @@ export type AboutNarrativeCopy = {
 export type AboutCopy = {
   meta: { title: string; description: string }
   /**
-   * Approved English About narrative. Sinhala and Tamil omit this and keep
-   * rendering the fields below until an approved translation exists.
+   * Official About narrative. Present in English, Sinhala, and Tamil.
+   * The fields below remain for type compatibility with earlier page copy.
    */
   narrative?: AboutNarrativeCopy
   hero: {
