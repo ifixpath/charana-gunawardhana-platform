@@ -634,9 +634,147 @@ export const en: Translation = {
   },
   about: {
     meta: {
-      title: 'About Charana Gunawardhana',
+      title: 'About Charana Gunawardhana | Personal Transformation Educator',
       description:
-        'A journey shaped by discipline, learning and a commitment to helping people move forward with clarity and purpose.',
+        'Learn about Charana Gunawardhana, a Personal Transformation Educator and Mindset Strategist whose journey through entrepreneurship, adversity and learning shaped his work in mindset, business and personal transformation.',
+    },
+    narrative: {
+      hero: {
+        eyebrow: 'About Charana Gunawardhana',
+        positioning:
+          'Personal Transformation Educator & Mindset Strategist | Entrepreneur | Educator | Speaker | Concept Creator',
+        intro:
+          'A journey shaped by entrepreneurship, adversity, learning and a search for practical answers to the challenges that shape our lives.',
+        ctaJourney: "Explore Charana's Journey",
+        ctaPrograms: 'Explore Programs',
+      },
+      person: {
+        heading: 'Before the Work, There Was a Journey',
+        paragraphs: [
+          'Before Charana began helping others explore personal transformation, he had to navigate a period of transformation in his own life.',
+          'Charana Gunawardhana is an entrepreneur, educator and speaker whose work grew from years of building businesses, experiencing success, facing failure and searching for a practical way forward.',
+          'With more than a decade of experience in developing businesses, he brings together entrepreneurial experience and personal learning to explore the relationship between mindset and action — and how the way we think can influence the decisions we make in business, money, relationships and everyday life.',
+        ],
+      },
+      turningPoint: {
+        heading: "When Success Wasn't Enough",
+        paragraphs: [
+          "Charana's entrepreneurial journey began early. Over the years, he built and developed businesses across different areas, learning firsthand what it takes to create, lead and grow.",
+          'There was success. There was progress. And then came a period that challenged everything he thought he understood about success.',
+          'Mistakes in the way money was understood, managed and respected, together with other decisions made along the way, eventually contributed to the collapse of his business and a period of significant debt.',
+          'At that point, the question was no longer simply,',
+        ],
+        quote: '“How do I build another business?”',
+        bridge: 'It became something much more personal:',
+        personal: 'How do I find peace of mind and move forward?',
+      },
+      search: {
+        heading: 'Looking for Answers That Could Actually Be Used',
+        paragraphs: [
+          'During that difficult period, Charana immersed himself in learning.',
+          'He read extensively, explored books and online resources, and studied ideas around the mind, the subconscious, personal development and the Law of Attraction.',
+          'He repeatedly returned to the Sinhala translation of The Power of the Subconscious Mind. He also watched The Secret by Rhonda Byrne hundreds of times, trying to understand the principles behind the ideas he was encountering.',
+          'But the more he learned, the more one question stayed with him.',
+        ],
+        question: 'People could explain what to do. But how could those ideas actually be applied?',
+        closing: 'That question changed the direction of his search.',
+      },
+      sharing: {
+        heading: 'What Started With a Few People',
+        paragraphs: [
+          'The answers he was finding through experience, reflection and continued learning gradually became ideas he could share with others.',
+          'He began discussing them with friends and people within his professional circle. One friend eventually encouraged him to share what he had learned with a wider audience.',
+          'The first session was small — just a handful of people.',
+          'There was no established brand. No large audience. No elaborate product structure.',
+          'There were simply ideas shaped by experience, and a desire to help other people understand what he had discovered.',
+          'Participants began sharing their experiences with others. Interest grew. Word of mouth did the rest.',
+        ],
+      },
+      naming: {
+        heading: 'A Name That Came From the Community',
+        paragraphs: [
+          'As more people began talking about the training, it needed a name.',
+          'The name did not come from a branding agency or a marketing exercise. It emerged during a WhatsApp discussion.',
+        ],
+        emphasis: [
+          'Two simple words were suggested: Mind and Magic.',
+          'Together, they became Mind Magic.',
+        ],
+        after: [
+          'The identity continued to evolve from there. The logo was later created by someone who had experienced the training themselves.',
+          "What began with a small group gradually became one of the central ideas within Charana's work.",
+        ],
+      },
+      education: {
+        heading: 'When Experience Became Education',
+        paragraphs: [
+          "Mind Magic was not initially created simply as a product for the public. Many of Charana's early training experiences grew through his work with people around him — including staff, partners and customers.",
+          'As these ideas were explored and applied in real situations, the learning expanded into different areas of personal and professional development.',
+          'This eventually led to a broader body of educational experiences, including Mind Magic, 100% and Art of Selling, alongside other programs focused on mindset, action, business development and personal growth.',
+          'Today, these experiences are being developed into a broader educational platform for people at different stages of their personal and professional journeys.',
+        ],
+      },
+      philosophy: {
+        heading: 'Change Begins in the Mind',
+        intro:
+          'For Charana, personal transformation is not about waiting for circumstances to change. It begins with taking control of the mind, the thoughts and beliefs that shape us, and the choices and actions through which we create our lives.',
+        steps: {
+          think: {
+            title: 'Think',
+            body: 'Change the way you think and what you believe is possible.',
+          },
+          act: {
+            title: 'Act',
+            body: 'Turn your beliefs into purposeful action.',
+          },
+          transform: {
+            title: 'Transform',
+            body: 'Create change through what you consistently think, believe and do.',
+          },
+        },
+        paragraphs: [
+          'Circumstances may change. Opportunities may come and go. But they do not have to define what a person can become. The starting point is within — in the way we think, what we believe and the choices we make from that mindset.',
+          'Our thoughts, beliefs and the way we trust what we believe can shape the way we experience our lives and the actions we take.',
+          "At the heart of Charana's work is a belief that the mind has a profound influence on the life we create.",
+        ],
+      },
+      today: {
+        heading: 'Helping People Move Forward',
+        paragraphs: [
+          'Today, Charana works across personal transformation, mindset, entrepreneurship, money, leadership and personal performance.',
+          'His work combines education, training, speaking and community — creating spaces where people can learn, reflect, ask questions and take action.',
+          'The focus is practical: connecting personal development with real life — the businesses we build, the money decisions we make, the relationships we maintain, the challenges we face and the direction we choose to take next.',
+        ],
+      },
+      impact: {
+        heading: 'A Growing Body of Work',
+        stats: [
+          { value: '10+ Years', label: 'Entrepreneurial & Business Experience' },
+          { value: '1,000+', label: 'Customers Served' },
+          { value: '200+', label: 'Video Testimonials' },
+          { value: 'Daily', label: 'Morning Gym Community' },
+        ],
+      },
+      purpose: {
+        heading: 'Education as an Opportunity',
+        paragraphs: [
+          "Charana's long-term vision extends beyond personal development programs.",
+          'He hopes to eventually create an educational campus for people who may have the ability and ambition to pursue higher education but lack the financial resources to do so.',
+          'The idea is to create an environment where students can access education without carrying the full financial burden at the beginning — giving them the opportunity to learn, build their capabilities and contribute towards the cost of their education later.',
+          'For Charana, this represents a broader purpose behind education: creating opportunity for people who may otherwise be left without it.',
+        ],
+      },
+      closing: {
+        heading: 'The Journey Continues',
+        paragraphs: [
+          "From entrepreneurship and adversity to education and personal transformation, Charana's journey continues to evolve.",
+          'What began as a personal search for answers has grown into a commitment to help others understand themselves, take meaningful action and move forward.',
+          'The next chapter is not simply about teaching more people. It is about building knowledge, creating opportunity and making meaningful transformation accessible to more people.',
+        ],
+        ctaPrograms: 'Explore Programs',
+        ctaMorningGym: 'Join Morning Gym',
+        ctaContact: 'Contact Charana',
+      },
     },
     hero: {
       eyebrow: 'About',

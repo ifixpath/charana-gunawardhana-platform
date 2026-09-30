@@ -349,8 +349,64 @@ export type ProgramsIndexCopy = {
   }
 }
 
+export type AboutNarrativeCopy = {
+  hero: {
+    eyebrow: string
+    positioning: string
+    intro: string
+    ctaJourney: string
+    ctaPrograms: string
+  }
+  person: { heading: string; paragraphs: readonly string[] }
+  turningPoint: {
+    heading: string
+    paragraphs: readonly string[]
+    quote: string
+    bridge: string
+    personal: string
+  }
+  search: {
+    heading: string
+    paragraphs: readonly string[]
+    question: string
+    closing: string
+  }
+  sharing: { heading: string; paragraphs: readonly string[] }
+  naming: {
+    heading: string
+    paragraphs: readonly string[]
+    emphasis: readonly string[]
+    after: readonly string[]
+  }
+  education: { heading: string; paragraphs: readonly string[] }
+  philosophy: {
+    heading: string
+    intro: string
+    steps: Record<'think' | 'act' | 'transform', { title: string; body: string }>
+    paragraphs: readonly string[]
+  }
+  today: { heading: string; paragraphs: readonly string[] }
+  impact: {
+    heading: string
+    stats: readonly { value: string; label: string }[]
+  }
+  purpose: { heading: string; paragraphs: readonly string[] }
+  closing: {
+    heading: string
+    paragraphs: readonly string[]
+    ctaPrograms: string
+    ctaMorningGym: string
+    ctaContact: string
+  }
+}
+
 export type AboutCopy = {
   meta: { title: string; description: string }
+  /**
+   * Approved English About narrative. Sinhala and Tamil omit this and keep
+   * rendering the fields below until an approved translation exists.
+   */
+  narrative?: AboutNarrativeCopy
   hero: {
     eyebrow: string
     heading: string

@@ -9,6 +9,8 @@ type SectionProps = {
   tone?: SectionTone
   /** Id of the heading that names this section. */
   labelledBy?: string
+  /** In-page anchor. Used by the About journey call to action. */
+  id?: string
   className?: string
 }
 
@@ -23,10 +25,12 @@ export default function Section({
   children,
   tone = 'surface',
   labelledBy,
+  id,
   className = '',
 }: SectionProps) {
   return (
     <section
+      id={id}
       aria-labelledby={labelledBy}
       className={`${TONES[tone]} py-20 sm:py-24 lg:py-28 ${className}`.trim()}
     >
