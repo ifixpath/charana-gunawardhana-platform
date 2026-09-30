@@ -63,8 +63,11 @@ export default function HeroSection() {
             id="hero-heading"
             className="font-serif mt-4 text-[1.65rem] leading-[1.14] tracking-tight min-[360px]:text-3xl sm:mt-5 sm:text-5xl lg:mt-7 lg:text-[3rem] xl:text-[3.5rem]"
           >
-            <span className="block text-balance">{home.hero.headline[0]}</span>
-            <span className="block text-balance">{home.hero.headline[1]}</span>
+            {home.hero.headline.map((line) => (
+              <span key={line} className="block text-balance">
+                {line}
+              </span>
+            ))}
           </h1>
 
           {/* Narrower measure between `lg` and `xl`: at those widths Charana's

@@ -47,6 +47,26 @@ export const si: Translation = {
       'body': 'විනය, ඉගෙනීම සහ මිනිසුන්ට පැහැදිලිකමින් හා අරමුණින් ඉදිරියට යාමට උපකාර කිරීමේ බැඳීමෙන් හැඩගැසුණු ගමනකි.',
       'cta': 'මගේ ගමන සොයා බලන්න'
     },
+    approach: {
+      eyebrow: 'The Charana Approach',
+      heading: 'Think. Act. Transform.',
+      intro:
+        'Lasting change begins with a different way of seeing. It grows through deliberate action and becomes visible in the way we live, work and relate to others.',
+      steps: {
+        think: {
+          title: 'Think',
+          body: 'See yourself and your circumstances differently.',
+        },
+        act: {
+          title: 'Act',
+          body: 'Turn intention into purposeful action.',
+        },
+        transform: {
+          title: 'Transform',
+          body: 'Create meaningful change across the areas that matter.',
+        },
+      },
+    },
     'focus': {
       'eyebrow': 'ප්‍රධාන අවධානය',
       'heading': 'අවධානය යොමු වන ක්ෂේත්‍ර',
@@ -69,10 +89,47 @@ export const si: Translation = {
         }
       }
     },
+    lifeFocus: {
+      eyebrow: 'Areas of Focus',
+      heading: 'Where Mindset Meets Real Life',
+      intro:
+        "Personal development doesn't happen in isolation. The way we think influences the choices we make across work, money, relationships and everyday life.",
+      items: {
+        'personal-growth': {
+          title: 'Personal Growth',
+          description: 'Building self-awareness, stronger habits and personal responsibility.',
+        },
+        mindset: {
+          title: 'Mindset',
+          description: 'Understanding the beliefs and perspectives that influence how we think and act.',
+        },
+        'money-entrepreneurship': {
+          title: 'Money & Entrepreneurship',
+          description:
+            'Exploring money, opportunity, business and the decisions that shape financial life.',
+        },
+        'family-relationships': {
+          title: 'Family & Relationships',
+          description:
+            'Developing greater awareness around relationships, family and responsibility.',
+        },
+      },
+    },
     'morningGym': {
       'eyebrow': 'Morning Gym',
       'heading': 'අරමුණින් දවස ආරම්භ කරන්න',
       'supporting': 'මානසිකත්වය, විනය සහ චේතනාන්විත ක්‍රියාව කෙරෙහි අවධානය යොමු කරන මඟපෙන්වන උදෑසන අත්දැකීමකි.',
+      paragraphs: [
+        'Morning Gym is a free daily community where people come together to learn, ask questions, share experiences and talk openly about the challenges they face in everyday life.',
+        'From money and debt to family, marriage, relationships, work, business and personal struggles, Morning Gym creates an open environment where real questions can be discussed without judgement.',
+        'Each morning, Charana explores books, ideas, experiences and different aspects of life — creating conversations that help people look at their situations from new perspectives.',
+        "You can simply listen, join the discussion or ask a question of your own. You don't have to appear on camera; you can participate privately and speak when you're ready.",
+      ],
+      schedule: 'Free • Daily • 7:00–8:00 AM',
+      ctaJoin: 'ප්‍රජාවට එක් වන්න',
+      participantsHeading: 'For existing program participants',
+      participantsBody:
+        "Already part of a Charana program? Morning Gym is also a place to continue learning, stay connected with the community and keep applying what you've learned.",
       'ctaExplore': 'Morning Gym බලන්න',
       'ctaCommunity': 'ප්‍රජාවට එක් වන්න'
     },
@@ -91,51 +148,49 @@ export const si: Translation = {
       },
       'items': {
         'mind-magic': {
+          homepageLabel: 'Mind Magic',
           'description': 'ඔබ තුළ ඇති ශක්තිය සොයා ගන්න.',
           'availability': 'පටිගත කළ සහ සජීවී වැඩමුළු යන ආකාර දෙකෙන්ම ලබා ගත හැකිය.',
           'detail': 'පටිගත කළ වැඩසටහන · පැය 8.5ක් පමණ',
           'cta': 'Mind Magic බලන්න'
         },
         'optimistic-magnet': {
+          homepageLabel: 'Optimistic Magnet',
           'description': 'කෘතඥතාව පුරුදු කරන්න. අවධානය මාරු කරන්න. වඩා ධනාත්මක මානසිකත්වයක් ගොඩනගන්න.'
         },
         'social-media-business-development': {
+          homepageLabel: 'Social Media for Business Development',
           'description': 'ව්‍යාපාර වර්ධනයට සමාජ මාධ්‍ය යොදා ගැනීම පිළිබඳ ප්‍රායෝගික මාර්ගගත පන්තියකි.'
         },
         'unstoppable': {
+          homepageLabel: 'Unstoppable Six Months',
           'description': 'විනය සහ ඉදිරිගමන කෙරෙහි අවධානය යොමු කරන දිගුකාලීන ජීවිත පරිවර්තන වැඩසටහනකි.'
         },
         'experience-your-100': {
+          homepageLabel: '100%',
           'description': 'ඔබේ ඉලක්ක කරා ඵලදායීව ක්‍රියා කරන ආකාරය තේරුම් ගන්න.'
         },
         'reality-room': {
+          homepageLabel: 'Reality Room — Visualization Workshop',
           'description': 'දෘශ්‍යකරණ වැඩමුළුව',
           'availability': 'පටිගත කළ වැඩමුළුවක් ලෙස ලබා ගත හැකිය.'
         },
         'paradigm-shifting-for-abundance': {
+          homepageLabel: 'Paradigm Shifting for Abundance',
           'description': 'Charana Gunawardhana වැඩසටහන් රාමුව තුළ ඇති පටිගත කළ පාඨමාලාවකි.'
         }
       }
     },
-    'trust': {
-      'eyebrow': 'විශ්වාසය',
-      'heading': 'සැබෑ වර්ධනය. සැබෑ බලපෑම.',
-      'body': 'මෙම ඉඩ සැබෑ කතා සහ ආවරණය සඳහා වෙන් කර ඇත. සත්‍ය වන තුරු මෙහි කිසිවක් පළ නොකෙරේ.',
-      'comingSoon': 'ළඟදී',
-      'items': {
-        'student-stories': {
-          'title': 'ශිෂ්‍ය කතා',
-          'description': 'වැඩසටහන් තුළ සිටින අයගේ අත්දැකීම් මෙහි පළ කෙරෙනු ඇත.'
-        },
-        'community-experiences': {
-          'title': 'ප්‍රජා අත්දැකීම්',
-          'description': 'ප්‍රජාව බෙදාගන්නා අදහස් මෙම ඉඩෙහි පෙනෙනු ඇත.'
-        },
-        'media-recognition': {
-          'title': 'මාධ්‍ය සහ පිළිගැනීම',
-          'description': 'විශේෂාංග, සම්මුඛ සාකච්ඡා සහ පෙනී සිටීම් මෙහි ලැයිස්තුගත කෙරෙනු ඇත.'
-        }
-      }
+    proof: {
+      eyebrow: 'Real People. Real Experiences.',
+      heading: 'What People Say About the Journey',
+      body: "More than 1,000 people have already experienced Charana's programs, with hundreds of customer stories captured through video testimonials.",
+      cta: 'Explore Real Stories',
+      stats: [
+        { value: '1,000+', label: 'Customers served' },
+        { value: '200+', label: 'Video testimonials' },
+        { value: 'A growing community', label: 'Built around learning and shared experience' },
+      ],
     },
     'media': {
       'eyebrow': 'අදහස් සහ මාධ්‍ය',
@@ -155,8 +210,9 @@ export const si: Translation = {
         'බැබළෙන හෙටක් තනන්න.'
       ],
       'supporting': 'වැඩසටහනකින් ආරම්භ කරන්න, නැතහොත් කෙලින්ම සම්බන්ධ වන්න.',
+      ctaMorningGym: 'ප්‍රජාවට එක් වන්න',
       'ctaPrograms': 'වැඩසටහන් බලන්න',
-      'ctaConnect': 'Charana සමඟ සම්බන්ධ වන්න'
+      ctaContact: 'සම්බන්ධ වන්න'
     },
     'footer': {
       'rights': 'සියලු හිමිකම් ඇවිරිණි.'

@@ -42,6 +42,26 @@ export const ta: Translation = {
       body: 'ஒழுக்கம், கற்றல், மற்றும் மக்கள் தெளிவுடனும் நோக்கத்துடனும் முன்னேற உதவும் அர்ப்பணிப்பால் வடிவம் பெற்ற பயணம்.',
       cta: 'என் பயணத்தை அறிய',
     },
+    approach: {
+      eyebrow: 'The Charana Approach',
+      heading: 'Think. Act. Transform.',
+      intro:
+        'Lasting change begins with a different way of seeing. It grows through deliberate action and becomes visible in the way we live, work and relate to others.',
+      steps: {
+        think: {
+          title: 'Think',
+          body: 'See yourself and your circumstances differently.',
+        },
+        act: {
+          title: 'Act',
+          body: 'Turn intention into purposeful action.',
+        },
+        transform: {
+          title: 'Transform',
+          body: 'Create meaningful change across the areas that matter.',
+        },
+      },
+    },
     focus: {
       eyebrow: 'முதன்மை கவனம்',
       heading: 'கவனம் செலுத்தும் துறைகள்',
@@ -64,11 +84,48 @@ export const ta: Translation = {
         },
       },
     },
+    lifeFocus: {
+      eyebrow: 'Areas of Focus',
+      heading: 'Where Mindset Meets Real Life',
+      intro:
+        "Personal development doesn't happen in isolation. The way we think influences the choices we make across work, money, relationships and everyday life.",
+      items: {
+        'personal-growth': {
+          title: 'Personal Growth',
+          description: 'Building self-awareness, stronger habits and personal responsibility.',
+        },
+        mindset: {
+          title: 'Mindset',
+          description: 'Understanding the beliefs and perspectives that influence how we think and act.',
+        },
+        'money-entrepreneurship': {
+          title: 'Money & Entrepreneurship',
+          description:
+            'Exploring money, opportunity, business and the decisions that shape financial life.',
+        },
+        'family-relationships': {
+          title: 'Family & Relationships',
+          description:
+            'Developing greater awareness around relationships, family and responsibility.',
+        },
+      },
+    },
     morningGym: {
       eyebrow: 'Morning Gym',
       heading: 'நோக்கத்துடன் உங்கள் நாளைத் தொடங்குங்கள்',
       supporting:
         'மனநிலை, ஒழுக்கம் மற்றும் உள்நோக்கத்துடன் கூடிய செயல்பாட்டில் கவனம் செலுத்தும் வழிகாட்டப்பட்ட காலை அனுபவம்.',
+      paragraphs: [
+        'Morning Gym is a free daily community where people come together to learn, ask questions, share experiences and talk openly about the challenges they face in everyday life.',
+        'From money and debt to family, marriage, relationships, work, business and personal struggles, Morning Gym creates an open environment where real questions can be discussed without judgement.',
+        'Each morning, Charana explores books, ideas, experiences and different aspects of life — creating conversations that help people look at their situations from new perspectives.',
+        "You can simply listen, join the discussion or ask a question of your own. You don't have to appear on camera; you can participate privately and speak when you're ready.",
+      ],
+      schedule: 'Free • Daily • 7:00–8:00 AM',
+      ctaJoin: 'சமூகத்தில் இணைய',
+      participantsHeading: 'For existing program participants',
+      participantsBody:
+        "Already part of a Charana program? Morning Gym is also a place to continue learning, stay connected with the community and keep applying what you've learned.",
       ctaExplore: 'Morning Gym-ஐப் பார்க்க',
       ctaCommunity: 'சமூகத்தில் இணைய',
     },
@@ -87,52 +144,50 @@ export const ta: Translation = {
       },
       items: {
         'mind-magic': {
+          homepageLabel: 'Mind Magic',
           description: 'உங்களுக்குள் இருக்கும் சக்தியைக் கண்டறியுங்கள்.',
           availability: 'பதிவு செய்யப்பட்ட மற்றும் நேரடி பட்டறை வடிவங்களில் கிடைக்கிறது.',
           detail: 'பதிவு செய்யப்பட்ட திட்டம் · சுமார் 8.5 மணி நேரம்',
           cta: 'Mind Magic-ஐப் பார்க்க',
         },
         'optimistic-magnet': {
+          homepageLabel: 'Optimistic Magnet',
           description:
             'நன்றியுணர்வைப் பயிலுங்கள். கவனத்தை மாற்றுங்கள். மேலும் நேர்மறையான மனநிலையை வளர்த்துக்கொள்ளுங்கள்.',
         },
         'social-media-business-development': {
+          homepageLabel: 'Social Media for Business Development',
           description: 'வணிக வளர்ச்சிக்கு சமூக ஊடகத்தைப் பயன்படுத்துவது குறித்த நடைமுறை இணைய வகுப்பு.',
         },
         unstoppable: {
+          homepageLabel: 'Unstoppable Six Months',
           description: 'ஒழுக்கம் மற்றும் முன்னேற்றத்தில் கவனம் செலுத்தும் நீண்டகால வாழ்க்கை மாற்றத் திட்டம்.',
         },
         'experience-your-100': {
+          homepageLabel: '100%',
           description: 'உங்கள் இலக்குகளை நோக்கி பயனுள்ள நடவடிக்கை எடுப்பது எப்படி என்பதைப் புரிந்துகொள்ளுங்கள்.',
         },
         'reality-room': {
+          homepageLabel: 'Reality Room — Visualization Workshop',
           description: 'காட்சிப்படுத்தல் பட்டறை',
           availability: 'பதிவு செய்யப்பட்ட பட்டறையாகக் கிடைக்கிறது.',
         },
         'paradigm-shifting-for-abundance': {
+          homepageLabel: 'Paradigm Shifting for Abundance',
           description: 'Charana Gunawardhana திட்ட அமைப்பிற்குள் அமைந்த பதிவு செய்யப்பட்ட பாடநெறி.',
         },
       },
     },
-    trust: {
-      eyebrow: 'நம்பிக்கை',
-      heading: 'உண்மையான வளர்ச்சி. உண்மையான தாக்கம்.',
-      body: 'இந்த இடம் உண்மையான கதைகளுக்கும் கவனத்துக்கும் ஒதுக்கப்பட்டுள்ளது. உண்மையாகும் வரை இங்கு எதுவும் வெளியிடப்படாது.',
-      comingSoon: 'விரைவில்',
-      items: {
-        'student-stories': {
-          title: 'மாணவர் கதைகள்',
-          description: 'திட்டங்களுக்குள் இருக்கும் மக்களின் அனுபவங்கள் இங்கு வெளியிடப்படும்.',
-        },
-        'community-experiences': {
-          title: 'சமூக அனுபவங்கள்',
-          description: 'சமூகம் பகிரும் எண்ணங்கள் இந்த இடத்தில் தோன்றும்.',
-        },
-        'media-recognition': {
-          title: 'ஊடகமும் அங்கீகாரமும்',
-          description: 'சிறப்புக் கட்டுரைகள், நேர்காணல்கள் மற்றும் தோற்றங்கள் இங்கு பட்டியலிடப்படும்.',
-        },
-      },
+    proof: {
+      eyebrow: 'Real People. Real Experiences.',
+      heading: 'What People Say About the Journey',
+      body: "More than 1,000 people have already experienced Charana's programs, with hundreds of customer stories captured through video testimonials.",
+      cta: 'Explore Real Stories',
+      stats: [
+        { value: '1,000+', label: 'Customers served' },
+        { value: '200+', label: 'Video testimonials' },
+        { value: 'A growing community', label: 'Built around learning and shared experience' },
+      ],
     },
     media: {
       eyebrow: 'கருத்துகளும் ஊடகமும்',
@@ -149,8 +204,9 @@ export const ta: Translation = {
     finalCta: {
       headline: ['வலுவான உங்களை உருவாக்குங்கள்.', 'பிரகாசமான நாளை அமைங்கள்.'],
       supporting: 'ஒரு திட்டத்துடன் தொடங்குங்கள், அல்லது நேரடியாகத் தொடர்புகொள்ளுங்கள்.',
+      ctaMorningGym: 'சமூகத்தில் இணைய',
       ctaPrograms: 'திட்டங்களைப் பார்க்க',
-      ctaConnect: 'Charana-வைத் தொடர்புகொள்ள',
+      ctaContact: 'தொடர்பு',
     },
     footer: {
       rights: 'அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.',

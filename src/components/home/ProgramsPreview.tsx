@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 
 import SectionHeading from '@/components/common/SectionHeading'
 import Section from '@/components/layout/Section'
-import ButtonLink from '@/components/ui/ButtonLink'
 import { PROGRAM_PREVIEWS } from '@/data/homeContent'
 import { isLatinLabel, labelClass } from '@/i18n/script'
 import { useLocalizedPath, useTranslations } from '@/i18n/useI18n'
@@ -28,7 +27,9 @@ export default function ProgramsPreview() {
         {PROGRAM_PREVIEWS.map((program, index) => {
           const item = copy.items[program.id]
           const format = copy.formats[program.format]
-          const cta = item.cta ?? copy.explore
+          const title = item.homepageLabel ?? program.name
+          const description = item.homepageDescription ?? item.description
+          const cta = copy.explore
 
           return (
             <li key={program.id} className="border-line border-b">
@@ -61,23 +62,11 @@ export default function ProgramsPreview() {
                   ) : null}
 
                   <h3 className="text-primary font-serif text-xl text-balance break-words sm:text-2xl">
-                    {program.name}
+                    {title}
                   </h3>
                   <p className="text-content-muted mt-2 max-w-prose text-sm leading-relaxed sm:text-base">
-                    {item.description}
+                    {description}
                   </p>
-                  {item.availability ? (
-                    <p className="text-content-muted mt-1 max-w-prose text-sm leading-relaxed">
-                      {item.availability}
-                    </p>
-                  ) : null}
-                  {item.detail ? (
-                    <p
-                      className={`text-content-muted mt-2 ${labelClass(item.detail, 'text-[0.7rem] tracking-[0.12em] uppercase', 'text-[0.8rem]')}`}
-                    >
-                      {item.detail}
-                    </p>
-                  ) : null}
                 </div>
 
                 {/* Below `lg` the format and the call to action share one line
@@ -108,12 +97,6 @@ export default function ProgramsPreview() {
           )
         })}
       </ul>
-
-      <div className="mt-12">
-        <ButtonLink to={localizedPath(ROUTES.programs)} variant="outlineOnLight">
-          {copy.viewAll}
-        </ButtonLink>
-      </div>
     </Section>
   )
 }

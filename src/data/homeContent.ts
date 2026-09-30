@@ -5,6 +5,16 @@ export const FOCUS_AREA_IDS = ['personal-growth', 'leadership', 'mindset', 'dire
 
 export type FocusAreaId = (typeof FOCUS_AREA_IDS)[number]
 
+/** Homepage "Areas of Focus" from the office document. Insights keeps `FOCUS_AREA_IDS`. */
+export const HOME_FOCUS_IDS = [
+  'personal-growth',
+  'mindset',
+  'money-entrepreneurship',
+  'family-relationships',
+] as const
+
+export type HomeFocusId = (typeof HOME_FOCUS_IDS)[number]
+
 export const PROGRAM_FORMAT_IDS = [
   'program',
   'workshop',
@@ -36,6 +46,7 @@ export type ProgramPreview = {
   path?: RoutePath
 }
 
+/** Homepage order from the office document. Official names and routes are unchanged. */
 export const PROGRAM_PREVIEWS: readonly ProgramPreview[] = [
   {
     id: 'mind-magic',
@@ -52,20 +63,6 @@ export const PROGRAM_PREVIEWS: readonly ProgramPreview[] = [
     path: ROUTES.optimisticMagnet,
   },
   {
-    id: 'social-media-business-development',
-    name: 'Social Media for Business Development',
-    format: 'zoomClass',
-    logo: PROGRAM_LOGOS['social-media-business-development'],
-    path: ROUTES.socialMediaBusinessDevelopment,
-  },
-  {
-    id: 'unstoppable',
-    name: 'Unstoppable',
-    format: 'longTerm',
-    logo: PROGRAM_LOGOS.unstoppable,
-    path: ROUTES.unstoppable,
-  },
-  {
     id: 'experience-your-100',
     name: 'Experience Your 100%',
     format: 'workshop',
@@ -80,6 +77,20 @@ export const PROGRAM_PREVIEWS: readonly ProgramPreview[] = [
     path: ROUTES.realityRoom,
   },
   {
+    id: 'social-media-business-development',
+    name: 'Social Media for Business Development',
+    format: 'zoomClass',
+    logo: PROGRAM_LOGOS['social-media-business-development'],
+    path: ROUTES.socialMediaBusinessDevelopment,
+  },
+  {
+    id: 'unstoppable',
+    name: 'Unstoppable',
+    format: 'longTerm',
+    logo: PROGRAM_LOGOS.unstoppable,
+    path: ROUTES.unstoppable,
+  },
+  {
     id: 'paradigm-shifting-for-abundance',
     name: 'Paradigm Shifting for Abundance',
     format: 'recordedCourse',
@@ -87,11 +98,3 @@ export const PROGRAM_PREVIEWS: readonly ProgramPreview[] = [
     path: ROUTES.paradigmShiftingForAbundance,
   },
 ]
-
-export const TRUST_PILLAR_IDS = [
-  'student-stories',
-  'community-experiences',
-  'media-recognition',
-] as const
-
-export type TrustPillarId = (typeof TRUST_PILLAR_IDS)[number]

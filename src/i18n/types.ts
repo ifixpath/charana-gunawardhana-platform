@@ -1,10 +1,5 @@
 import type { CatalogProgramId } from '@/data/programs'
-import type {
-  FocusAreaId,
-  ProgramFormatId,
-  ProgramId,
-  TrustPillarId,
-} from '@/data/homeContent'
+import type { FocusAreaId, HomeFocusId, ProgramFormatId, ProgramId } from '@/data/homeContent'
 import type { SocialNetwork } from '@/data/socialLinks'
 
 /**
@@ -165,6 +160,10 @@ export type HomeProgramItemCopy = {
   availability?: string
   detail?: string
   cta?: string
+  /** Office homepage label. Official program names and routes stay in the data layer. */
+  homepageLabel?: string
+  /** Office homepage description. Other pages keep `description`. */
+  homepageDescription?: string
 }
 
 /**
@@ -175,7 +174,7 @@ export type HomeCopy = {
   meta: { title: string; description: string }
   hero: {
     eyebrow: string
-    headline: readonly [string, string]
+    headline: readonly string[]
     supporting: string
     ctaPrograms: string
     ctaJourney: string
@@ -186,15 +185,34 @@ export type HomeCopy = {
     body: string
     cta: string
   }
+  approach: {
+    eyebrow: string
+    heading: string
+    intro: string
+    steps: Record<'think' | 'act' | 'transform', { title: string; body: string }>
+  }
+  /** Kept for the Insights themes. The homepage uses `lifeFocus`. */
   focus: {
     eyebrow: string
     heading: string
     items: Record<FocusAreaId, { title: string; description: string }>
   }
+  lifeFocus: {
+    eyebrow: string
+    heading: string
+    intro: string
+    items: Record<HomeFocusId, { title: string; description: string }>
+  }
   morningGym: {
     eyebrow: string
     heading: string
+    /** Short line still used by the About page. */
     supporting: string
+    paragraphs: readonly string[]
+    schedule: string
+    ctaJoin: string
+    participantsHeading: string
+    participantsBody: string
     ctaExplore: string
     ctaCommunity: string
   }
@@ -207,12 +225,12 @@ export type HomeCopy = {
     formats: Record<ProgramFormatId, string>
     items: Record<ProgramId, HomeProgramItemCopy>
   }
-  trust: {
+  proof: {
     eyebrow: string
     heading: string
     body: string
-    comingSoon: string
-    items: Record<TrustPillarId, { title: string; description: string }>
+    cta: string
+    stats: readonly { value: string; label: string }[]
   }
   media: {
     eyebrow: string
@@ -227,10 +245,11 @@ export type HomeCopy = {
     follow: string
   }
   finalCta: {
-    headline: readonly [string, string]
+    headline: readonly string[]
     supporting: string
+    ctaMorningGym: string
     ctaPrograms: string
-    ctaConnect: string
+    ctaContact: string
   }
   footer: {
     rights: string

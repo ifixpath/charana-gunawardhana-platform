@@ -29,17 +29,36 @@ export const en: Translation = {
     },
     hero: {
       eyebrow: 'Charana Gunawardhana',
-      headline: ['Build a Stronger Life.', 'Create a Brighter Future.'],
-      supporting:
-        'Ideas, discipline and practical guidance for personal growth, leadership and meaningful progress.',
+      headline: ['Change Your Mind.', 'Change Your Actions.', 'Change Your Life.'],
+      supporting: 'Personal Transformation Educator & Mindset Strategist',
       ctaPrograms: 'Explore Programs',
       ctaJourney: 'Discover My Journey',
     },
     about: {
       eyebrow: 'About Charana',
       heading: 'More Than a Mentor',
-      body: 'A journey shaped by discipline, learning and a commitment to helping people move forward with clarity and purpose.',
+      body: 'An entrepreneur, educator and speaker whose own journey through challenge, learning and rebuilding shaped a deeper commitment to helping others create meaningful change in their lives.',
       cta: 'Discover My Journey',
+    },
+    approach: {
+      eyebrow: 'The Charana Approach',
+      heading: 'Think. Act. Transform.',
+      intro:
+        'Lasting change begins with a different way of seeing. It grows through deliberate action and becomes visible in the way we live, work and relate to others.',
+      steps: {
+        think: {
+          title: 'Think',
+          body: 'See yourself and your circumstances differently.',
+        },
+        act: {
+          title: 'Act',
+          body: 'Turn intention into purposeful action.',
+        },
+        transform: {
+          title: 'Transform',
+          body: 'Create meaningful change across the areas that matter.',
+        },
+      },
     },
     focus: {
       eyebrow: 'Core Focus',
@@ -63,18 +82,56 @@ export const en: Translation = {
         },
       },
     },
+    lifeFocus: {
+      eyebrow: 'Areas of Focus',
+      heading: 'Where Mindset Meets Real Life',
+      intro:
+        "Personal development doesn't happen in isolation. The way we think influences the choices we make across work, money, relationships and everyday life.",
+      items: {
+        'personal-growth': {
+          title: 'Personal Growth',
+          description: 'Building self-awareness, stronger habits and personal responsibility.',
+        },
+        mindset: {
+          title: 'Mindset',
+          description: 'Understanding the beliefs and perspectives that influence how we think and act.',
+        },
+        'money-entrepreneurship': {
+          title: 'Money & Entrepreneurship',
+          description:
+            'Exploring money, opportunity, business and the decisions that shape financial life.',
+        },
+        'family-relationships': {
+          title: 'Family & Relationships',
+          description:
+            'Developing greater awareness around relationships, family and responsibility.',
+        },
+      },
+    },
     morningGym: {
       eyebrow: 'Morning Gym',
-      heading: 'Start Your Day With Purpose',
+      heading: 'A Place to Talk About Real Life.',
       supporting:
         'A guided morning experience focused on mindset, discipline and intentional action.',
+      paragraphs: [
+        'Morning Gym is a free daily community where people come together to learn, ask questions, share experiences and talk openly about the challenges they face in everyday life.',
+        'From money and debt to family, marriage, relationships, work, business and personal struggles, Morning Gym creates an open environment where real questions can be discussed without judgement.',
+        'Each morning, Charana explores books, ideas, experiences and different aspects of life — creating conversations that help people look at their situations from new perspectives.',
+        "You can simply listen, join the discussion or ask a question of your own. You don't have to appear on camera; you can participate privately and speak when you're ready.",
+      ],
+      schedule: 'Free • Daily • 7:00–8:00 AM',
+      ctaJoin: 'Join Morning Gym',
+      participantsHeading: 'For existing program participants',
+      participantsBody:
+        "Already part of a Charana program? Morning Gym is also a place to continue learning, stay connected with the community and keep applying what you've learned.",
       ctaExplore: 'Explore Morning Gym',
       ctaCommunity: 'Join Community',
     },
     programs: {
       eyebrow: 'Programs',
-      heading: 'Programs & Courses',
-      intro: 'Programs, workshops and classes across mindset, discipline and business growth.',
+      heading: 'Find the Right Path for Your Next Step',
+      intro:
+        'Explore programs, workshops and practical learning experiences designed for different goals, challenges and stages of personal development.',
       viewAll: 'View All Programs',
       explore: 'Explore Program',
       formats: {
@@ -87,68 +144,81 @@ export const en: Translation = {
       items: {
         'mind-magic': {
           description: 'Discover the power within yourself.',
+          homepageLabel: 'Mind Magic',
+          homepageDescription:
+            'A transformational experience that helps you discover the power within yourself, understand your mind and create a new perspective on your life and goals.',
           availability: 'Available in recorded and live workshop formats.',
           detail: 'Recorded Program · Approx. 8.5 Hours',
           cta: 'Explore Mind Magic',
         },
         'optimistic-magnet': {
           description: 'Practice gratitude. Shift your focus. Build a more positive mindset.',
+          homepageLabel: 'Optimistic Magnet',
+          homepageDescription:
+            'A 37-day gratitude practice designed to help you put what you learn into action, shift your focus and cultivate a more positive and empowered state of mind.',
         },
         'social-media-business-development': {
           description: 'A practical online class on using social media to support business growth.',
+          homepageLabel: 'Social Media for Business Development',
+          homepageDescription:
+            'A practical training combining social media, personal branding and business development — from building your online presence to understanding customers, identifying your market and growing your business.',
         },
         unstoppable: {
           description: 'A long-term life transformation program focused on discipline and progress.',
+          homepageLabel: 'Unstoppable Six Months',
+          homepageDescription:
+            'A six-month transformational program built around focused action, guidance and consistency to help you work towards your personal goals and create meaningful change in your life.',
         },
         'experience-your-100': {
           description: 'Understand how to take effective action towards your goals.',
+          homepageLabel: '100%',
+          homepageDescription:
+            'A transformational training that explores what may be holding you back from achieving what you want and helps you approach your goals differently.',
         },
         'reality-room': {
           description: 'Visualization Workshop',
+          homepageLabel: 'Reality Room — Visualization Workshop',
+          homepageDescription:
+            'A practical workshop designed to help you understand visualization and learn how to visualize your goals with greater clarity and focus.',
           availability: 'Available as a Recorded Workshop',
         },
         'paradigm-shifting-for-abundance': {
           description: 'A recorded course within the Charana Gunawardhana program ecosystem.',
+          homepageLabel: 'Paradigm Shifting for Abundance',
+          homepageDescription:
+            'A 25-day recorded transformational program focused on changing unhelpful habits and building productive daily routines through planning, scheduling and consistent action.',
         },
       },
     },
-    trust: {
-      eyebrow: 'Trust',
-      heading: 'Real Growth. Real Impact.',
-      body: 'This space is reserved for genuine stories and coverage. Nothing is published here until it is real.',
-      comingSoon: 'Coming soon',
-      items: {
-        'student-stories': {
-          title: 'Student Stories',
-          description: 'Experiences from people inside the programs will be published here.',
-        },
-        'community-experiences': {
-          title: 'Community Experiences',
-          description: 'Reflections shared by the community will appear in this space.',
-        },
-        'media-recognition': {
-          title: 'Media & Recognition',
-          description: 'Features, interviews and appearances will be listed here.',
-        },
-      },
+    proof: {
+      eyebrow: 'Real People. Real Experiences.',
+      heading: 'What People Say About the Journey',
+      body: "More than 1,000 people have already experienced Charana's programs, with hundreds of customer stories captured through video testimonials.",
+      cta: 'Explore Real Stories',
+      stats: [
+        { value: '1,000+', label: 'Customers served' },
+        { value: '200+', label: 'Video testimonials' },
+        { value: 'A growing community', label: 'Built around learning and shared experience' },
+      ],
     },
     media: {
       eyebrow: 'Insights & Media',
-      heading: 'Ideas, Practice and Conversation',
-      body: 'Long-form thinking and short-form video, published across the platforms below.',
+      heading: 'Conversations, Ideas & Perspectives',
+      body: "Explore Charana's thoughts, conversations and educational content across the subjects that shape everyday life — from mindset and money to family, entrepreneurship and personal growth.",
       insightsTitle: 'Insights',
-      insightsDescription: 'Written reflections and practical notes on growth, mindset and leadership.',
+      insightsDescription: 'Reflections, ideas and practical perspectives from Charana.',
       mediaTitle: 'Media',
-      mediaDescription: 'Videos, conversations and appearances, collected in one place.',
+      mediaDescription: 'Watch talks, conversations, interviews and other appearances.',
       ctaInsights: 'Explore Insights',
       ctaYoutube: 'Watch on YouTube',
-      follow: 'Follow along',
+      follow: 'Follow Charana',
     },
     finalCta: {
-      headline: ['Build a Stronger You.', 'Create a Brighter Tomorrow.'],
-      supporting: 'Start with a program, or reach out directly.',
+      headline: ['Ready to Take the Next Step?'],
+      supporting: 'Explore the programs, join Morning Gym or connect directly with Charana.',
+      ctaMorningGym: 'Join Morning Gym',
       ctaPrograms: 'Explore Programs',
-      ctaConnect: 'Connect With Charana',
+      ctaContact: 'Contact',
     },
     footer: {
       rights: 'All rights reserved.',

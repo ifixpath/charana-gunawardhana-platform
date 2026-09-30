@@ -1,4 +1,5 @@
 import AboutPreview from '@/components/home/AboutPreview'
+import ApproachSection from '@/components/home/ApproachSection'
 import FinalCtaSection from '@/components/home/FinalCtaSection'
 import FocusAreas from '@/components/home/FocusAreas'
 import HeroSection from '@/components/home/HeroSection'
@@ -18,6 +19,7 @@ export default function HomePage() {
     <>
       <HeroSection />
       <AboutPreview />
+      <ApproachSection />
       <FocusAreas />
       <MorningGymSection />
       <ProgramsPreview />

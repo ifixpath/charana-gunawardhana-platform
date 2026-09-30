@@ -1,15 +1,14 @@
 import PortraitArea from '@/components/common/PortraitArea'
 import SectionHeading from '@/components/common/SectionHeading'
 import Section from '@/components/layout/Section'
-import ButtonLink, { ExternalButtonLink } from '@/components/ui/ButtonLink'
+import { ExternalButtonLink } from '@/components/ui/ButtonLink'
 import { MORNING_GYM_LOGO, MORNING_GYM_PHOTO } from '@/data/images'
 import { WHATSAPP_COMMUNITY } from '@/data/socialLinks'
-import { useLocalizedPath, useTranslations } from '@/i18n/useI18n'
-import { ROUTES } from '@/routes/paths'
+import { useTranslations } from '@/i18n/useI18n'
 
 export default function MorningGymSection() {
   const { home } = useTranslations()
-  const localizedPath = useLocalizedPath()
+  const [lead, ...paragraphs] = home.morningGym.paragraphs
 
   return (
     <Section
@@ -52,23 +51,38 @@ export default function MorningGymSection() {
             id="morning-gym-heading"
             eyebrow={home.morningGym.eyebrow}
             title={home.morningGym.heading}
-            lead={home.morningGym.supporting}
+            lead={lead}
             tone="dark"
           />
 
-          <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
-            <ButtonLink to={localizedPath(ROUTES.morningGym)} className="w-full sm:w-auto">
-              {home.morningGym.ctaExplore}
-            </ButtonLink>
-            {/* The only place the community invite is exposed. */}
+          {paragraphs.map((paragraph) => (
+            <p
+              key={paragraph}
+              className="text-content-inverse-muted mt-6 text-base leading-relaxed sm:text-lg"
+            >
+              {paragraph}
+            </p>
+          ))}
+
+          <p className="text-accent-light mt-8 text-sm font-medium sm:text-base">
+            {home.morningGym.schedule}
+          </p>
+
+          <div className="mt-10">
             <ExternalButtonLink
               href={WHATSAPP_COMMUNITY.url}
               ariaLabel={home.a11y.whatsappCommunity}
-              variant="outlineOnDark"
               className="w-full sm:w-auto"
             >
-              {home.morningGym.ctaCommunity}
+              {home.morningGym.ctaJoin}
             </ExternalButtonLink>
+          </div>
+
+          <div className="mt-10 border-t border-white/15 pt-8">
+            <h3 className="font-serif text-xl text-balance">{home.morningGym.participantsHeading}</h3>
+            <p className="text-content-inverse-muted mt-4 text-base leading-relaxed">
+              {home.morningGym.participantsBody}
+            </p>
           </div>
         </div>
       </div>
