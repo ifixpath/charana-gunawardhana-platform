@@ -7,6 +7,38 @@ export type ProgramFormatId = 'program' | 'workshop' | 'zoomClass' | 'longTerm' 
 
 export type ProgramStatus = 'draft' | 'published'
 
+export type CourseStatus = 'draft' | 'published'
+
+export type EnrollmentStatus = 'active' | 'revoked'
+
+export type ProfileRow = {
+  id: string
+  email: string | null
+  display_name: string | null
+  created_at: string
+  updated_at: string
+}
+
+export type CourseRow = {
+  id: string
+  program_id: string
+  slug: string
+  price_amount: number
+  currency: string
+  status: CourseStatus
+  created_at: string
+  updated_at: string
+}
+
+export type EnrollmentRow = {
+  id: string
+  user_id: string
+  course_id: string
+  status: EnrollmentStatus
+  created_at: string
+  updated_at: string
+}
+
 export type ProgramRow = {
   id: string
   slug: string
@@ -99,6 +131,64 @@ export type Database = {
           format_value?: string | null
           cta_enquire?: string | null
           cta_all_programs?: string | null
+          created_at?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: ProfileRow
+        Insert: {
+          id: string
+          email?: string | null
+          display_name?: string | null
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          display_name?: string | null
+        }
+        Relationships: []
+      }
+      courses: {
+        Row: CourseRow
+        Insert: {
+          id?: string
+          program_id: string
+          slug: string
+          price_amount: number
+          currency?: string
+          status?: CourseStatus
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          program_id?: string
+          slug?: string
+          price_amount?: number
+          currency?: string
+          status?: CourseStatus
+          created_at?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      enrollments: {
+        Row: EnrollmentRow
+        Insert: {
+          id?: string
+          user_id: string
+          course_id: string
+          status?: EnrollmentStatus
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          user_id?: string
+          course_id?: string
+          status?: EnrollmentStatus
           created_at?: string
           updated_at?: string
         }
