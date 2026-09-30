@@ -6,12 +6,13 @@ import ButtonLink from '@/components/ui/ButtonLink'
 import { labelClass } from '@/i18n/script'
 import { useLocalizedPath, useTranslations } from '@/i18n/useI18n'
 import { usePageMeta } from '@/i18n/usePageMeta'
+import { useParadigmShiftingCopy } from '@/pages/Programs/useParadigmShiftingCopy'
 import { ROUTES } from '@/routes/paths'
 
 export default function ParadigmShiftingForAbundancePage() {
   const t = useTranslations()
   const localizedPath = useLocalizedPath()
-  const copy = t.programs.paradigmShiftingForAbundance
+  const copy = useParadigmShiftingCopy(t.programs.paradigmShiftingForAbundance)
 
   usePageMeta(copy.meta)
 
