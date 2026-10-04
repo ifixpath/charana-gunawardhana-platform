@@ -25,7 +25,7 @@ export type CourseRow = {
   id: string
   program_id: string
   slug: string
-  price_amount: number
+  price_amount: number | null
   currency: string
   status: CourseStatus
   created_at: string
@@ -181,7 +181,7 @@ export type Database = {
           id?: string
           program_id: string
           slug: string
-          price_amount: number
+          price_amount?: number | null
           currency?: string
           status?: CourseStatus
           created_at?: string
@@ -191,7 +191,7 @@ export type Database = {
           id?: string
           program_id?: string
           slug?: string
-          price_amount?: number
+          price_amount?: number | null
           currency?: string
           status?: CourseStatus
           created_at?: string
