@@ -21,6 +21,11 @@ export type ProfileRow = {
   updated_at: string
 }
 
+export type AdminUserRow = {
+  user_id: string
+  created_at: string
+}
+
 export type CourseRow = {
   id: string
   program_id: string
@@ -172,6 +177,17 @@ export type Database = {
         }
         Update: {
           display_name?: string | null
+        }
+        Relationships: []
+      }
+      admin_users: {
+        Row: AdminUserRow
+        Insert: {
+          user_id: string
+          created_at?: string
+        }
+        Update: {
+          created_at?: string
         }
         Relationships: []
       }
