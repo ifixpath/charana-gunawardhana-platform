@@ -11,6 +11,8 @@ export type CourseStatus = 'draft' | 'published'
 
 export type EnrollmentStatus = 'active' | 'revoked'
 
+export type CourseLessonType = 'text' | 'video' | 'download' | 'live'
+
 export type ProfileRow = {
   id: string
   email: string | null
@@ -35,6 +37,29 @@ export type EnrollmentRow = {
   user_id: string
   course_id: string
   status: EnrollmentStatus
+  created_at: string
+  updated_at: string
+}
+
+export type CourseModuleRow = {
+  id: string
+  course_id: string
+  title: string
+  description: string | null
+  sort_order: number
+  status: CourseStatus
+  created_at: string
+  updated_at: string
+}
+
+export type CourseLessonRow = {
+  id: string
+  module_id: string
+  title: string
+  lesson_type: CourseLessonType
+  sort_order: number
+  status: CourseStatus
+  duration_seconds: number | null
   created_at: string
   updated_at: string
 }
@@ -189,6 +214,56 @@ export type Database = {
           user_id?: string
           course_id?: string
           status?: EnrollmentStatus
+          created_at?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      course_modules: {
+        Row: CourseModuleRow
+        Insert: {
+          id?: string
+          course_id: string
+          title: string
+          description?: string | null
+          sort_order: number
+          status?: CourseStatus
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          course_id?: string
+          title?: string
+          description?: string | null
+          sort_order?: number
+          status?: CourseStatus
+          created_at?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      course_lessons: {
+        Row: CourseLessonRow
+        Insert: {
+          id?: string
+          module_id: string
+          title: string
+          lesson_type: CourseLessonType
+          sort_order: number
+          status?: CourseStatus
+          duration_seconds?: number | null
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          module_id?: string
+          title?: string
+          lesson_type?: CourseLessonType
+          sort_order?: number
+          status?: CourseStatus
+          duration_seconds?: number | null
           created_at?: string
           updated_at?: string
         }
