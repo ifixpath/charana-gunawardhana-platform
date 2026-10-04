@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
-import Container from '@/components/layout/Container'
 import { usePageMeta } from '@/i18n/usePageMeta'
+import StudentFrame from '@/pages/Student/StudentFrame'
 import { ROUTES } from '@/routes/paths'
 
 export default function CheckoutReturnPage() {
@@ -12,7 +12,7 @@ export default function CheckoutReturnPage() {
   })
 
   return (
-    <Container className="py-16">
+    <StudentFrame>
       <h1 className="text-primary font-serif text-3xl tracking-tight">Payment confirmation</h1>
       <p className="text-content-muted mt-4 max-w-xl text-base leading-relaxed">
         Checkout return placeholder.
@@ -23,6 +23,6 @@ export default function CheckoutReturnPage() {
       >
         Home
       </Link>
-    </Container>
+    </StudentFrame>
   )
 }

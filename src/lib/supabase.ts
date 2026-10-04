@@ -244,8 +244,8 @@ function assertPublishableKey(key: string) {
 }
 
 /**
- * Browser client for published CMS reads.
- * Not used by the public pages yet. No session is stored.
+ * Browser client. Published CMS reads use the publishable key.
+ * A student session, when one exists, is stored in the browser only.
  */
 export function getSupabaseClient(): SupabaseClient<Database> {
   if (browserClient) {
@@ -263,9 +263,9 @@ export function getSupabaseClient(): SupabaseClient<Database> {
 
   browserClient = createClient<Database>(url, key, {
     auth: {
-      persistSession: false,
-      autoRefreshToken: false,
-      detectSessionInUrl: false,
+      persistSession: true,
+      autoRefreshToken: true,
+      detectSessionInUrl: true,
     },
   })
 
