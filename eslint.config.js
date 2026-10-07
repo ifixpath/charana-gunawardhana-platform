@@ -8,6 +8,7 @@ export default tseslint.config(
   { ignores: ['dist', 'scripts/qa-output'] },
   {
     files: ['**/*.{ts,tsx}'],
+    ignores: ['api/**'],
     extends: [
       js.configs.recommended,
       ...tseslint.configs.recommended,
@@ -17,6 +18,14 @@ export default tseslint.config(
     languageOptions: {
       ecmaVersion: 2022,
       globals: globals.browser,
+    },
+  },
+  {
+    files: ['api/**/*.ts'],
+    extends: [js.configs.recommended, ...tseslint.configs.recommended],
+    languageOptions: {
+      ecmaVersion: 2022,
+      globals: globals.node,
     },
   },
   {
