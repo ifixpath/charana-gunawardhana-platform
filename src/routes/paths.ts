@@ -32,6 +32,23 @@ export const STUDENT_ROUTES = {
 export type StudentRoutePath = (typeof STUDENT_ROUTES)[keyof typeof STUDENT_ROUTES]
 
 /**
+ * Admin paths. Mounted once, outside the locale-aware public tree, so
+ * `/admin` is not also served as `/si/admin`. Do not pass these through
+ * `withLocale`.
+ */
+export const ADMIN_ROUTES = {
+  home: '/admin',
+  programs: '/admin/programs',
+  programNew: '/admin/programs/new',
+} as const
+
+export type AdminRoutePath = (typeof ADMIN_ROUTES)[keyof typeof ADMIN_ROUTES]
+
+export function adminProgramPath(programId: string) {
+  return `/admin/programs/${encodeURIComponent(programId)}`
+}
+
+/**
  * Routes whose first section paints its own dark background behind the header,
  * which lets the header sit transparently on top of it until the page scrolls.
  */

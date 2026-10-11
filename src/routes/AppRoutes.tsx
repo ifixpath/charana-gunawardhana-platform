@@ -18,6 +18,7 @@ import UnstoppablePage from '@/pages/Programs/UnstoppablePage'
 import ExperienceYour100Page from '@/pages/Programs/ExperienceYour100Page'
 import RealityRoomPage from '@/pages/Programs/RealityRoomPage'
 import ParadigmShiftingForAbundancePage from '@/pages/Programs/ParadigmShiftingForAbundancePage'
+import { adminRoutes } from '@/routes/adminRoutes'
 import { ROUTES } from '@/routes/paths'
 import { studentRoutes } from '@/routes/studentRoutes'
 
@@ -74,6 +75,7 @@ const pageRoutes = () => [
 export default function AppRoutes() {
   return (
     <Routes>
+      {adminRoutes}
       {studentRoutes}
       {LOCALES.map((locale) => (
         <Route
