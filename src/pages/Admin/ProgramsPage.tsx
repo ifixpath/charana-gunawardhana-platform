@@ -48,9 +48,8 @@ export default function ProgramsPage() {
     <div className="mx-auto max-w-5xl">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <p className="text-content max-w-2xl text-sm leading-relaxed">
-          Published programs this account can read. Saving and offer editing stay off. Draft rows
-          remain hidden by the current database policy, so the Draft filter only applies to rows
-          returned here.
+          Published and draft programs this account can read. Saving and offer editing stay off. The
+          Draft filter shows no results when no draft records exist.
         </p>
         <Link to={ADMIN_ROUTES.programNew} className={adminSecondaryButtonClass}>
           Open program form
@@ -140,7 +139,9 @@ export default function ProgramsPage() {
 
       {load.status === 'ready' && programs !== null && programs.length > 0 && visible.length === 0 ? (
         <p className="text-content-muted mt-6 text-sm" role="status">
-          No programs match this search or filter.
+          {status === 'draft' && !programs.some((program) => program.status === 'draft')
+            ? 'No draft programs are in this list. The Draft filter shows no results when no draft records exist.'
+            : 'No programs match this search or filter.'}
         </p>
       ) : null}
 
