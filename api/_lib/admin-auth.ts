@@ -1,6 +1,6 @@
 import { createClient } from '@supabase/supabase-js'
 
-import { getSupabaseServerEnv } from './env'
+import { getSupabaseServerEnv } from './env.js'
 
 export type AdminMeBody =
   | {
