@@ -12,16 +12,43 @@ export type MindMagicCopy = {
   meta: { title: string; description: string }
   hero: {
     eyebrow: string
-    descriptor: string
-    supporting: string
-    /** The two confirmed formats, shown as a metadata line. */
-    badges: readonly [string, string]
+    headline: string
+    question: string
+    body: string
+    tagline: string
+    explore: string
   }
-  overview: { heading: string; body: string }
-  formats: {
+  happens: {
     heading: string
-    recorded: { title: string; points: readonly [string, string] }
-    live: { title: string; points: readonly [string] }
+    subheading: string
+    before: string
+    situations: readonly [string, string, string, string, string]
+    knowing: string
+    change: string
+    system: string
+    closing: string
+  }
+  explore: {
+    heading: string
+    subheading: string
+    paragraphs: readonly [string, string, string]
+    areasLabel: string
+    areas: readonly [string, string, string, string, string, string, string]
+  }
+  audience: {
+    heading: string
+    lead: string
+    intro: string
+    points: readonly [string, string, string, string, string, string, string, string]
+    close: string
+    willingness: string
+  }
+  experience: {
+    heading: string
+    subheading: string
+    begins: string
+    preparation: string
+    instructions: string
   }
   homework: {
     heading: string
@@ -30,7 +57,7 @@ export type MindMagicCopy = {
     items: readonly [
       { title: string; body: string },
       { title: string; body: string },
-      { title: string; body: string },
+      { title: string; body: string; detail: string },
       { title: string; body: string },
     ]
     secretVideo: { label: string; aria: string }
@@ -39,8 +66,70 @@ export type MindMagicCopy = {
     submission: { heading: string; body: string; cta: string; aria: string }
     quote: { text: string; attribution: string }
   }
-  journey: { heading: string; steps: readonly [string, string, string] }
-  next: { heading: string; body: string }
+  recorded: {
+    heading: string
+    subheading: string
+    body: string
+    price: string
+    access: string
+    zoom: string
+    value: string
+    accepted: string
+    join: string
+    missed: string
+    explore: string
+  }
+  journey: {
+    heading: string
+    notice: string
+    paymentTitle: string
+    paymentOffer: string
+    bank: readonly [string, string, string, string]
+    paymentReference: string
+    homeworkTitle: string
+    homeworkIntro: string
+    achievementsTitle: string
+    achievements: string
+    failuresTitle: string
+    failures: string
+    possibleTitle: string
+    possible: string
+    possibleQuestion: string
+    secretTitle: string
+    secret: string
+    watchPreparation: string
+    afterVideo: string
+    submitTitle: string
+    submitBody: string
+    submitName: string
+    submitWhatsApp: string
+    submitCta: string
+    approvalTitle: string
+    approval: string
+    accessTitle: string
+    access: string
+    sessionTitle: string
+    sessionJoin: string
+    sessionOpportunity: string
+    sessionPoints: readonly [string, string, string]
+    sessionValue: string
+    sessionIncluded: string
+    sessionImportant: string
+    refund: string
+  }
+  hanthana: {
+    heading: string
+    audience: string
+    when: string
+    notBasic: string
+    different: string
+    stay: string
+    shared: string
+    preparation: string
+    cta: string
+    contactNote: string
+  }
+  next: { heading: string; body: string; closing: string }
   cta: { enquire: string; allPrograms: string }
   resources: {
     theSecretPart1: {

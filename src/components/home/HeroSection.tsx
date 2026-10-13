@@ -48,27 +48,27 @@ export default function HeroSection() {
         {/* Held to a narrow measure on phones so the block reads as a
             lower-left column and never runs under Charana. */}
         <div className="max-w-[20rem] sm:max-w-xl lg:max-w-2xl">
-          <p
-            className={`flex items-center gap-4 font-medium ${labelClass(home.hero.eyebrow, 'text-[0.7rem] tracking-[0.3em] uppercase')}`}
-          >
-            <span aria-hidden="true" className="bg-accent h-px w-10 shrink-0" />
-            <span className="text-accent-light">{home.hero.eyebrow}</span>
-          </p>
-
-          {/* Sized so each sentence stays on one line inside the narrow mobile
-              column: the longer line measures 310px at 30px, and 270px at
-              26.4px for the 280px of room a 320px screen leaves. A third line
-              would push the block up into his face. */}
           <h1
             id="hero-heading"
-            className="font-serif mt-4 text-[1.65rem] leading-[1.14] tracking-tight min-[360px]:text-3xl sm:mt-5 sm:text-5xl lg:mt-7 lg:text-[3rem] xl:text-[3.5rem]"
+            className={`font-serif mt-4 flex w-full min-w-0 items-center gap-4 leading-[0.96] sm:mt-5 lg:mt-7 ${labelClass(
+              home.hero.eyebrow,
+              'text-[1.85rem] tracking-[0.04em] uppercase min-[360px]:text-[2rem] sm:text-5xl lg:text-6xl xl:text-[4rem]',
+              'text-[1.6rem] min-[360px]:text-[1.75rem] sm:text-4xl lg:text-5xl xl:text-6xl',
+            )}`}
           >
+            <span aria-hidden="true" className="bg-accent h-px w-8 shrink-0 sm:w-10" />
+            <span className="text-accent-light min-w-0 text-balance">{home.hero.eyebrow}</span>
+          </h1>
+
+          {/* Kept smaller than the name, and small enough that each sentence
+              stays on one line in the narrow mobile column. */}
+          <p className="font-serif mt-3 text-[0.95rem] leading-snug tracking-tight min-[360px]:text-base sm:mt-4 sm:text-xl lg:mt-5 lg:text-2xl xl:text-[1.75rem]">
             {home.hero.headline.map((line) => (
               <span key={line} className="block text-balance">
                 {line}
               </span>
             ))}
-          </h1>
+          </p>
 
           {/* Narrower measure between `lg` and `xl`: at those widths Charana's
               white shirt sits close to the text column, and the sentence would

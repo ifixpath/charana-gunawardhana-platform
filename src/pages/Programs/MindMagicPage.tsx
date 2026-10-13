@@ -55,54 +55,116 @@ export default function MindMagicPage() {
             Mind Magic
           </h1>
 
-          <p className="text-accent-light mt-5 text-base sm:text-lg">{copy.hero.descriptor}</p>
-
-          <p className="text-content-inverse-muted mt-4 max-w-xl text-base leading-relaxed">
-            {copy.hero.supporting}
+          <p className="mt-5 max-w-xl font-serif text-2xl leading-snug text-balance text-accent-light sm:text-3xl">
+            {copy.hero.headline}
           </p>
 
-          <ul className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3">
-            {copy.hero.badges.map((badge) => (
-              <li
-                key={badge}
-                className={`text-content-inverse-muted flex items-center gap-3 ${labelClass(badge)}`}
-              >
-                <span aria-hidden="true" className="bg-accent h-1 w-1 shrink-0 rounded-full" />
-                {badge}
-              </li>
-            ))}
-          </ul>
+          <p className="text-content-inverse-muted mt-5 max-w-xl text-base leading-relaxed sm:text-lg">
+            {copy.hero.question}
+          </p>
+
+          <p className="text-content-inverse-muted mt-4 max-w-xl text-base leading-relaxed">
+            {copy.hero.body}
+          </p>
+
+          <p className="text-content-inverse mt-6 max-w-xl font-serif text-xl leading-snug text-balance sm:text-2xl">
+            {copy.hero.tagline}
+          </p>
+
+          <div className="mt-10">
+            <ButtonLink
+              to={`${localizedPath(ROUTES.mindMagic)}#mind-magic-experience`}
+              className="w-full whitespace-normal text-balance sm:w-auto"
+            >
+              {copy.hero.explore}
+            </ButtonLink>
+          </div>
         </Container>
       </section>
 
-      <Section labelledBy="mind-magic-overview">
+      <Section labelledBy="mind-magic-happens">
         <SectionHeading
-          id="mind-magic-overview"
-          title={copy.overview.heading}
-          lead={copy.overview.body}
+          id="mind-magic-happens"
+          title={copy.happens.heading}
+          lead={copy.happens.subheading}
         />
+
+        <div className="mt-10 max-w-2xl lg:mt-14">
+          <p className="text-content-muted text-base leading-relaxed">{copy.happens.before}</p>
+          <ul className="mt-6 flex flex-col gap-3">
+            {copy.happens.situations.map((situation) => (
+              <li key={situation} className="text-primary flex gap-4 font-serif text-lg leading-snug sm:text-xl">
+                <span aria-hidden="true" className="bg-accent-dark mt-3 h-px w-4 shrink-0" />
+                {situation}
+              </li>
+            ))}
+          </ul>
+          <div className="mt-10 flex flex-col gap-5">
+            <p className="text-content-muted text-base leading-relaxed">{copy.happens.knowing}</p>
+            <p className="text-content-muted text-base leading-relaxed">{copy.happens.change}</p>
+            <p className="text-content-muted text-base leading-relaxed">{copy.happens.system}</p>
+            <p className="text-primary font-serif text-xl leading-snug text-balance sm:text-2xl">
+              {copy.happens.closing}
+            </p>
+          </div>
+        </div>
       </Section>
 
-      <Section tone="muted" labelledBy="mind-magic-formats">
-        <SectionHeading id="mind-magic-formats" title={copy.formats.heading} />
+      <Section tone="muted" labelledBy="mind-magic-explore">
+        <SectionHeading id="mind-magic-explore" title={copy.explore.heading} />
+        <p className="text-primary font-serif mt-6 max-w-2xl text-2xl leading-snug text-balance sm:text-3xl">
+          {copy.explore.subheading}
+        </p>
 
-        {/* Two columns divided by hairlines rather than cards, matching the
-            editorial listing on the homepage. */}
-        <div className="mt-12 grid gap-10 sm:grid-cols-2 sm:gap-12 lg:mt-16">
-          {[copy.formats.recorded, copy.formats.live].map((format) => (
-            <div key={format.title} className="border-line border-t pt-6">
-              <h3 className="text-primary font-serif text-xl sm:text-2xl">{format.title}</h3>
-
-              <ul className="mt-5 flex flex-col gap-3">
-                {(format.points as readonly string[]).map((point) => (
-                  <li key={point} className="text-content-muted flex gap-4 text-sm leading-relaxed">
-                    <span aria-hidden="true" className="bg-accent-dark mt-2.5 h-px w-4 shrink-0" />
-                    {point}
-                  </li>
-                ))}
-              </ul>
-            </div>
+        <div className="mt-10 flex max-w-2xl flex-col gap-5 lg:mt-14">
+          {copy.explore.paragraphs.map((paragraph) => (
+            <p key={paragraph} className="text-content-muted text-base leading-relaxed">
+              {paragraph}
+            </p>
           ))}
+        </div>
+
+        <h3 className="text-primary font-serif mt-14 text-2xl sm:text-3xl">{copy.explore.areasLabel}</h3>
+        <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:mt-10">
+          {copy.explore.areas.map((area) => (
+            <li key={area} className="border-line text-primary flex gap-4 border-t pt-4 font-serif text-lg leading-snug">
+              <span aria-hidden="true" className="bg-accent-dark mt-3 h-px w-4 shrink-0" />
+              {area}
+            </li>
+          ))}
+        </ul>
+      </Section>
+
+      <Section labelledBy="mind-magic-audience">
+        <SectionHeading id="mind-magic-audience" title={copy.audience.heading} lead={copy.audience.lead} />
+
+        <div className="mt-10 max-w-2xl lg:mt-14">
+          <p className="text-content-muted text-base leading-relaxed">{copy.audience.intro}</p>
+          <ul className="mt-6 flex flex-col gap-4">
+            {copy.audience.points.map((point) => (
+              <li key={point} className="text-content-muted flex gap-4 text-base leading-relaxed">
+                <span aria-hidden="true" className="bg-accent-dark mt-2.5 h-px w-4 shrink-0" />
+                {point}
+              </li>
+            ))}
+          </ul>
+          <p className="text-primary mt-10 font-serif text-xl leading-snug text-balance sm:text-2xl">
+            {copy.audience.close}
+          </p>
+          <p className="text-content-muted mt-4 text-base leading-relaxed">{copy.audience.willingness}</p>
+        </div>
+      </Section>
+
+      <Section id="mind-magic-experience" tone="muted" labelledBy="mind-magic-experience-heading">
+        <SectionHeading
+          id="mind-magic-experience-heading"
+          title={copy.experience.heading}
+          lead={copy.experience.subheading}
+        />
+        <div className="mt-8 flex max-w-2xl flex-col gap-5">
+          <p className="text-content-muted text-base leading-relaxed">{copy.experience.begins}</p>
+          <p className="text-content-muted text-base leading-relaxed">{copy.experience.preparation}</p>
+          <p className="text-content-muted text-base leading-relaxed">{copy.experience.instructions}</p>
         </div>
       </Section>
 
@@ -138,6 +200,11 @@ export default function MindMagicPage() {
                   <p className="text-content-muted mt-3 max-w-prose text-sm leading-relaxed sm:text-base">
                     {item.body}
                   </p>
+                  {'detail' in item ? (
+                    <p className="text-content-muted mt-3 max-w-prose text-sm leading-relaxed sm:text-base">
+                      {item.detail}
+                    </p>
+                  ) : null}
                   {index === 3 ? (
                     <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
                       <ExternalButtonLink
@@ -167,9 +234,6 @@ export default function MindMagicPage() {
           <h3 className="text-primary font-serif text-2xl sm:text-3xl">
             {copy.homework.preparation.heading}
           </h3>
-          <p className="text-content-muted mt-4 max-w-prose text-base leading-relaxed">
-            {copy.homework.preparation.body}
-          </p>
           <div className="mt-8">
             <ExternalButtonLink
               href={MIND_MAGIC_RESOURCES.videos.preparation}
@@ -180,6 +244,9 @@ export default function MindMagicPage() {
               {copy.homework.preparation.video.label}
             </ExternalButtonLink>
           </div>
+          <p className="text-content-muted mt-4 max-w-prose text-base leading-relaxed">
+            {copy.homework.preparation.body}
+          </p>
         </div>
 
         <div className="border-line mt-16 border-t pt-12 lg:mt-20 lg:pt-16">
@@ -189,8 +256,9 @@ export default function MindMagicPage() {
           <p className="text-content-muted mt-4 max-w-prose text-base leading-relaxed">
             {copy.homework.submission.body}
           </p>
-          <p className="text-primary mt-6 text-lg tracking-wide sm:text-xl">
-            {MIND_MAGIC_RESOURCES.homeworkWhatsApp.phoneDisplay}
+          <p className="text-primary mt-4 text-lg">{copy.journey.submitName}</p>
+          <p className="text-primary mt-1 text-lg tracking-wide">
+            {copy.journey.submitWhatsApp}
           </p>
           <div className="mt-8">
             <ExternalButtonLink
@@ -213,19 +281,174 @@ export default function MindMagicPage() {
         </blockquote>
       </Section>
 
-      <Section labelledBy="mind-magic-journey">
-        <SectionHeading id="mind-magic-journey" title={copy.journey.heading} />
+      <Section id="mind-magic-recorded" tone="dark" labelledBy="mind-magic-recorded-heading">
+        <SectionHeading
+          id="mind-magic-recorded-heading"
+          title={copy.recorded.heading}
+          lead={copy.recorded.subheading}
+          tone="dark"
+        />
+        <div className="mt-10 max-w-2xl lg:mt-14">
+          <p className="text-content-inverse-muted text-base leading-relaxed sm:text-lg">{copy.recorded.body}</p>
+          <p className="font-serif mt-8 text-4xl tracking-tight text-accent-light sm:text-5xl">{copy.recorded.price}</p>
+          <p className="text-content-inverse mt-4 font-serif text-xl leading-snug sm:text-2xl">{copy.recorded.access}</p>
+          <p className="text-content-inverse-muted mt-6 text-base leading-relaxed">{copy.recorded.zoom}</p>
+          <p className="text-accent-light mt-4 text-base leading-relaxed">{copy.recorded.value}</p>
+          <div className="border-white/15 mt-8 flex flex-col gap-4 border-t pt-8">
+            <p className="text-content-inverse-muted text-base leading-relaxed">{copy.recorded.accepted}</p>
+            <p className="text-content-inverse-muted text-base leading-relaxed">{copy.recorded.join}</p>
+            <p className="text-content-inverse text-base leading-relaxed">{copy.recorded.missed}</p>
+          </div>
+          <div className="mt-10">
+            <ButtonLink
+              to={`${localizedPath(ROUTES.mindMagic)}#mind-magic-recorded-journey`}
+              className="w-full whitespace-normal text-balance sm:w-auto"
+            >
+              {copy.recorded.explore}
+            </ButtonLink>
+          </div>
+        </div>
+      </Section>
 
-        <ol className="mt-12 grid gap-8 sm:grid-cols-3 sm:gap-10 lg:mt-16">
-          {copy.journey.steps.map((step, index) => (
-            <li key={step} className="border-line border-t pt-6">
-              <p aria-hidden="true" className="text-accent-dark font-serif text-sm">
-                {String(index + 1).padStart(2, '0')}
-              </p>
-              <p className="text-primary font-serif mt-3 text-lg leading-snug">{step}</p>
-            </li>
-          ))}
+      <Section id="mind-magic-recorded-journey" labelledBy="mind-magic-journey-heading">
+        <SectionHeading id="mind-magic-journey-heading" title={copy.journey.heading} />
+        <p className="border-line text-content-muted mt-8 max-w-2xl border-t pt-6 text-sm leading-relaxed sm:text-base">
+          {copy.journey.notice}
+        </p>
+
+        <ol className="mt-12 flex max-w-2xl flex-col gap-12 lg:mt-16">
+          <li>
+            <p aria-hidden="true" className="text-accent-dark font-serif text-sm">01</p>
+            <h3 className="text-primary font-serif mt-3 text-2xl sm:text-3xl">{copy.journey.paymentTitle}</h3>
+            <p className="text-primary mt-4 text-lg">{copy.journey.paymentOffer}</p>
+            <ul className="mt-4 flex flex-col gap-2">
+              {copy.journey.bank.map((line) => (
+                <li key={line} className="text-content font-medium leading-relaxed">
+                  {line}
+                </li>
+              ))}
+            </ul>
+            <p className="text-content-muted mt-4 text-base leading-relaxed">{copy.journey.paymentReference}</p>
+          </li>
+
+          <li>
+            <p aria-hidden="true" className="text-accent-dark font-serif text-sm">02</p>
+            <h3 className="text-primary font-serif mt-3 text-2xl sm:text-3xl">{copy.journey.homeworkTitle}</h3>
+            <p className="text-content-muted mt-4 text-base leading-relaxed">{copy.journey.homeworkIntro}</p>
+            <div className="mt-6 flex flex-col gap-6">
+              <div>
+                <h4 className="text-primary font-serif text-xl">{copy.journey.achievementsTitle}</h4>
+                <p className="text-content-muted mt-2 text-base leading-relaxed">{copy.journey.achievements}</p>
+              </div>
+              <div>
+                <h4 className="text-primary font-serif text-xl">{copy.journey.failuresTitle}</h4>
+                <p className="text-content-muted mt-2 text-base leading-relaxed">{copy.journey.failures}</p>
+              </div>
+              <div>
+                <h4 className="text-primary font-serif text-xl">{copy.journey.possibleTitle}</h4>
+                <p className="text-content-muted mt-2 text-base leading-relaxed">{copy.journey.possible}</p>
+                <p className="text-content-muted mt-3 text-base leading-relaxed">{copy.journey.possibleQuestion}</p>
+              </div>
+              <div>
+                <h4 className="text-primary font-serif text-xl">{copy.journey.secretTitle}</h4>
+                <p className="text-content-muted mt-2 text-base leading-relaxed">{copy.journey.secret}</p>
+                <div className="mt-6">
+                  <ExternalButtonLink
+                    href={MIND_MAGIC_RESOURCES.videos.theSecret}
+                    ariaLabel={copy.homework.secretVideo.aria}
+                    variant="outlineOnLight"
+                    className="w-full whitespace-normal text-balance sm:w-auto"
+                  >
+                    {copy.homework.secretVideo.label}
+                  </ExternalButtonLink>
+                </div>
+              </div>
+            </div>
+            <div className="mt-8">
+              <ExternalButtonLink
+                href={MIND_MAGIC_RESOURCES.videos.preparation}
+                ariaLabel={copy.homework.preparation.video.aria}
+                variant="outlineOnLight"
+                className="w-full whitespace-normal text-balance sm:w-auto"
+              >
+                {copy.journey.watchPreparation}
+              </ExternalButtonLink>
+            </div>
+            <p className="text-content-muted mt-4 text-base leading-relaxed">{copy.journey.afterVideo}</p>
+          </li>
+
+          <li>
+            <p aria-hidden="true" className="text-accent-dark font-serif text-sm">03</p>
+            <h3 className="text-primary font-serif mt-3 text-2xl sm:text-3xl">{copy.journey.submitTitle}</h3>
+            <p className="text-content-muted mt-4 text-base leading-relaxed">{copy.journey.submitBody}</p>
+            <p className="text-primary mt-4 text-lg">{copy.journey.submitName}</p>
+            <p className="text-primary mt-1 text-lg tracking-wide">{copy.journey.submitWhatsApp}</p>
+            <div className="mt-6">
+              <ExternalButtonLink
+                href={MIND_MAGIC_RESOURCES.homeworkWhatsApp.href}
+                ariaLabel={copy.homework.submission.aria}
+                className="w-full whitespace-normal text-balance sm:w-auto"
+              >
+                {copy.journey.submitCta}
+              </ExternalButtonLink>
+            </div>
+          </li>
+
+          <li>
+            <p aria-hidden="true" className="text-accent-dark font-serif text-sm">04</p>
+            <h3 className="text-primary font-serif mt-3 text-2xl sm:text-3xl">{copy.journey.approvalTitle}</h3>
+            <p className="text-content-muted mt-4 text-base leading-relaxed">{copy.journey.approval}</p>
+          </li>
+
+          <li>
+            <p aria-hidden="true" className="text-accent-dark font-serif text-sm">05</p>
+            <h3 className="text-primary font-serif mt-3 text-2xl sm:text-3xl">{copy.journey.accessTitle}</h3>
+            <p className="text-content-muted mt-4 text-base leading-relaxed">{copy.journey.access}</p>
+          </li>
+
+          <li>
+            <p aria-hidden="true" className="text-accent-dark font-serif text-sm">06</p>
+            <h3 className="text-primary font-serif mt-3 text-2xl sm:text-3xl">{copy.journey.sessionTitle}</h3>
+            <p className="text-content-muted mt-4 text-base leading-relaxed">{copy.journey.sessionJoin}</p>
+            <p className="text-content-muted mt-4 text-base leading-relaxed">{copy.journey.sessionOpportunity}</p>
+            <ul className="mt-4 flex flex-col gap-3">
+              {copy.journey.sessionPoints.map((point) => (
+                <li key={point} className="text-content-muted flex gap-4 text-base leading-relaxed">
+                  <span aria-hidden="true" className="bg-accent-dark mt-2.5 h-px w-4 shrink-0" />
+                  {point}
+                </li>
+              ))}
+            </ul>
+            <p className="text-primary mt-6 text-base leading-relaxed">{copy.journey.sessionValue}</p>
+            <p className="text-primary mt-2 text-base leading-relaxed">{copy.journey.sessionIncluded}</p>
+            <p className="text-content mt-4 text-base leading-relaxed">{copy.journey.sessionImportant}</p>
+          </li>
         </ol>
+
+        <p className="text-primary font-serif mt-12 max-w-2xl text-xl leading-snug sm:text-2xl">{copy.journey.refund}</p>
+      </Section>
+
+      <Section tone="muted" labelledBy="mind-magic-hanthana">
+        <SectionHeading id="mind-magic-hanthana" title={copy.hanthana.heading} lead={copy.hanthana.audience} />
+        <div className="mt-10 max-w-2xl lg:mt-14">
+          <p className="text-primary font-serif text-2xl leading-snug sm:text-3xl">{copy.hanthana.when}</p>
+          <div className="mt-8 flex flex-col gap-5">
+            <p className="text-content-muted text-base leading-relaxed">{copy.hanthana.notBasic}</p>
+            <p className="text-content-muted text-base leading-relaxed">{copy.hanthana.different}</p>
+            <p className="text-content-muted text-base leading-relaxed">{copy.hanthana.stay}</p>
+            <p className="text-primary font-serif text-xl leading-snug text-balance sm:text-2xl">{copy.hanthana.shared}</p>
+            <p className="text-content-muted text-base leading-relaxed">{copy.hanthana.preparation}</p>
+          </div>
+          <p className="text-content-muted mt-8 text-sm leading-relaxed sm:text-base">{copy.hanthana.contactNote}</p>
+          <div className="mt-8">
+            <ButtonLink
+              to={localizedPath(ROUTES.contact)}
+              className="w-full whitespace-normal text-balance sm:w-auto"
+            >
+              {copy.hanthana.cta}
+            </ButtonLink>
+          </div>
+        </div>
       </Section>
 
       <Section tone="dark" labelledBy="mind-magic-next" className="lg:py-32">
@@ -240,6 +463,8 @@ export default function MindMagicPage() {
           <p className="text-content-inverse-muted mt-6 text-base leading-relaxed sm:text-lg">
             {copy.next.body}
           </p>
+
+          <p className="mt-6 font-serif text-xl leading-snug text-balance sm:text-2xl">{copy.next.closing}</p>
 
           <div className="mt-11 flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-4">
             <ButtonLink to={localizedPath(ROUTES.contact)} className="w-full sm:w-auto">

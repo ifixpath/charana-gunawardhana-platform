@@ -143,12 +143,12 @@ export const en: Translation = {
       },
       items: {
         'mind-magic': {
-          description: 'Discover the power within yourself.',
+          description: 'Take control of your thinking. Take control of your life.',
           homepageLabel: 'Mind Magic',
           homepageDescription:
-            'A transformational experience that helps you discover the power within yourself, understand your mind and create a new perspective on your life and goals.',
-          availability: 'Available in recorded and live workshop formats.',
-          detail: 'Recorded Program · Approx. 8.5 Hours',
+            'Experience the core Mind Magic training through the recorded program, followed by a live discussion and visualization session.',
+          availability: 'Recorded program · One-week access',
+          detail: 'Rs. 25,000/-',
           cta: 'Explore Mind Magic',
         },
         'optimistic-magnet': {
@@ -246,28 +246,80 @@ export const en: Translation = {
       meta: {
         title: 'Mind Magic — Charana Gunawardhana',
         description:
-          'A transformational experience that helps you discover the power within yourself. Available as a recorded program of approximately 8.5 hours and as a live workshop.',
+          'Take control of your thinking. Take control of your life. Mind Magic is a transformational experience built around the mind, beliefs, mindset and the way we approach our goals, challenges and everyday life.',
       },
       hero: {
         eyebrow: 'Program',
-        descriptor: 'Discover the power within yourself.',
-        supporting: 'Available in recorded and live workshop formats.',
-        badges: ['Recorded Program · Approx. 8.5 Hours', 'Live Workshop'],
+        headline: 'Take control of your thinking. Take control of your life.',
+        question:
+          'What if the way you respond to your life could change simply because you began to look at the same situations differently?',
+        body: 'Mind Magic is a transformational experience built around the mind, beliefs, mindset and the way we approach our goals, challenges and everyday life.',
+        tagline: 'A system to install. A different way to experience life.',
+        explore: 'Explore Mind Magic',
       },
-      overview: {
-        heading: 'About Mind Magic',
-        body: 'A transformational experience that helps you discover the power within yourself, understand your mind, and create a new perspective on your life and goals — a potential turning point in your journey.',
+      happens: {
+        heading: 'What happens when you experience Mind Magic?',
+        subheading: "The situation may be the same. You don't have to be.",
+        before: 'You may have faced the same type of problem before.',
+        situations: [
+          'A financial difficulty.',
+          'A business challenge.',
+          'A personal issue.',
+          'A disappointment.',
+          "A decision you don't know how to make.",
+        ],
+        knowing:
+          'But after experiencing Mind Magic, the intention is not simply that you know more.',
+        change:
+          'It is that something changes in the way you think about the situation, understand it and respond to it.',
+        system:
+          'The mindset developed through the experience becomes part of your internal system - something you can draw on when life presents familiar challenges again.',
+        closing: "That's what we mean by installing the Mind Magic system.",
       },
-      formats: {
-        heading: 'Two Formats',
-        recorded: {
-          title: 'Recorded Program',
-          points: ['Approx. 8.5 hours', 'Pre-course homework required'],
-        },
-        live: {
-          title: 'Live Workshop',
-          points: ['Delivered as a live workshop experience'],
-        },
+      explore: {
+        heading: 'What does Mind Magic explore?',
+        subheading: 'Understanding the power within you',
+        paragraphs: [
+          'Mind Magic explores the potential within each of us, how we become disconnected from it, and how we can learn to reconnect with our inner resources.',
+          'Through a deeper understanding of the mind, beliefs and personal patterns, the experience helps you explore how your thinking influences the way you approach challenges, make decisions and pursue your goals.',
+          'It introduces a different way of looking at yourself and your life — helping you recognize your own capacity to find solutions, respond to challenges and move forward with greater clarity and freedom.',
+        ],
+        areasLabel: 'Key Areas of Exploration',
+        areas: [
+          'Mindset & Beliefs',
+          'Conscious & Subconscious Mind',
+          'Law of Attraction',
+          'Goals & Dreams',
+          'Trust',
+          'Personal Responsibility',
+          'Practical Application',
+        ],
+      },
+      audience: {
+        heading: 'Who is Mind Magic for?',
+        lead: "Perhaps you're looking for an answer.",
+        intro: 'Mind Magic may be relevant to you if you:',
+        points: [
+          "feel that you are capable of more but aren't moving forward;",
+          'have tried hard, tried again and tried everything you know - but still feel stuck;',
+          'keep experiencing patterns you want to change;',
+          'know what you should do but find yourself responding in the same way;',
+          'are facing financial, business or personal challenges;',
+          'have goals but struggle to move towards them;',
+          'want to understand your mind, beliefs and mindset more deeply;',
+          'or feel that there must be another way to approach your life.',
+        ],
+        close: "You don't need to arrive with all the answers.",
+        willingness: 'You only need to be willing to look at your life differently.',
+      },
+      experience: {
+        heading: 'The Mind Magic experience',
+        subheading: 'It starts before the training.',
+        begins: 'Mind Magic begins before the training itself.',
+        preparation:
+          'Participants are required to complete preparation work before beginning the experience. The preparation is designed to help you reflect on your achievements, challenges and what you would choose to create if limitations were removed.',
+        instructions:
+          'Detailed preparation instructions and the required homework are provided as part of the registration process.',
       },
       homework: {
         heading: 'Mind Magic — Homework and Preparation',
@@ -278,20 +330,21 @@ export const en: Translation = {
         },
         items: [
           {
-            title: 'Your 10 achievements',
-            body: 'Write 10 achievements from your life that feel important to you.',
+            title: '10 Achievements',
+            body: '10 achievements that you feel you have accomplished.',
           },
           {
-            title: '10 opportunities you missed',
-            body: 'Write 10 things or experiences you wanted, but could not reach.',
+            title: '10 Failures',
+            body: '10 things you wanted to achieve but have not yet achieved.',
           },
           {
-            title: 'Your 20 hopes',
-            body: 'Write 20 things you would like to obtain or experience in life if you had as much money as you needed.',
+            title: '20 Things You Would Do If Everything Were Possible',
+            body: 'Imagine that you are given whatever you need to accomplish what you want - including any amount of money, resources, knowledge, authority, permissions, opportunities and support.',
+            detail: 'If everything required were made available to you, what are the 20 things you would do?',
           },
           {
-            title: 'Study of The Secret',
-            body: 'Watch The Secret video in full and write its Sinhala subtitles in a separate notebook.',
+            title: 'The Secret Exercise',
+            body: 'Watch the complete short The Secret video provided for the program and handwrite the Sinhala subtitles/content in a separate notebook.',
           },
         ],
         secretVideo: {
@@ -304,7 +357,7 @@ export const en: Translation = {
         },
         preparation: {
           heading: 'Prepare for the program',
-          body: 'You must watch the video that explains how to prepare before you take part in the Mind Magic program.',
+          body: 'Then complete the handwritten homework according to the instructions provided in the preparation video.',
           video: {
             label: 'Watch the preparation video',
             aria: 'Watch the Mind Magic preparation video on YouTube (opens in a new tab)',
@@ -312,7 +365,7 @@ export const en: Translation = {
         },
         submission: {
           heading: 'After you complete the homework',
-          body: 'Send clear photographs of all the homework you wrote to Charana Gunawardhana on WhatsApp.',
+          body: 'Take clear photographs of all your handwritten work and send them to:',
           cta: 'Send homework on WhatsApp',
           aria: 'Send Mind Magic homework to Charana Gunawardhana on WhatsApp (opens in a new tab)',
         },
@@ -321,13 +374,96 @@ export const en: Translation = {
           attribution: 'Charana Gunawardhana',
         },
       },
+      recorded: {
+        heading: 'Mind Magic Recorded',
+        subheading: 'Your first step into Mind Magic',
+        body: 'Experience the core Mind Magic training through the recorded program, followed by a live discussion and visualization session.',
+        price: 'Rs. 25,000/-',
+        access: 'One-week recording access',
+        zoom: 'Your purchase also includes a complimentary (FREE) live Zoom session, including discussion, questions and practical visualization training.',
+        value: 'Regular value of visualization session: Rs. 15,000/-',
+        accepted:
+          'Once your homework has been accepted, you will receive access to the recorded Mind Magic training for one week.',
+        join: 'Join the next available 2-3 hour live Zoom session following your purchase.',
+        missed:
+          'Important: The complimentary session is available only at the first scheduled session following your purchase. If you miss that session, another complimentary session will not be provided.',
+        explore: 'Explore recorded Mind Magic',
+      },
       journey: {
-        heading: 'How the Recorded Journey Works',
-        steps: ['Prepare', 'Complete Pre-Course Homework', 'Continue to Program Access'],
+        heading: 'Your recorded Mind Magic journey',
+        notice:
+          'These steps are instructions. This page does not collect the bank payment, approve homework, create an account, or open the recording.',
+        paymentTitle: 'Make your payment',
+        paymentOffer: 'Mind Magic Recorded - Rs. 25,000/-',
+        bank: [
+          'Sampath Bank PLC',
+          'Branch: Wekada, Panadura',
+          'Account Name: Aum International Holding Pvt Ltd',
+          'Account Number: 004710001087',
+        ],
+        paymentReference:
+          'When making the payment, please include your WhatsApp number in the payment description, narration or reference.',
+        homeworkTitle: 'Complete your handwritten homework',
+        homeworkIntro: 'Before completing your homework, please read the instructions below carefully.',
+        achievementsTitle: '10 Achievements',
+        achievements: '10 achievements that you feel you have accomplished.',
+        failuresTitle: '10 Failures',
+        failures: '10 things you wanted to achieve but have not yet achieved.',
+        possibleTitle: '20 Things You Would Do If Everything Were Possible',
+        possible:
+          'Imagine that you are given whatever you need to accomplish what you want - including any amount of money, resources, knowledge, authority, permissions, opportunities and support.',
+        possibleQuestion:
+          'If everything required were made available to you, what are the 20 things you would do?',
+        secretTitle: 'The Secret Exercise',
+        secret:
+          'Watch the complete short The Secret video provided for the program and handwrite the Sinhala subtitles/content in a separate notebook.',
+        watchPreparation: 'Watch homework preparation video',
+        afterVideo:
+          'Then complete the handwritten homework according to the instructions provided in the preparation video.',
+        submitTitle: 'Submit your homework',
+        submitBody: 'Take clear photographs of all your handwritten work and send them to:',
+        submitName: 'Charana Gunawardhana',
+        submitWhatsApp: 'WhatsApp: 075 170 0160',
+        submitCta: 'Send homework via WhatsApp',
+        approvalTitle: 'Receive approval',
+        approval:
+          'Your homework must be accepted before access to the recording is provided. If it is not accepted, you will need to redo and resubmit it.',
+        accessTitle: 'One-week access',
+        access:
+          'Once your homework has been accepted, you will receive access to the recorded Mind Magic training for one week.',
+        sessionTitle: 'Join the live discussion and visualization session',
+        sessionJoin: 'Join the next available 2-3 hour live Zoom session following your purchase.',
+        sessionOpportunity: 'The session provides an opportunity to:',
+        sessionPoints: [
+          'discuss what you learned;',
+          'ask questions; and',
+          'learn practical visualization.',
+        ],
+        sessionValue: 'Regular value: Rs. 15,000/-',
+        sessionIncluded: 'Included FREE with Mind Magic Recorded',
+        sessionImportant:
+          'Important: The complimentary session is available only at the first scheduled session following your purchase. If you miss that session, another complimentary session will not be provided.',
+        refund: 'Mind Magic Recorded is non-refundable.',
+      },
+      hanthana: {
+        heading: 'Mind Magic Hanthana',
+        audience: 'For those who have already experienced Mind Magic',
+        when: '24-27 July 2027 | 4 Days · 3 Nights',
+        notBasic: 'Mind Magic Hanthana is not another way to learn the basic Mind Magic experience.',
+        different:
+          'It is a different experience for people who have already experienced Mind Magic - a residential gathering where participants come together to experience another dimension of the Mind Magic journey.',
+        stay: 'Over four days and three nights, participants stay together at the Hanthana training centre and take part in training, reflection, Dream Board work, group activities, entertainment, shared experiences and the Gala Night.',
+        shared: 'Different people. Different journeys. A shared Mind Magic experience.',
+        preparation:
+          'Detailed preparation and participant information will be provided to registered participants.',
+        cta: 'Contact the coordinator',
+        contactNote:
+          'A separate Hanthana coordinator number is not published here. This opens the general contact page.',
       },
       next: {
-        heading: 'Continue Your Journey',
-        body: 'Completing Mind Magic can form part of the eligibility for selected future programs.',
+        heading: "Maybe it's time to look at your life differently.",
+        body: 'If you are searching for answers, facing challenges or simply feel that you are capable of more, Mind Magic gives you an opportunity to explore the mind behind the life you are creating.',
+        closing: 'Take control of your thinking. Take greater ownership of your life.',
       },
       cta: {
         enquire: 'Enquire About Mind Magic',
@@ -576,9 +712,9 @@ export const en: Translation = {
         cta: 'Explore Morning Gym',
       },
       mindMagic: {
-        heading: 'Discover the power within yourself.',
-        supporting: 'Available in recorded and live workshop formats.',
-        detail: 'Recorded Program · Approx. 8.5 Hours',
+        heading: 'Take control of your thinking. Take control of your life.',
+        supporting: 'Recorded program · One-week access',
+        detail: 'Rs. 25,000/-',
         cta: 'Explore Mind Magic',
       },
     },
@@ -592,9 +728,9 @@ export const en: Translation = {
             'A guided morning experience focused on mindset, discipline and intentional action.',
         },
         'mind-magic': {
-          description: 'Discover the power within yourself.',
-          availability: 'Available in recorded and live workshop formats.',
-          detail: 'Recorded Program · Approx. 8.5 Hours',
+          description: 'Take control of your thinking. Take control of your life.',
+          availability: 'Recorded program · One-week access',
+          detail: 'Rs. 25,000/-',
         },
         'optimistic-magnet': {
           description: 'Practice gratitude. Shift your focus. Build a more positive mindset.',
