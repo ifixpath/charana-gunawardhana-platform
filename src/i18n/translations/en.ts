@@ -323,7 +323,7 @@ export const en: Translation = {
       },
       homework: {
         heading: 'Mind Magic — Homework and Preparation',
-        intro: 'Complete the following tasks and prepare before you take part in the Mind Magic program.',
+        intro: 'Watch the introduction before you follow the recorded journey.',
         introductionVideo: {
           label: 'Watch the introduction video',
           aria: 'Watch the Mind Magic introduction video on YouTube (opens in a new tab)',

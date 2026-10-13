@@ -327,8 +327,7 @@ export const si: Translation = {
       },
       homework: {
         heading: 'Mind Magic — Homework සහ සූදානම',
-        intro:
-          'Mind Magic වැඩසටහනට සහභාගී වීමට පෙර පහත කාර්යයන් සම්පූර්ණ කර සූදානම් වන්න.',
+        intro: 'පටිගත කළ ගමන අනුගමනය කිරීමට පෙර හඳුන්වාදීම නරඹන්න.',
         introductionVideo: {
           label: 'හඳුන්වාදීමේ වීඩියෝව නරඹන්න',
           aria: 'Mind Magic හඳුන්වාදීමේ වීඩියෝව YouTube හි නරඹන්න (නව ටැබයකින් විවෘත වේ)',

@@ -186,91 +186,6 @@ export default function MindMagicPage() {
           </ExternalButtonLink>
         </div>
 
-        <ol className="border-line mt-12 border-t lg:mt-16">
-          {copy.homework.items.map((item, index) => (
-            <li key={item.title} className="border-line border-b py-8 lg:py-9">
-              <div className="flex gap-6 lg:gap-10">
-                <p aria-hidden="true" className="text-accent-dark font-serif w-8 shrink-0 text-sm">
-                  {String(index + 1).padStart(2, '0')}
-                </p>
-                <div className="min-w-0">
-                  <h3 className="text-primary font-serif text-xl text-balance sm:text-2xl">
-                    {item.title}
-                  </h3>
-                  <p className="text-content-muted mt-3 max-w-prose text-sm leading-relaxed sm:text-base">
-                    {item.body}
-                  </p>
-                  {'detail' in item ? (
-                    <p className="text-content-muted mt-3 max-w-prose text-sm leading-relaxed sm:text-base">
-                      {item.detail}
-                    </p>
-                  ) : null}
-                  {index === 3 ? (
-                    <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
-                      <ExternalButtonLink
-                        href={MIND_MAGIC_RESOURCES.videos.theSecret}
-                        ariaLabel={copy.homework.secretVideo.aria}
-                        variant="outlineOnLight"
-                        className="w-full whitespace-normal text-balance sm:w-auto"
-                      >
-                        {copy.homework.secretVideo.label}
-                      </ExternalButtonLink>
-                      <ButtonLink
-                        to={localizedPath(ROUTES.mindMagicTheSecretPart1)}
-                        variant="outlineOnLight"
-                        className="w-full whitespace-normal text-balance sm:w-auto"
-                      >
-                        {copy.homework.secretReading.label}
-                      </ButtonLink>
-                    </div>
-                  ) : null}
-                </div>
-              </div>
-            </li>
-          ))}
-        </ol>
-
-        <div className="border-line mt-16 border-t pt-12 lg:mt-20 lg:pt-16">
-          <h3 className="text-primary font-serif text-2xl sm:text-3xl">
-            {copy.homework.preparation.heading}
-          </h3>
-          <div className="mt-8">
-            <ExternalButtonLink
-              href={MIND_MAGIC_RESOURCES.videos.preparation}
-              ariaLabel={copy.homework.preparation.video.aria}
-              variant="outlineOnLight"
-              className="w-full whitespace-normal text-balance sm:w-auto"
-            >
-              {copy.homework.preparation.video.label}
-            </ExternalButtonLink>
-          </div>
-          <p className="text-content-muted mt-4 max-w-prose text-base leading-relaxed">
-            {copy.homework.preparation.body}
-          </p>
-        </div>
-
-        <div className="border-line mt-16 border-t pt-12 lg:mt-20 lg:pt-16">
-          <h3 className="text-primary font-serif text-2xl sm:text-3xl">
-            {copy.homework.submission.heading}
-          </h3>
-          <p className="text-content-muted mt-4 max-w-prose text-base leading-relaxed">
-            {copy.homework.submission.body}
-          </p>
-          <p className="text-primary mt-4 text-lg">{copy.journey.submitName}</p>
-          <p className="text-primary mt-1 text-lg tracking-wide">
-            {copy.journey.submitWhatsApp}
-          </p>
-          <div className="mt-8">
-            <ExternalButtonLink
-              href={MIND_MAGIC_RESOURCES.homeworkWhatsApp.href}
-              ariaLabel={copy.homework.submission.aria}
-              className="w-full whitespace-normal text-balance sm:w-auto"
-            >
-              {copy.homework.submission.cta}
-            </ExternalButtonLink>
-          </div>
-        </div>
-
         <blockquote className="border-line mt-16 max-w-2xl border-t pt-10 lg:mt-20">
           <p className="text-primary font-serif text-xl leading-snug text-balance sm:text-2xl">
             {copy.homework.quote.text}
@@ -353,28 +268,16 @@ export default function MindMagicPage() {
                 <h4 className="text-primary font-serif text-xl">{copy.journey.secretTitle}</h4>
                 <p className="text-content-muted mt-2 text-base leading-relaxed">{copy.journey.secret}</p>
                 <div className="mt-6">
-                  <ExternalButtonLink
-                    href={MIND_MAGIC_RESOURCES.videos.theSecret}
-                    ariaLabel={copy.homework.secretVideo.aria}
+                  <ButtonLink
+                    to={localizedPath(ROUTES.mindMagicTheSecretPart1)}
                     variant="outlineOnLight"
                     className="w-full whitespace-normal text-balance sm:w-auto"
                   >
-                    {copy.homework.secretVideo.label}
-                  </ExternalButtonLink>
+                    {copy.homework.secretReading.label}
+                  </ButtonLink>
                 </div>
               </div>
             </div>
-            <div className="mt-8">
-              <ExternalButtonLink
-                href={MIND_MAGIC_RESOURCES.videos.preparation}
-                ariaLabel={copy.homework.preparation.video.aria}
-                variant="outlineOnLight"
-                className="w-full whitespace-normal text-balance sm:w-auto"
-              >
-                {copy.journey.watchPreparation}
-              </ExternalButtonLink>
-            </div>
-            <p className="text-content-muted mt-4 text-base leading-relaxed">{copy.journey.afterVideo}</p>
           </li>
 
           <li>
